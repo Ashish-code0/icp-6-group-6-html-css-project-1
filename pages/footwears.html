@@ -3,10 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Footwears </title>
+    <title> Electronics </title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .navbar{
+            margin-top:0;
+            font-size:25px;
+            background-color: #000;
+            color:#bcc8cf;
+            display:flex;
+            align-items: center;
+        }
+        .electronic-logo{
+            height: 30px;
+            width: 40px;
+            align-items: center;
+        }
+        .menu-contianer{
+            margin-left:auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .menu{
+            background-color: #d1d1d1;
+            color:black;
+            font-size: 15px;
+            padding:5px 15px;
+            border:1px solid white;
+            margin:15px;
+            border-radius: 5px;
+        }
+        .latest-offers{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .popular-brands{
+            height:100px;
+            background-color: #565656;
+            color:#eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 10px;
+            padding:10px;
+        }
+        .img-logo{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            
+            padding: 10px;
+
+        }
+        .card{
+            width:200px;
+            border:1px solid black;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            border: none;
+            display: block;
+            justify-content: center;
+        }
+        .img-in-card{
+            width: 150px;
+            height: 120px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .price-font{
+            font-size: small;
+            color: green;
+        }
+        .brand-names{
+            font-size: 15px;
+            color: grey;
+        }
+        .shop-footer{
+            height:200px;
+            background-color: #000000;
+            text-align: center;
+            color:white;
+        }
+    </style>
 </head>
 <body>
-     <h1> Group 6  Footwear Page</h1>   
-     <h2> Divya Kasule</h2>
+    <div class="navbar">
+        <span style=" padding:5px 25px; font-size: 40px;"> Dream's Land</span>
+
+        <div class="menu-contianer">
+            <span class="menu">
+                Home
+            </span>
+            <span class="menu">
+                Clothings
+            </span>
+            <span class="menu">
+                Footwear
+            </span>
+            <span class="menu">
+                Beauty & care
+            </span>
+            <span class="menu">
+                Groceries
+            </span>
+            <span class="menu">
+                Food
+            </span>
+            <span class="menu">
+                Home & Kitchen
+            </span> 
+            <list class="menu">
+                <i class="fa-solid fa-bars "></i>
+            </list>
+        </div>
+    </div>
+    <div class="deals-section">
+        <p><h1> Latest-offers on Footwear </h1></p>
+   <div class="latest-offers">
+      
+    <div class="card">
+        <img src="./../img/1stimage.jpg" class="img-in-card">
+        <p class="product-name">Top Deals on Footwear</p>
+        <p class="price-font">From ₹₹348</p>
+        <p class="brand-names">Fashion Heel Block Heels Sandals For Women</p>
+    </div>
+    <div class="card">
+        <img src="./../img/sandal.jpg" class="img-in-card">
+        <p class="product-name">Mochi Sandals</p>
+        <p class="price-font">From ₹₹2,490 </p>
+        <p class="brand-names">Mochi Women Chikoo Synthetic Sandals</p>
+    </div>
+    <div class="card">
+        <img src="./../img/blacksandal.jpg" class="img-in-card">
+        <p class="product-name">Soft Sleeper</p>
+        <p class="price-font">From ₹149</p>
+        <p class="brand-names">Black Simmer Slippers for Women</p>
+    </div>
+    <div class="card">
+        <img src="./../img/shoes1.jpg" class="img-in-card">
+        <p class="product-name">Shoes</p>
+        <p class="price-font">From ₹550*</p>
+        <p class="brand-names">Girls Comfortable, Fashionable Shoes</p>
+    </div>
+    <div class="card">
+        <img src="./../img/heelsandal.jpg" class="img-in-card">
+        <p class="product-name">Heel Sandal</p>
+        <p class="price-font">From ₹490*</p>
+        <p class="brand-names">Pink Stylish Latest Party heel sandal</p>
+    </div>
+        
+   </div>
+   <p> popular brands </p>
+   <div class="popular-brands">
+        <img src="./../img/batalogo.jpg" class="img-logo">
+        <img src="./../img/venuslogo.jpg" class="img-logo">
+        <img src="./../img/pasion.jpg" class="img-logo">
+        <img src="./../img/libertylogo.jpg" class="img-logo">
+        <img src="./../img/mungro.jpg" class="img-logo">
+   </div>
+
+    <div class="shop-footer">
+        <h3> FOOTER </h3>
+    </div>
+    <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script> 
 </body>
 </html>
