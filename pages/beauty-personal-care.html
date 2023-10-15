@@ -87,10 +87,11 @@
         }
         .card{
             width:200px;
-            border:1px solid black;
+            border-radius:10px;
             text-align: center;
             background-color:white;
-            border-radius: 10px;
+            box-shadow:0 0 10px #999;
+        
         }
         .button{
             margin-bottom: 20px;
@@ -139,6 +140,23 @@
             font-size:small;
             margin-top:px;
         }
+        .popular-brands{
+            height:100px;
+            background-color: #565656;
+            color:#eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 10px;
+            padding:10px;
+        }
+        .img-logo{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 10px;
+
+        }
         
 </style>
    
@@ -176,9 +194,11 @@
             </list>
         </div>
     </div> 
-
-<p> Beauty  & Personal Care Dels </p>
-<div class="deals-on-beauty-care">
+    <div>
+        <img src="./../img/beauty-personal-care/WhatsApp Image 2023-10-15 at 18.21.14.jpeg"  width="100%" height="500">
+        <div class="deals-section">
+            <h2 class="heading-for-item"> Latest-offers on beauty product </h2>
+            <div class="latest-offers">
     <div class="card">
         <img src="./../img/beauty-personal-care/beauty img2.jpg"class="img-in-card">
         <p class="product-name">Lakme foundation</p>
@@ -209,8 +229,161 @@
     </div>
 
     </div>
+    </div>
+    <h2 class="heading-for-item"> Popular Brands </h2>
+
+    <div class="popular-brands">
+        <img src="./../img/beauty-personal-care/lackme logo.png" class="img-logo">
+        <img src="./../img/beauty-personal-care/hair serum logo.png" class="img-logo">
+        <img src="./../img/beauty-personal-care/cosmatic logo.jpg" class="img-logo">
+        <img src="./../img/beauty-personal-care/skin serum logo.jpg" class="img-logo">
+    </div>
+    <div>
+    <h2 class="heading-for-item">FACEWASH</h2>
+    <div class="latest-offers">
+
+      
+        <div class="card">
+            <img src="./../img/beauty-personal-care/lakme.jpg" class="img-in-card">
+            <p class="product-name">Lackme fecewash</p>
+            <p class="price-font">Rs 999*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/mamaearth.jpg" class="img-in-card">
+            <p class="product-name">Mamaearth facewash</p>
+            <p class="price-font">Rs 100*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/nivya.jpg" class="img-in-card">
+            <p class="product-name">Nivya facewash</p>
+            <p class="price-font">Rs 299*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/beauty img5.jpg" class="img-in-card" >
+            <p class="product-name">Himalaya</p>
+            <p class="price-font">Rs 99*</p>
+            <p class="brand-names">
+        
+        </div>
+    </div>
+        <h2 class="heading-for-item">CREAMS</h2>
+        <div class="latest-offers">
+
+        <div class="card">
+            <img src="./../img/beauty-personal-care/nivya cream.jpg" class="img-in-card">
+            <p class="product-name">nivya</p>
+            <p class="price-font">Rs 999*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/himalaya cream.jpg" class="img-in-card">
+            <p class="product-name">himalaya</p>
+            <p class="price-font">Rs 100*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/meglow cream.jpg" class="img-in-card">
+            <p class="product-name">meglow </p>
+            <p class="price-font">Rs 299*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/lotus.jpg" class="img-in-card" >
+            <p class="product-name">lotus</p>
+            <p class="price-font">Rs 99*</p>
+            <p class="brand-names"></p>
+         </div>
+        </div>
+        <h2 class="heading-for-item">LIPSTICKS</h2>
+            <div class="latest-offers">
+
+        <div class="card">
+            <img src="./../img/beauty-personal-care/sephora lipstick.jpg" class="img-in-card">
+            <p class="product-name">Sephora</p>
+            <p class="price-font">Rs 999*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/MARS creamy matte lipstick.jpg" class="img-in-card">
+            <p class="product-name">MARS creamy matte</p>
+            <p class="price-font">Rs 100*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/maybelline new york.jpg" class="img-in-card">
+            <p class="product-name">Maybelline new york</p>
+            <p class="price-font">Rs 299*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/beauty img4.jpg" class="img-in-card" >
+            <p class="product-name">Lackme</p>
+            <p class="price-font">Rs 99*</p>
+            <p class="brand-names"></p>
+        </div>
+            </div>
+        <h2 class="heading-for-item">POWDER</h2>
+            <div class="latest-offers">
+
+        <div class="card">
+            <img src="./../img/beauty-personal-care/beauty img6.jpg" class="img-in-card">
+            <p class="product-name">Mamaearth facewash</p>
+            <p class="price-font">Rs 100*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/himalaya.jpg" class="img-in-card">
+            <p class="product-name">Lackme</p>
+            <p class="price-font">Rs 99*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/ponds.jpg" class="img-in-card">
+            <p class="product-name">Nivya facewash</p>
+            <p class="price-font">Rs 299*</p>
+            <p class="brand-names"></p>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/johnson baby.jpg" class="img-in-card" >
+            <p class="product-name">Himalaya</p>
+            <p class="price-font">Rs 99*</p>
+            <p class="brand-names"></p>
+        </div>
+            </div>
+        <h2 class="heading-for-item">EYELAINER</h2>
+        <div class="latest-offers">
+
+    <div class="card">
+        <img src="./../img/beauty-personal-care/kiko milano precision.jpg" class="img-in-card">
+        <p class="product-name">Sephor</p>
+        <p class="price-font">Rs 999*</p>
+        <p class="brand-names"></p>
+    </div>
+    <div class="card">
+        <img src="./../img/beauty-personal-care/dazeller eailyaner.jpg" class="img-in-card">
+        <p class="product-name">MARS creamy matte</p>
+        <p class="price-font">Rs 100*</p>
+        <p class="brand-names"></p>
+    </div>
+    <div class="card">
+        <img src="./../img/beauty-personal-care/facescanada magneteyes.jpg" class="img-in-card">
+        <p class="product-name">Maybelline new york</p>
+        <p class="price-font">Rs 299*</p>
+        <p class="brand-names"></p>
+    </div>
+    <div class="card">
+        <img src="./../img/beauty-personal-care/manish mahlohtra.png" class="img-in-card" >
+        <p class="product-name">Lackme</p>
+        <p class="price-font">Rs 99*</p>
+        <p class="brand-names"></p>
+    </div>
+</div>
+
         <div class="shop-footer">
-                <h3> FOOTER </h3>
+                <h2> FOOTER </h2>
         </div>
     
         <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
