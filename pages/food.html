@@ -4,9 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Packaged-food </title>
+    <style>
+         body{
+            margin:0;
+            padding:0;
+        }
+        .navbar{
+            margin-top:0;
+            font-size:25px;
+            background-color: #000;
+            color:#bcc8cf;
+            display:flex;
+            align-items: center;
+        }
+        .menu-contianer{
+            margin-left:auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .menu{
+            background-color: #d1d1d1;
+            color:black;
+            font-size: 15px;
+            padding:5px 15px;
+            border:1px solid white;
+            margin:15px;
+            border-radius: 5px;
+        }
+        
+        .latest-offer-snack{
+            height:280px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .card{
+            width:200px;
+            border:1px solid black;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            border: none;
+            display: block;
+            justify-content: center;
+        }
+        .card-img{
+            width: 175px;
+            height: 150px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card-img:hover{
+            width: 185px;
+            height: 155px;
+        }
+        .btn{
+            width: 80px;
+            background-color: #eee;
+            border-radius: 15px;
+            color: black;
+            margin-bottom: 5px;
+        }
+        .btn:hover{
+            width: 150px;
+            background-color: chartreuse;
+            transition: 0.2s;
+        }
+        .shop-footer{
+            height:200px;
+            background-color: #000000;
+            text-align: center;
+            color:white;
+        }
+    </style>
 </head>
 <body>
-     <h1> Group 6 Packaged Food Page</h1>  
-     <h2> Vikrant </h2> 
+    <div class="navbar">
+        <span style=" padding:5px 25px; font-size: 45px;"> Dream's Land</span>
+
+        <div class="menu-contianer">
+            <span class="menu">
+                Home
+            </span>
+            <span class="menu">
+                Clothings
+            </span>
+            <span class="menu">
+                Footwear
+            </span>
+            <span class="menu">
+                Beauty & care
+            </span>
+            <span class="menu">
+                Groceries
+            </span>
+            <span class="menu">
+                Food
+            </span>
+            <span class="menu">
+                Home & Kitchen
+            </span> 
+            <list class="menu">
+                <i class="fa-solid fa-bars "></i>
+            </list>
+        </div>
+    </div>
+
+    <div>
+        <h1>Latest-offers On Snack Foods 👉</h1>
+    </div>
+    <div class="latest-offer-snack">
+       <div class="card">
+           <img src="../img/food/chips.jpg" class="card-img">
+           <p class="product-name">Balaji Chips</p>
+           <p class="price">From ₹49</p>
+           <button class="btn">Buy Now</button>
+       </div>
+
+       <div class="card">
+        <img src="../img/food/haldiram.jpg" class="card-img">
+        <p class="product-name">Haldiram Chiwda</p>
+        <p class="price">From ₹99</p>
+        <button class="btn">Buy Now</button>
+       </div>
+
+       <div class="card">
+        <img src="../img/food/biscute.jpg" class="card-img">
+        <p class="product-name">Britannia 50-50 Sweets</p>
+        <p class="price">From ₹49</p>
+        <button class="btn">Buy Now</button>
+       </div>
+
+       <div class="card">
+        <img src="../img/food/popcorn.jpg" class="card-img">
+        <p class="product-name">popcorn</p>
+        <p class="price">From ₹29</p>
+        <button class="btn">Buy Now</button>
+       </div>
+
+       <div class="card">
+        <img src="../img/food/maggi.jpg" class="card-img">
+        <p class="product-name">Maggie</p>
+        <p class="price">From ₹49</p>
+        <button class="btn">Buy Now</button>
+       </div>
+    </div>
+   
+          
+   </div>
+   <div class="shop-footer">
+    <h3> FOOTER </h3>
+   </div>
+
+   <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
 </body>
 </html>
