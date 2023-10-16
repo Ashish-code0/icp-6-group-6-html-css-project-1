@@ -93,13 +93,18 @@
             box-shadow:0 0 10px #999;
         
         }
-        .button{
+        button{
             margin-bottom: 20px;
             padding:5px 15px;
-            background-color:#8daec4 ;
+            background-color:black;
             color:white;
             border-radius:5px;
             border:none;
+            cursor:pointer;
+        }
+        .btn:hover{
+            background-color: #565656;
+            transition:colour-bezier(0,075,0.82,0.165,1);
         }
         
         p{
@@ -136,6 +141,10 @@
             margin-bottom: 10px;
             margin-top: 5px;
         }
+        .img-in-card:hover{
+            width:155px;
+            height:125px;
+        }
         .offers{
             font-size:small;
             margin-top:px;
@@ -155,9 +164,21 @@
             width: 80px;
             border-radius: 50%;
             padding: 10px;
+            box-shadow:0 0 10px white;
 
         }
-        
+        .heading{
+            font-size:30px;
+        }
+        .product{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
 </style>
    
 <body>
@@ -239,8 +260,8 @@
         <img src="./../img/beauty-personal-care/skin serum logo.jpg" class="img-logo">
     </div>
     <div>
-    <h2 class="heading-for-item">FACEWASH</h2>
-    <div class="latest-offers">
+    <h2 class="heading-for-item">FACEWASH<b></b></h2>:
+    <div class="product">
 
       
         <div class="card">
@@ -248,25 +269,28 @@
             <p class="product-name">Lackme fecewash</p>
             <p class="price-font">Rs 999*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/mamaearth.jpg" class="img-in-card">
             <p class="product-name">Mamaearth facewash</p>
             <p class="price-font">Rs 100*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/nivya.jpg" class="img-in-card">
             <p class="product-name">Nivya facewash</p>
             <p class="price-font">Rs 299*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/beauty img5.jpg" class="img-in-card" >
             <p class="product-name">Himalaya</p>
             <p class="price-font">Rs 99*</p>
-            <p class="brand-names">
-        
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
     </div>
         <h2 class="heading-for-item">CREAMS</h2>
@@ -277,24 +301,28 @@
             <p class="product-name">nivya</p>
             <p class="price-font">Rs 999*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/himalaya cream.jpg" class="img-in-card">
             <p class="product-name">himalaya</p>
             <p class="price-font">Rs 100*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/meglow cream.jpg" class="img-in-card">
             <p class="product-name">meglow </p>
             <p class="price-font">Rs 299*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/lotus.jpg" class="img-in-card" >
             <p class="product-name">lotus</p>
             <p class="price-font">Rs 99*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
          </div>
         </div>
         <h2 class="heading-for-item">LIPSTICKS</h2>
@@ -305,24 +333,28 @@
             <p class="product-name">Sephora</p>
             <p class="price-font">Rs 999*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/MARS creamy matte lipstick.jpg" class="img-in-card">
             <p class="product-name">MARS creamy matte</p>
             <p class="price-font">Rs 100*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/maybelline new york.jpg" class="img-in-card">
             <p class="product-name">Maybelline new york</p>
             <p class="price-font">Rs 299*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/beauty img4.jpg" class="img-in-card" >
             <p class="product-name">Lackme</p>
             <p class="price-font">Rs 99*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
             </div>
         <h2 class="heading-for-item">POWDER</h2>
@@ -333,24 +365,28 @@
             <p class="product-name">Mamaearth facewash</p>
             <p class="price-font">Rs 100*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/himalaya.jpg" class="img-in-card">
             <p class="product-name">Lackme</p>
             <p class="price-font">Rs 99*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/ponds.jpg" class="img-in-card">
             <p class="product-name">Nivya facewash</p>
             <p class="price-font">Rs 299*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
         <div class="card">
             <img src="./../img/beauty-personal-care/johnson baby.jpg" class="img-in-card" >
             <p class="product-name">Himalaya</p>
             <p class="price-font">Rs 99*</p>
             <p class="brand-names"></p>
+            <button class="btn">BUY</button>
         </div>
             </div>
         <h2 class="heading-for-item">EYELAINER</h2>
@@ -361,24 +397,28 @@
         <p class="product-name">Sephor</p>
         <p class="price-font">Rs 999*</p>
         <p class="brand-names"></p>
+        <button class="btn">BUY</button>
     </div>
     <div class="card">
         <img src="./../img/beauty-personal-care/dazeller eailyaner.jpg" class="img-in-card">
         <p class="product-name">MARS creamy matte</p>
         <p class="price-font">Rs 100*</p>
         <p class="brand-names"></p>
+        <button class="btn">BUY</button>
     </div>
     <div class="card">
         <img src="./../img/beauty-personal-care/facescanada magneteyes.jpg" class="img-in-card">
         <p class="product-name">Maybelline new york</p>
         <p class="price-font">Rs 299*</p>
         <p class="brand-names"></p>
+        <button class="btn">BUY</button>
     </div>
     <div class="card">
         <img src="./../img/beauty-personal-care/manish mahlohtra.png" class="img-in-card" >
         <p class="product-name">Lackme</p>
         <p class="price-font">Rs 99*</p>
         <p class="brand-names"></p>
+        <button class="btn">BUY</button>
     </div>
 </div>
 
