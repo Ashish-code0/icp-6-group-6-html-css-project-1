@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title> Home </title>
-    <link rel="stylesheet" href="./css/style.css"/>
     <style>
         .color-scheme{
             color:#000000; 
@@ -13,6 +12,233 @@
             color:#bcc8cf; /* text on black div*/
             color :#d1d1d1;
         }
+        body{
+            margin:0;
+            padding:0;
+        }
+        .tagline{
+            background-color: #eeeeee;
+            color:#000000;
+            margin:0;
+            text-align: center;
+            font-size:25px;
+        }
+        .navbar{
+            margin-top:0;
+            font-size:40px;
+            background-color: #000;
+            color:#bcc8cf;
+            display:flex;
+            align-items: center;
+        }
+        .nav-shop-logo{
+            height:70px;
+            border:1px solid black;
+            border-radius: 50%;
+        } 
+        .navbar-menu-contianer{
+            margin-left:auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar-menu{
+            background-color: #d1d1d1;
+            color:black;
+            font-size: 15px;
+            padding:5px 15px;
+            border:1px solid white;
+            margin:15px;
+            border-radius: 5px;
+        }
+        .page-header{
+            height:200px;
+            background-color: #eee;
+            margin: 20px 10px;
+            padding:10px;
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .header-img{
+            margin:5px 30px;
+            height:200px;
+            border-radius: 50%;
+        }
+       
+        .header-desc{
+            margin-left:auto;
+            margin-right:auto;
+            padding:15px;
+            font-size: 25px;
+            align-items: center;
+        }
+        .header-btn{
+            background-color: black;
+            color:rgb(255, 254, 254);
+            font-size: 15px;
+            font-weight:bold;
+            border-radius: 10px;
+            padding:5px 25px;
+        }
+        .header-btn-arrow{
+            margin-left:15px;
+            padding:5px;
+            color:#000;
+            background-color:#ddd;
+            border-radius: 50%;
+        }
+
+        .section-heading{
+            margin:10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .special-offers{
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .special-offers-card{
+            width:200px;
+            border:1px solid #eee;
+            text-align: center;
+            padding:25px 20px;
+            margin:10px 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .card-img{
+            width: 120px;
+            height: 120px;
+        }
+        .card-title{
+            font-size: 15px;
+        }
+        .discount-desc{
+            font-size:medium;
+            color: green;
+        }
+        .category-name{
+            font-size: 15px;
+            color: grey;
+        }
+        .card-btn{
+            padding:5px 15px;
+            background-color:#8daec4 ;
+            color:white;
+            border-radius: 5px;
+            border:none;
+        }
+
+        .shopping-categories{
+            height:100px;
+            background-color: #565656;
+            color:#eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 10px;
+            padding:10px;
+        }
+        .categories-img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .popular-brands{
+            height:100px;
+            background-color: #565656;
+            color:#eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 10px;
+            padding:10px;
+        }
+        .popular-products{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .deals-on-electronics{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .deals-on-clothing{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .deals-on-footwear{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .deals-on-beauty-care{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+
+        .deals-on-groceries{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .deals-on-food{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+       
+        .review-section{
+            height:300px;
+            text-align: center;
+            background-color: #8daec4;
+        }
+
+        .shop-footer{
+            height:200px;
+            background-color: #000000;
+            text-align: center;
+            color:white;
+        }
+                
     </style>
 </head>
 <body>
@@ -20,227 +246,267 @@
         A place where your dreams come true.
     </div>
     <div class="navbar">
-        <span style=" padding:5px 25px; font-size: 40px;"> Dream's Land</span>
+            <img class="nav-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
+        <span> Dream's Land</span>
 
-        <div class="menu-contianer">
-            <span class="menu">
+        <div class="navbar-menu-contianer">
+            <span class="navbar-menu">
                 Electronics
             </span>
-            <span class="menu">
+            <span class="navbar-menu">
                 Clothings
             </span>
-            <span class="menu">
+            <span class="navbar-menu">
                 Footwear
             </span>
-            <span class="menu">
+            <span class="navbar-menu">
                 Beauty & care
             </span>
-            <span class="menu">
+            <span class="navbar-menu">
                 Groceries
             </span>
-            <span class="menu">
+            <span class="navbar-menu">
                 Food
             </span>
-            <span class="menu">
+            <span class="navbar-menu">
                 Home & Kitchen
             </span> 
-            <list class="menu">
+            <list class="navbar-menu">
                 <i class="fa-solid fa-bars "></i>
             </list>
         </div>
     </div> 
 
-    <div class="page-header">    
-        <p>page-header</p>    
+    <div class="page-header"> 
+              <img class="header-img" src="./img/home-page/header-img.jpg" alt="">
+
+        <div class="header-desc">
+            <p>Welcome to Your Favourite Shopping Destination </p>
+            <p> A online store with ambition of fulfilling your needs at a price lower than your dreams.</p>
+            <button class="header-btn">  
+                Explore the Shop 
+                <i class="fa-solid fa-arrow-right header-btn-arrow"></i>
+            </button>
+        </div>        
     </div>  
     <hr/><hr/>
 
     <div class="deals-section">
-                 <p> latest-offers </p>
-            <div class="latest-offers">
-               
-                <div class="card">
-                    <h4> cards</h4>
-                    <button> BUY </button>
+                 <p class="section-heading"> Special Offers </p>
+
+            <div class="special-offers">
+                <div class="special-offers-card">
+                    <img src="./img/home-page/elctronics.png" class="card-img">
+                    <p class="card-title">Top Deals on Electronics</p>
+                    <p class="discount-desc"> Upto 50% of</p>
+                    <p class="category-name">Mobile, Laptops, Earphones and More</p>
+                    <button class="card-btn"> BUY </button>
                 </div>
-                <div class="card">
-                    <h4> cards</h4>
-                    <button> BUY </button>
+                <div class="special-offers-card">
+                    <img src="./img/home-page/footwear.png" class="card-img">
+                    <p class="card-title">Top Deals on Footwear</p>
+                    <p class="discount-desc"> Upto 40% of</p>
+                    <p class="category-name">Shoes, Sandals, Slippers and More</p>
+                    <button class="card-btn"> BUY </button>
                 </div>
-                <div class="card">
-                    <h4> cards</h4>
-                    <button> BUY </button>
+                <div class="special-offers-card">
+                    <img src="./img/home-page/clothings.png" class="card-img">
+                    <p class="card-title">Top Deals on Clothings</p>
+                    <p class="discount-desc"> Upto 30% of</p>
+                    <p class="category-name">Shirts, Trousers, Sarees and More</p>
+                    <button class="card-btn"> BUY </button>
                 </div>
-                <div class="card">
-                <h4> cards</h4>
-                <button> BUY </button>
+                <div class="special-offers-card">
+                    <img src="./img/home-page/beauty1.png" class="card-img">
+                    <p class="card-title">Top Deals on beauty and care</p>
+                    <p class="discount-desc"> Upto 50% of</p>
+                    <p class="category-name">Hair care, Skincare and Make-up More</p>
+                    <button class="card-btn"> BUY </button>
+                </div>
+                <div class="special-offers-card">
+                    <img src="./img/home-page/grocery1.png" class="card-img">
+                    <p class="card-title">Top Deals on Groceries</p>
+                    <p class="discount-desc"> Upto 50% of</p>
+                    <p class="category-name">Grains, Dairy, Spices, Flours and More</p>
+                    <button class="card-btn"> BUY </button>
                 </div>
             </div>
-            <p> popular brands </p>
-            <div class="popular-brands">
 
+            <hr/>
+
+            <p class="section-heading"> Shop By Category </p>
+            <div class="shopping-categories">
+                <img src="img/home-page/top-offer.webp" class="categories-img">
+                <img src="img/home-page/category-laptop.webp" class="categories-img">
+                <img src="img/home-page/category-mobiles.webp" class="categories-img">
+                <img src="img/home-page/clothings.webp" class="categories-img">
+                <img src="img/home-page/home.webp" class="categories-img">
+                <img src="img/home-page/beauty.png" class="categories-img">
+                <img src="img/home-page/grocery.png" class="categories-img">
             </div>
 
-            <p> popular products </p>
+            <hr/>
+
+            <p class="section-heading"> popular products </p>
             <div class="popular-products">
                 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
-                 <div class="card">
+                 <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
             </div>
-
-            <p> Electronics deals </p>
+            <hr/>
+            <p class="section-heading"> Electronics deals </p>
             <div class="deals-on-electronics">
                
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
-                 <div class="card">
+                 <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
-                 <div class="card">
+                 <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
             </div>
-
-            <p> Clothing deals </p>
+            <hr/>
+            <p class="section-heading"> Clothing deals </p>
             <div class="deals-on-clothing">
                
-                 <div class="card">
+                 <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
-                 <div class="card">
+                 <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
-                <div class="card">
-                <h4> cards</h4>
-                <button> BUY </button>
+                <div class="special-offers-card">
+                    <h4> cards</h4>
+                    <button class="card-btn"> BUY </button>
                 </div>
             </div>
-
-                <p> popular brands </p>
+            <hr/>
+                <p class="section-heading"> popular brands </p>
             <div class="popular-brands">
                 
             </div>
-
-            <p> footwear deals </p>
+            <hr/>
+            <p class="section-heading"> footwear deals </p>
             <div class="deals-on-footwear">
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
             </div>
-
-            <p> beauty  & personal care dels </p>
+            <hr/>
+            <p class="section-heading"> beauty  & personal care dels </p>
             <div class="deals-on-beauty-care">
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
             </div>
-
-            <p> popular-brands </p>
+            <hr/>
+            <p class="section-heading"> popular-brands </p>
             <div class="popular-brands">
                 
             </div>
-
-            <p> groceries deals </p>
+            <hr/>
+            <p class="section-heading"> groceries deals </p>
             <div class="deals-on-groceries">
                 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
             </div>
-
-            <p> Packaged food deals </p>
+            <hr/>
+            <p class="section-heading"> Packaged food deals </p>
             <div class="deals-on-food">
                 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div> 
-                <div class="card">
+                <div class="special-offers-card">
                     <h4> cards</h4>
-                    <button> BUY </button>
+                    <button class="card-btn"> BUY </button>
                 </div>
             </div>
     </div>
-
+    <hr/>
     <div class="review-section">
             <h3> REVIEW SECTION</h3>
     </div>
-
+    <hr/>
     <div class="shop-footer">
             <h3> FOOTER </h3>
     </div>
