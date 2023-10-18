@@ -29,6 +29,10 @@
             display:flex;
             align-items: center;
         }
+        .navbar-name-logo{
+            display: flex;
+            align-items: center;
+        }
         .nav-shop-logo{
             height:70px;
             border:1px solid black;
@@ -37,6 +41,7 @@
         .navbar-menu-contianer{
             margin-left:auto;
             display:flex;
+            margin-right: 50px;
             justify-content: space-around;
             align-items: center;
         }
@@ -45,11 +50,53 @@
             color:black;
             font-size: 15px;
             font-weight: bold;
-            padding:5px 25px;
+            padding:5px 20px;
             border:1px solid white;
             margin:15px;
             border-radius: 10px;
         }
+        .navbar-sub-menu{
+            background-color: white;
+            color:black;
+            font-size: 15px;
+            font-weight: bold;
+            padding:5px 25px;
+            border:1px solid white;
+            border-radius: 10px;
+        }
+        ul{
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul li{
+            display: block;
+        }
+        li ul{
+            display: none;
+        }
+        ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 5px 15px 5px 15px;
+            white-space: nowrap;
+        }
+        li:hover ul {
+            display: block;
+            position: absolute;
+        }
+        li:hover li{
+            float: none;
+            font-size: 15px;
+        }
+        li:hover a {
+            background: white
+        }
+        li:hover li a:hover {
+            background: #ccc;
+        }
+        
         .tagline{
             background-color: #eeeeee;
             color:#000000;
@@ -109,19 +156,22 @@
             flex-wrap: wrap;
             margin: 20px 0;
             padding:10px;
+            position:relative;
         }
         .special-offers-card{
             width:200px;
             border:1px solid #eee;
             text-align: center;
-            padding:25px 20px;
+            padding:20px 20px;
             margin:10px 20px;
             background-color: white;
             border-radius: 10px;
+            box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.5);
         }
         .card-img{
             width: 120px;
             height: 120px;
+
         }
         .card-title{
             font-size: 15px;
@@ -142,7 +192,17 @@
             border-radius: 5px;
             border:none;
         }
-
+        .right-arrow{
+            position:absolute;
+            top:45%;
+            right:20px;
+            padding:8px;
+            background-color: white;
+            color:#565656;
+            border-radius: 50%;
+            font-size: 35px;
+            box-shadow: 0 0 4px 2px grey ;
+        }
         .shopping-categories{
             height:100px;
             background-color: #565656;
@@ -157,7 +217,7 @@
             height: 80px;
             width: 80px;
             border-radius: 50%;
-            padding: 10px;
+            padding:10px;
         }
         .popular-brands{
             height:100px;
@@ -169,15 +229,35 @@
             margin: 10px 0;
             padding:10px;
         }
+        .product-title{
+            font-size: 15px;
+        }
+        .product-discount{
+            font-size:17px;
+            color: green;
+        }
+        .offer-price{
+            font-size: 20px;
+            color:#565656;
+        }
+        .product-btn{
+            padding:7px 20px;
+            background-color:#0099ff ;
+            font-weight: bold;
+            color:white;
+            border-radius: 10px;
+            border:none;
+        }
         .popular-products{
-            height:250px;
             background-color: #eee;
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
             margin: 20px 0;
             padding:10px;
+            position:relative;
         }
+        
         .deals-on-electronics{
             height:250px;
             background-color: #eee;
@@ -186,6 +266,7 @@
             flex-wrap: wrap;
             margin: 20px 0;
             padding:10px;
+            position:relative;
         }
         .deals-on-clothing{
             height:250px;
@@ -195,6 +276,7 @@
             flex-wrap: wrap;
             margin: 20px 0;
             padding:10px;
+            position:relative;
         }
         .deals-on-footwear{
             height:250px;
@@ -204,6 +286,7 @@
             flex-wrap: wrap;
             margin: 20px 0;
             padding:10px;
+            position:relative;
         }
         .deals-on-beauty-care{
             height:250px;
@@ -213,8 +296,8 @@
             flex-wrap: wrap;
             margin: 20px 0;
             padding:10px;
+            position:relative;
         }
-
         .deals-on-groceries{
             height:250px;
             background-color: #eee;
@@ -223,6 +306,7 @@
             flex-wrap: wrap;
             margin: 20px 0;
             padding:10px;
+            position:relative;
         }
         .deals-on-food{
             height:250px;
@@ -232,11 +316,12 @@
             flex-wrap: wrap;
             margin: 20px 0;
             padding:10px;
+            position:relative;
         }
-       
         .review-section{
             text-align: center;
             background-color: #8daec4;
+            padding: 15px 30px;
             display:flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -302,44 +387,160 @@
             margin:5px;
             font-size: 18px;
             padding:5px;
+            cursor:pointer;
         }
         .footer-anchor{
             color:#bcc8cf;
+        }
+        @media only screen and (max-width:700px){
+            .navbar{
+                font-size:25px;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .tagline{
+                font-size:20px;
+            }
+            .page-header{
+                height:auto;
+                margin: 10px 0;
+                padding:10px;
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .header-img{
+                margin:25px 10px;
+                height:125px;
+                border-radius: 50%;
+            }
+            .header-desc{
+                width:400px;
+                margin-left:15px;
+                display:flex;
+                flex-wrap: wrap;
+                padding:10px;
+                font-weight: bold;
+                font-size: 15px;
+                align-items: flex-start;
+            }
+            .header-btn{
+                font-size: 15px;
+                font-weight:bold;
+                padding:2px 25px;
+            }
+            .shop-footer{
+                background-color: #000000;
+                color:#bcc8cf;
+                padding:15px;
+                text-align: center;
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .footer-sec{
+                width:auto;
+                margin:15px 0;
+                font-size: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .footer-about-logo{
+                height:60px;
+            }
+            .footer-shop-logo{
+                height:60px;
+            }
+            .footer-about-desc{
+                font-size: 15px; 
+            }
+            .footer-data{
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .footer-item-list{
+                margin:5px;
+                font-size: 15px;
+                padding:5px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="navbar">
+        <div class="navbar-name-logo" >
             <img class="nav-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
-        <span> Dream's Land</span>
-
-        <div class="navbar-menu-contianer">
-            
-            <span class="navbar-menu">
-                <a href="./pages/electronics.html">Electronics</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/clothings.html">Clothings</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/footwears.html">Footwear</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/beauty-personal-care.html">Beauty & care</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/groceries.html">Groceries</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/food.html">Food</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/home-kitchen.html">Home & Kitchen</a>
-            </span> 
-            <list class="navbar-menu">
-                <i class="fa-solid fa-bars "></i>
-            </list>
+            <span> Dream's Land</span>
         </div>
+        <ul class="navbar-menu-contianer">
+            
+            <li class="navbar-menu" style="padding:0 25px;">
+                <a href="./pages/electronics.html">Electronics</a>
+            </li>
+            <li class="navbar-menu"> Fashion
+                <ul> 
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/clothings.html">Clothings</a> 
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/footwears.html">Footwear</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/beauty-personal-care.html">Beauty & care</a>
+                    </li>
+                   
+                </ul>
+            </li>       
+            <li class="navbar-menu"> Home and groceries
+                <ul>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/food.html">Food</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/home-kitchen.html">Home & Kitchen</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                    <a href="./pages/groceries.html">Groceries</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="navbar-menu">
+                <i class="fa-solid fa-bars "></i>
+                <ul>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/clothings.html">Clothings</a> 
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/footwears.html">Footwear</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/beauty-personal-care.html">Beauty & care</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/food.html">Food</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/home-kitchen.html">Home & Kitchen</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                    <a href="./pages/groceries.html">Groceries</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/about.html"> About</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/contact.html"> contact</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div> 
 
     <div class="tagline">
@@ -358,7 +559,7 @@
             </button>
         </div>        
     </div>  
-    <hr/><hr/>
+    <hr/>
 
     <div class="deals-section">
             <p class="section-heading"> Special Offers </p>
@@ -367,76 +568,93 @@
                 <div class="special-offers-card">
                     <img src="./img/home-page/elctronics.png" class="card-img">
                     <p class="card-title">Top Deals on Electronics</p>
-                    <p class="discount-desc"> Upto 50% of</p>
+                    <p class="discount-desc"> Upto 50% off</p>
                     <p class="category-name">Mobile, Laptops, Earphones and More</p>
                     <button class="card-btn"> BUY </button>
                 </div>
                 <div class="special-offers-card">
                     <img src="./img/home-page/footwear.png" class="card-img">
                     <p class="card-title">Top Deals on Footwear</p>
-                    <p class="discount-desc"> Upto 40% of</p>
+                    <p class="discount-desc"> Upto 40% off</p>
                     <p class="category-name">Shoes, Sandals, Slippers and More</p>
                     <button class="card-btn"> BUY </button>
                 </div>
                 <div class="special-offers-card">
                     <img src="./img/home-page/clothings.png" class="card-img">
                     <p class="card-title">Top Deals on Clothings</p>
-                    <p class="discount-desc"> Upto 30% of</p>
+                    <p class="discount-desc"> Upto 30% off</p>
                     <p class="category-name">Shirts, Trousers, Sarees and More</p>
                     <button class="card-btn"> BUY </button>
                 </div>
                 <div class="special-offers-card">
                     <img src="./img/home-page/beauty1.png" class="card-img">
                     <p class="card-title">Top Deals on beauty and care</p>
-                    <p class="discount-desc"> Upto 50% of</p>
+                    <p class="discount-desc"> Upto 50% off</p>
                     <p class="category-name">Hair care, Skincare and Make-up More</p>
                     <button class="card-btn"> BUY </button>
                 </div>
                 <div class="special-offers-card">
                     <img src="./img/home-page/grocery1.png" class="card-img">
                     <p class="card-title">Top Deals on Groceries</p>
-                    <p class="discount-desc"> Upto 50% of</p>
+                    <p class="discount-desc"> Upto 50% off</p>
                     <p class="category-name">Grains, Dairy, Spices, Flours and More</p>
                     <button class="card-btn"> BUY </button>
                 </div>
+                <i class="fa-solid fa-arrow-right right-arrow" ></i>
             </div>
-
-            <hr/>
 
             <p class="section-heading"> Shop By Category </p>
             <div class="shopping-categories">
-                <img src="img/home-page/top-offer.webp" class="categories-img">
-                <img src="img/home-page/category-laptop.webp" class="categories-img">
-                <img src="img/home-page/category-mobiles.webp" class="categories-img">
-                <img src="img/home-page/clothings.webp" class="categories-img">
+                <img src="img/home-page/discount.png"  class="categories-img">
+                <img src="img/home-page/mobile.jpg" class="categories-img">
+                <img src="img/home-page/laptop.jpg" class="categories-img">
+                <img src="img/home-page/fashion.jpg" class="categories-img">
                 <img src="img/home-page/home.webp" class="categories-img">
                 <img src="img/home-page/beauty.png" class="categories-img">
                 <img src="img/home-page/grocery.png" class="categories-img">
             </div>
 
-            <hr/>
-
-            <p class="section-heading"> popular products </p>
+            <p class="section-heading"> Popular Products </p>
             <div class="popular-products">
                 
                 <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
+                    <img src="./img/home-page/hair-serum.jpg" class="card-img">
+                    <p class="product-title">Minimalist Hair Growth Serum With Redensyl, Anagain, Procapil, Capixyl & Baicapil</p>
+                    <p class="product-discount"> 30% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
                 </div>
                 <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
+                    <img src="./img/home-page/trolley-bag.jpg" class="card-img">
+                    <p class="product-title">Safari Pentagon 55 Cms Small Cabin Polypropylene Hard Sided Trolley Bag, Cyan Blue</p>
+                    <p class="product-discount"> 27% off</p>
+                    <p class="offer-price">₹2,299</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
                 <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
+                    <img src="./img/home-page/mixer.jpg" class="card-img">
+                    <p class="product-title">Philips HL7756/00 Mixer Grinder 750 Watt, 3 Speed Control and Pulse function</p>
+                    <p class="product-discount"> 43% off</p>
+                    <p class="offer-price">₹2,9999</p>
+                    <button class="product-btn"> BUY </button>
                 </div>
-                 <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
+                <div class="special-offers-card">
+                    <img src="./img/home-page/perfume.jpg" class="card-img">
+                    <p class="product-title">Bella Vita Luxury Unisex Eau De Parfum Gift Set 4 x 20ml for Men & Women</p>
+                    <p class="product-discount"> 15% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
                 </div>
+                <div class="special-offers-card">
+                    <img src="./img/home-page/tshirt.jpg" class="card-img">
+                    <p class="product-title">Urbano Fashion Men's Printed Full Sleeve Slim Fit Cotton T-Shirt</p>
+                    <p class="product-discount"> 70% off</p>
+                    <p class="offer-price">₹399</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+                <i class="fa-solid fa-arrow-right right-arrow" ></i>
             </div>
-            <hr/>
+            
             <p class="section-heading"> Electronics deals </p>
             <div class="deals-on-electronics">
                
@@ -456,8 +674,9 @@
                     <h4> cards</h4>
                     <button class="card-btn"> BUY </button>
                 </div>
+                <i class="fa-solid fa-arrow-right right-arrow" ></i>
             </div>
-            <hr/>
+            
             <p class="section-heading"> Clothing deals </p>
             <div class="deals-on-clothing">
                
@@ -477,13 +696,14 @@
                     <h4> cards</h4>
                     <button class="card-btn"> BUY </button>
                 </div>
+                <i class="fa-solid fa-arrow-right right-arrow" ></i>
             </div>
-            <hr/>
+            
                 <p class="section-heading"> popular brands </p>
             <div class="popular-brands">
                 
             </div>
-            <hr/>
+            
             <p class="section-heading"> footwear deals </p>
             <div class="deals-on-footwear">
                 <div class="special-offers-card">
@@ -502,8 +722,9 @@
                     <h4> cards</h4>
                     <button class="card-btn"> BUY </button>
                 </div>
+                <i class="fa-solid fa-arrow-right right-arrow" ></i>
             </div>
-            <hr/>
+            
             <p class="section-heading"> beauty  & personal care dels </p>
             <div class="deals-on-beauty-care">
                 <div class="special-offers-card">
@@ -522,13 +743,14 @@
                     <h4> cards</h4>
                     <button class="card-btn"> BUY </button>
                 </div>
+                <i class="fa-solid fa-arrow-right right-arrow" ></i>
             </div>
-            <hr/>
+            
             <p class="section-heading"> popular-brands </p>
             <div class="popular-brands">
                 
             </div>
-            <hr/>
+           
             <p class="section-heading"> groceries deals </p>
             <div class="deals-on-groceries">
                 
@@ -548,11 +770,11 @@
                     <h4> cards</h4>
                     <button class="card-btn"> BUY </button>
                 </div>
+                <i class="fa-solid fa-arrow-right right-arrow" ></i>
             </div>
-            <hr/>
+           
             <p class="section-heading"> Packaged food deals </p>
             <div class="deals-on-food">
-                
                 <div class="special-offers-card">
                     <h4> cards</h4>
                     <button class="card-btn"> BUY </button>
@@ -569,9 +791,10 @@
                     <h4> cards</h4>
                     <button class="card-btn"> BUY </button>
                 </div>
+                <i class="fa-solid fa-arrow-right right-arrow" ></i>
             </div>
     </div>
-    <hr/>
+    
 
         <p class="section-heading"> What do our Customers have to say about us...  </p>
         <div class="review-section">
@@ -597,14 +820,11 @@
             </div>
         </div>
     </div>
-    <hr/>
-
-
+    
 
 
     <!-- Footer Section -->
-
-    <div style="background-color: #000; padding-top: 10px;">
+    <div style="background-color: #000; padding-top: 10px; margin-top: 10px;">
     <div class="shop-footer">
             <div class="footer-sec">
                 <div class="footer-about-logo">
@@ -618,7 +838,7 @@
                     <span><a class="footer-anchor" href="./pages/about.html"> More about us <i class="fa-solid fa-arrow-right header-btn-arrow"></i> </a></span>
                 </div>
             </div>
-           
+            <hr/>
             <div class="footer-sec">
                 <p> Quick Links </p>
                 <div class="footer-data">
