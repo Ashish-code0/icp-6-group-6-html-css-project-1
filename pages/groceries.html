@@ -1,12 +1,849 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Groceries </title>
+    <style>      
+     .color-scheme{
+            color:#000000; 
+            color:#565656;/* nav */
+            color:#ffffff; /*background*/
+            color:#eeeeee; /*card-div-background*/
+            color:#8daec4; /*button*/
+            color:#bcc8cf; /* text on black div*/
+            color :#d1d1d1;
+            color:#262626;
+        }
+        a{
+            text-decoration: none;
+            color: #262626;
+        }
+        body{
+            margin:0;
+            padding:0;
+        }
+        .navbar{
+            margin-top:0;
+            font-size:40px;
+            background-color: #000;
+            color:#bcc8cf;
+            display:flex;
+            align-items: center;
+        }
+        .nav-shop-logo{
+            height:70px;
+            border:1px solid black;
+            border-radius: 50%;
+        } 
+        .navbar-menu-contianer{
+            margin-left:auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar-menu{
+            background-color: white;
+            color:black;
+            font-size: 15px;
+            font-weight: bold;
+            padding:5px 25px;
+            border:1px solid white;
+            margin:15px;
+            border-radius: 10px;
+        }
+
+
+
+        .menu-contianer
+        {
+            margin-left:auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .menu
+        {
+            background-color: #d1d1d1;
+            color:black;
+            font-size: 15px;
+            padding:5px 15px;
+            border:1px solid white;
+            margin:15px;
+            border-radius: 5px;
+        }
+
+        .heading-for-item
+        {
+            text-align: center;
+        }
+
+        .latest-offers
+        {
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+
+        .popular-brands
+        {
+            height:100px;
+            background-color: #565656;
+            color:#eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 10px;
+            padding:10px;
+        }
+
+        .img-logo
+        {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 10px;
+            margin-bottom: 20px;
+         
+        }
+
+        .img-logo:hover
+        {
+            width: 90px;
+            height: 95px;
+        }
+
+        .card
+        {
+            width:190px;
+            height: 250px;
+            border:1px solid black;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            border: none;
+            display: block;
+            justify-content: center;
+        }
+
+        .img-in-card
+        {
+            width: 80px;
+            height: 85px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .img-in-card:hover
+        {
+            width: 100px;
+            height: 95px;
+        }
+
+        .card-btn
+        {
+            padding:5px 15px;
+            background-color:#8daec4 ;
+            color:white;
+            border-radius: 5px;
+            border:none;
+        }
+
+        .card-btn:hover
+        {
+            width: 55px;
+            height: 30px;
+            
+        }
+
+        .spices-img
+        {
+            width: 70px;
+            height: 70px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .spices-img:hover
+        {
+            width: 80px;
+            height: 79px;
+        }
+
+        .dairy-img
+        {
+            width: 90px;
+            height: 70px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .dairy-img:hover
+        {
+            width: 75px;
+            height: 80px;
+        }
+
+        .price-font
+        {
+            font-size: small;
+            color: green;
+        }
+
+        .brand-names
+        {
+            font-size: 15px;
+            color: grey;
+        }
+       
+        .special-offers-card{
+            width:200px;
+            border:1px solid #eee;
+            text-align: center;
+            padding:25px 20px;
+            margin:10px 20px;
+            background-color: white;
+            border-radius: 10px;}
+
+           .section-heading{
+            margin:10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .img-in-dal
+        {
+          height: 100px;
+          width: 100px;
+          margin-top: 20px;
+        }
+
+        .img-in-dal:hover
+        {
+            height: 110px;
+            width: 105px;
+        }
+
+        .img-in-dal1
+        {
+          height: 75px;
+          width: 70px;
+          margin-top: 20px;
+        }
+
+        .img-in-dal1:hover
+        {
+            height: 85px;
+            width: 80px;
+        }
+
+        .user{
+            height:25px;
+            width: 30px;
+            margin-right: 10px;
+        }
+        .review-section{
+            text-align: center;
+            background-color: #8daec4;
+           
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .review-btn{
+            text-align: left;
+            cursor: pointer;
+            margin-right: 110px;
+            padding-bottom: 5px;
+        }
+         
+
+        .thumbs-up{
+            height: 20px;
+            width: 30px;
+            margin-top: 2px;
+            cursor: pointer;
+       }
+
+      
+        .review-btn1{
+            margin-top: 20px;
+            margin-right: 110px;
+            cursor: pointer;
+        }
+
+        .report{
+           
+            margin-left: 160px;
+            margin-top: -30px;
+            color:grey}
+
+        .report:hover{
+            color:blue;
+            cursor: pointer;
+        }
+        .customer-img{
+            width:100px;
+            height:100px;
+        }
+        .customer-name{
+            color:#262626;
+            font-size:25px;
+            text-align:left;
+        }
+        .customer-review{
+            color:#565656;
+            font-size:20px;
+            text-align: left;
+            
+        }
+
+       .shop-footer{
+            background-color: #000000;
+            color:#bcc8cf;
+            padding:25px;
+            margin-top: 10px;
+            text-align: center;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .footer-sec{
+            height: 450px;
+            width:246px;
+            background-color:#0f0f0f;
+            font-size: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            padding:15px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+         }
+        .footer-about-logo{
+            height:80px;
+            display:flex;
+            align-items: center;
+        }
+        .footer-shop-logo{
+            height:80px;
+            border-radius:50%;
+        }
+        .footer-shop-name{
+            padding:10px;
+        }
+        .footer-about-desc{
+            text-align: justify;
+            font-size: 18px;
+            padding:15px; 
+        }
+        .footer-data{
+            margin-left: 20px;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .footer-item-list{
+            margin:5px;
+            font-size: 20px;
+            padding:5px;
+            text-align: center;
+        }
+        .footer-anchor{
+            color:#bcc8cf;
+        }
+
+        
+    </style>
 </head>
 <body>
-     <h1> Group 6 Groceries Page</h1>  
-     <h2> Sharyu </h2> 
+    <div class="navbar">
+            <img class="nav-shop-logo" src="./../img/groceries/shop-logo.png" alt="shop-logo">
+        <span> Dream's Land</span>
+
+        <div class="navbar-menu-contianer">
+            
+            <span class="navbar-menu">
+                <a href="./../index.html">Home</a>
+            </span>
+            <span class="navbar-menu">
+                <a href="./../pages/electronics.html">Electronics</a>
+            </span>
+            <span class="navbar-menu">
+                <a href="./../pages/clothings.html">Clothings</a>
+            </span>
+            <span class="navbar-menu">
+                <a href="./../pages/footwears.html">Footwear</a>
+            </span>
+            <span class="navbar-menu">
+                <a href="./../pages/beauty-personal-care.html">Beauty & care</a>
+            </span>
+            <span class="navbar-menu">
+                <a href="./../pages/food.html">Food</a>
+            </span>
+            <span class="navbar-menu">
+                <a href="./../pages/home-kitchen.html">Home & Kitchen</a>
+            </span> 
+            <list class="navbar-menu">
+                <i class="fa-solid fa-bars "></i>
+            </list>
+        </div>
+    </div> 
+
+    <div class="deals-section">
+        <h2 class="heading-for-item"> Latest-offers on Groceries </h2>
+        <div class="latest-offers">
+
+         <div class="card">
+            <img src="./../img/groceries/mix2.jpg"class="img-in-card">
+            <p class="product-name">Sales on Groceries</p>
+            <p class="price-font">From ₹100</p>
+            <p class="brand-names">Tata,Fortune,Dawat & More</p>
+            <button class="card-btn"> BUY </button>
+         </div>    
+      
+         <div class="card">
+            <img src="./../img/groceries/dals.jpg" class="img-in-card">
+            <p class="product-name">Dals</p>
+            <p class="price-font">₹250</p>
+            <p class="brand-names">Tata,Fortune,Dawat & More</p>
+             <button class="card-btn"> BUY </button>
+         </div>
+
+         <div class="card">
+            <img src="./../img/groceries/beans.webp" class="img-in-card">
+            <p class="product-name">Pulses</p>
+            <p class="price-font">₹350</p>
+            <p class="brand-names">Tata,Fortune,Dawat & More</p>
+            <button class="card-btn"> BUY </button>
+         </div>
+
+         <div class="card">
+            <img src="./../img/groceries/grains.jpeg" class="img-in-card">
+            <p class="product-name">Grains</p>
+            <p class="price-font">₹200</p>
+            <p class="brand-names">Tata,Fortune,Dawat & More</p>
+            <button class="card-btn"> BUY </button>
+         </div>
+
+         <div class="card">
+            <img src="./../img/groceries/rice.jpg" class="img-in-card">
+            <p class="product-name">Rice</p>
+            <p class="price-font">₹399</p>
+            <p class="brand-names">Tata,Fortune,Dawat & More</p>
+            <button class="card-btn"> BUY </button>
+         </div> 
+
+         
+        </div>       
+   </div>
+
+    <h2 class="heading-for-item"> Popular Brands </h2>
+
+    <div class="popular-brands">
+        <img src="./../img/groceries/tata sampana.jpg" class="img-logo">
+        <img src="./../img/groceries/vedaka1.jpeg" class="img-logo">
+        <img src="./../img/groceries/fortune.jpg" class="img-logo">
+        <img src="./../img/groceries/aashrivaad.jpg" class="img-logo">
+        <img src="./../img/groceries/quaker.jpeg"class="img-logo">
+    </div>
+
+    <h2 class="heading-for-item">Best Of Dairy Products & Many More!!!</h2>
+    
+    <div class="latest-offers">
+      
+        <div class="card">
+            <img src="./../img/groceries/dairy.jpeg" class="img-in-dal1">
+            <p class="product-name">Dairy Products</p>
+            <p class="price-font">From ₹399</p>
+            <p class="brand-names">Amul,Mother Dairy & More</p>
+            <button class="card-btn"> BUY </button>
+        </div>
+        <div class="card">
+            <img src="./../img/groceries/ghee.webp" class="img-in-dal1">
+            <p class="product-name">Ghee</p>
+            <p class="price-font">Grab Now</p>
+            <p class="brand-names">Govind,Govardhan & More</p>
+            <button class="card-btn"> BUY </button>
+        </div>
+        <div class="card">
+            <img src="./../img/groceries/paneer.webp" class="img-in-dal1">
+            <p class="product-name">Paneer</p>
+            <p class="price-font">Grab Now</p>
+            <p class="brand-names">Amul,Ofemd & More</p>
+            <button class="card-btn"> BUY </button>
+        </div>
+        <div class="card">
+            <img src="./../img/groceries/spices.webp" class="img-in-dal1" >
+            <p class="product-name">Spices & Herbs</p>
+            <p class="price-font">From ₹499*</p>
+            <p class="brand-names">Everest,Kiya & More</p>
+            <button class="card-btn"> BUY </button>
+        </div>
+        <div class="card">
+            <img src="./../img/groceries/pizza.webp" class="img-in-dal1">
+            <p class="product-name">Oragano</p>
+            <p class="price-font">00</p>
+            <p class="brand-names">Everest,Kiya & More</p>
+            <button class="card-btn"> BUY </button>
+        </div>
+        
+ </div>  
+
+ <h2>Dals</h2>
+ <div class="latest-offers">
+      
+    <div class="card">
+        <img src="./../img/groceries/arhar-dal.webp" class="img-in-dal">
+        <p class="product-name">Arhar Dal-1kg</p>
+        <p class="price-font">₹149</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    
+    <div class="card">
+        <img src="./../img/groceries/chana-dal.webp" class="img-in-dal">
+        <p class="product-name">Chan Dal-1kg</p>
+        <p class="price-font">₹171</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    
+    <div class="card">
+        <img src="./../img/groceries/masoor-dal.webp" class="img-in-dal">
+        <p class="product-name">Masoor Dal-1/2kg</p>
+        <p class="price-font">₹46</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    
+    <div class="card">
+        <img src="./../img/groceries/moong-dal.webp" class="img-in-dal">
+        <p class="product-name">Moong Dal-1kg</p>
+        <p class="price-font">₹179</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    
+    <div class="card">
+        <img src="./../img/groceries/dal-mix.webp" class="img-in-dal">
+        <p class="product-name">Good Life Mix Dal-1kg</p>
+        <p class="price-font">₹139</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    
+   
+    
+</div>  
+
+<h2>Grains</h2>
+ <div class="latest-offers">
+      
+    <div class="card">
+        <img src="./../img/groceries/jowar.jpg" class="img-in-dal">
+        <p class="product-name">Jowar - 1.5kg</p>
+        <p class="price-font">₹199</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/groceries/wheat.jpg" class="img-in-dal">
+        <p class="product-name">Wheat - 5kg</p>
+        <p class="price-font">₹855</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/groceries/rye.jpg" class="img-in-dal">
+        <p class="product-name">Rye - 200g</p>
+        <p class="price-font">₹84</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/groceries/barley.jpg" class="img-in-dal" >
+        <p class="product-name">Barley - 1kg</p>
+        <p class="price-font">₹126</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/groceries/maze.jpg" class="img-in-dal">
+        <p class="product-name">Corn Maze - 1kg</p>
+        <p class="price-font">₹144</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    
+</div>  
+
+<h2>Pulses</h2>
+ <div class="latest-offers">
+    <div class="card">
+        <img src="./../img/groceries/blk-rajam.webp" class="img-in-dal">
+        <p class="product-name">Kala Ghevda-250g</p>
+        <p class="price-font">₹165</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    
+    <div class="card">
+        <img src="./../img/groceries/lal-chana.webp" class="img-in-dal">
+        <p class="product-name">Lal Chana-1kg</p>
+        <p class="price-font">₹165</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/groceries/chickpeas.webp" class="img-in-dal">
+        <p class="product-name">Chickpeas(kabuli chana)-1kg</p>
+        <p class="price-font">₹130</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/groceries/rajma.webp" class="img-in-dal">
+        <p class="product-name">Rajma 1-kg</p>
+        <p class="price-font">₹399</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/groceries/combo-pulses.webp" class="img-in-dal">
+        <p class="product-name">Combo Pulses-6 packs</p>
+        <p class="price-font">₹1499</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+  
+    
+</div>  
+
+<h2>Rice</h2>
+ <div class="latest-offers">
+      
+    <div class="card">
+        <img src="./../img/groceries/rice-1.webp" class="img-in-dal">
+        <p class="product-name">Dawat Basmati Rice(10kg)</p>
+        <p class="price-font">₹395</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+
+    <div class="card">
+        <img src="./../img/groceries/rice-2.webp" class="img-in-dal">
+        <p class="product-name">India Gate Basmati Rice(10kg)</p>
+        <p class="price-font">₹429</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+
+
+    <div class="card">
+        <img src="./../img/groceries/rice-5.webp" class="img-in-dal">
+        <p class="product-name">Rice Villa Yuvraj Steam Rice(10kg)</p>
+        <p class="price-font">₹575</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+
+    <div class="card">
+        <img src="./../img/groceries/rice-3.webp" class="img-in-dal">
+        <p class="product-name">Jublee Regular Long Rice 1kg</p>
+        <p class="price-font">₹63</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+
+
+    <div class="card">
+        <img src="./../img/groceries/rice-4.webp" class="img-in-dal">
+        <p class="product-name">Loose Popular Rice 1kg</p>
+        <p class="price-font">₹38</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+</div>  
+
+<h2>Dairy Products</h2>
+ <div class="latest-offers">
+      
+    <div class="card">
+        <img src="./../img/groceries/cow-milk.webp" class="img-in-dal">
+        <p class="product-name">Cow Milk - 500ml</p>
+        <p class="price-font">₹28</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+
+    <div class="card">
+        <img src="./../img/groceries/curd.webp" class="img-in-dal">
+        <p class="product-name">Curd - 400g</p>
+        <p class="price-font">₹70</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+   
+    <div class="card">
+        <img src="./../img/groceries/cream.webp" class="img-in-dal">
+        <p class="product-name">Cream - 200ml</p>
+        <p class="price-font">₹52</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+   
+    <div class="card">
+        <img src="./../img/groceries/cheese.webp" class="img-in-dal">
+        <p class="product-name">Cheese</p>
+        <p class="price-font">₹114</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+   
+    <div class="card">
+        <img src="./../img/groceries/butter.webp" class="img-in-dal">
+        <p class="product-name">Butter - 500g</p>
+        <p class="price-font">₹265</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+   
+    
+</div>  
+
+<h2>Spices</h2>
+ <div class="latest-offers">
+      
+    <div class="card">
+        <img src="./../img/groceries/red-chilli.webp" class="img-in-dal">
+        <p class="product-name">Red Chilli Powder - 100g</p>
+        <p class="price-font">₹56</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/groceries/turmeric.webp" class="img-in-dal">
+        <p class="product-name">Turmeric-250g</p>
+        <p class="price-font"> ₹128</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/groceries/meat.webp" class="img-in-dal">
+        <p class="product-name">Meat MAsala - 50g</p>
+        <p class="price-font"> ₹38</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/groceries/Is.webp" class="img-in-dal" >
+        <p class="product-name">Italian Seasoing</p>
+        <p class="price-font"></p>₹109</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/groceries/mh.webp" class="img-in-dal">
+        <p class="product-name">Mix Herbs</p>
+        <p class="price-font">₹109</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    
+</div>  
+
+  <hr/>
+
+  <p class="section-heading">Customer Reviews  </p>
+  <div class="review-section">
+      <div class="special-offers-card">
+              <h3 class="customer-name"> <img src="./../img/groceries/user.png" class="user">Sayli </h3>
+              <p class="customer-review"> Clean and useable anytime </p>
+             
+             <button class="review-btn"> <img src="./../img/groceries/thumbs-up.png" class="thumbs-up"/> Helpful </button>
+              <p class="report">Report</p>
+      </div>
+      <div class="special-offers-card">
+              <h3 class="customer-name"><img src="./../img/groceries/user.png" class="user">Paras</h3>
+              <p class="customer-review">Item is good  </p>
+              <button class="review-btn1"><img src="./../img/groceries/thumbs-up.png" class="thumbs-up"/> Helpful </button>
+              <p class="report">Report</p>
+       </div>    
+      <div class="special-offers-card">
+          <h3 class="customer-name"> <img src="./../img/groceries/user.png" class="user">Nishant</h3>
+          <p class="customer-review">Its good and its healthy   </p>
+          <button class="review-btn1"><img src="./../img/groceries/thumbs-up.png" class="thumbs-up"/> Helpful </button>
+          <p class="report">Report</p>
+        </div>
+      <div class="special-offers-card">
+
+          <h3 class="customer-name"> <img src="./../img/groceries/user.png" class="user">Shankar</h3>
+          <p class="customer-review"> Best taste and best quality </p>
+          <button class="review-btn"><img src="./../img/groceries/thumbs-up.png" class="thumbs-up"/> Helpful </button>
+          <p class="report">Report</p>
+      </div>
+    </div>
+    <hr/>
+
+
+
+
+
+
+   <div style="background-color: #000; padding:20px ">
+    <div class="shop-footer">
+            <div class="footer-sec">
+                <div class="footer-about-logo">
+                    <img class="footer-shop-logo" src="./../img/groceries/shop-logo.png" alt="shop-logo">
+                    <span class="footer-shop-name"> Dream's Land</span>
+                </div>
+                
+                <div class="footer-about-desc">
+                    <p>A online shopping experience that you will not experience anywhere else.</p>
+                    <p>Experience the difference with us as your shopping partners.</p>
+                    <p>A group of individuals who wish to enrich your shopping experience.</p>
+                    <span><a class="footer-anchor" href="./pages/about.html"> More about us <i class="fa-solid fa-arrow-right header-btn-arrow"></i> </a></span>
+                </div>
+            </div>
+         
+            <div class="footer-sec">
+                <p> Quick Links </p>
+                <div class="footer-data">
+                    <p class="footer-item-list"><a href="./../index.html" class="footer-anchor">Home </a></p>
+                    <p class="footer-item-list"><a href="./../pages/electronics.html" class="footer-anchor">Electronics </a></p>
+                    <p class="footer-item-list"><a href="./../pages/clothings.html" class="footer-anchor">Fashion </a></p>
+                    <p class="footer-item-list"><a href="./../pages/footwears.html" class="footer-anchor">Footwears </a></p>
+                    <p class="footer-item-list"><a href="./../pages/beauty-personal-care.html" class="footer-anchor"> Beauty & personal care </a></p>
+                    <p class="footer-item-list"><a href="./../pages/groceries.html" class="footer-anchor"> Groceries </a></p>
+                    <p class="footer-item-list"><a href="./../pages/home-kitchen.html" class="footer-anchor"> Home & Kitchen </a></p>
+                </div>
+            </div>
+            <div class="footer-sec"> 
+                <p> Social :</p>
+                <div class="footer-data">
+                    <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp;  <a href="mailto:suraj@roadtocode.org" class="footer-anchor">suraj@roadtocode.org</a>
+                     </p>
+
+                    <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp; <a href="tel:+918805803087" class="footer-anchor"> +91-8805803087</a>
+                    </p>
+
+                    <p class="footer-item-list"> <i class="fa-brands fa-facebook" style="color: #ffffff;"></i> &nbsp; &nbsp; Facebook </p>
+                    
+                    <p class="footer-item-list"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i> &nbsp; &nbsp; Twitter</p>
+                    
+                    <p class="footer-item-list"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> &nbsp; &nbsp;  Instagram</p>
+                    
+                    <p class="footer-item-list"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> &nbsp; &nbsp; LinkedIn</p>
+                </div>
+            </div>
+            <div class="footer-sec"> 
+                <p> Contact us :</p>
+                <div class="footer-data">
+                    <p class="footer-item-list"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp; &nbsp; <a href="https://goo.gl/maps/2v5cX44ZgVjsnx5Y9" target="blank" class="footer-anchor">404,Laxmi Heights, Above Lotus Multi-speciality Hospital Manjari BK, pune - 412307</a>
+                    </p>
+                    <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp;  <a href="mailto:ashishgore393@gmail.com" class="footer-anchor">ashishgore393@gmail.com</a>
+                     </p>
+
+                    <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp; <a href="tel:+918975004427" class="footer-anchor"> +91-8975004427</a>
+                    </p>
+                </div>
+            </div>
+    </div>
+    <hr/>
+    <p style="text-align: center; font-size: 20px; color: white; background-color: #000; margin: 0; padding:0;"> Made by ICP 6 Group 6 (2023) </p>
+    </div>
+    <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
+    
+    
+
+
+
+
+   
 </body>
 </html>
