@@ -3,10 +3,482 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> beauty and personal care</title>
+    <title> Beauty and Personal Care</title>
 </head>
+<style>
+      
+        body{
+            margin:0;
+            padding:0;
+        }
+        .tagline{
+            background-color: #eeeeee;
+            color:#000000;
+            margin:0;
+            text-align: center;
+            font-size:25px;
+        }
+        .navbar{
+            margin-top:0;
+            font-size:25px;
+            background-color: #000;
+            color:#bcc8cf;
+            display:flex;
+            align-items: center;
+        }
+        .menu-contianer{
+            margin-left:auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .menu{
+            background-color: #d1d1d1;
+            color:black;
+            font-size: 15px;
+            padding:5px 15px;
+            border:1px solid white;
+            margin:15px;
+            border-radius: 5px;
+        }
+        .page-header{
+            height:300px;
+            background-color: #eee;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .latest-offers{
+            height:250px;
+            background-color:#eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .popular-brands{
+            height:100px;
+            background-color: #565656;
+            color:#eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 10px;
+            padding:10px;
+        }
+        .popular-products{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+    .deals-on-beauty-care{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .card{
+            width:200px;
+            border-radius:10px;
+            text-align: center;
+            background-color:white;
+            box-shadow:0 0 10px #999;
+        
+        }
+        button{
+            margin-bottom: 20px;
+            padding:5px 15px;
+            background-color:black;
+            color:white;
+            border-radius:5px;
+            border:none;
+            cursor:pointer;
+            
+        }
+        .btn:hover{
+            background-color: #565656;
+            transition:colour-bezier(0,075,0.82,0.165,1);
+        }
+        
+        p{
+            text-align: center;
+            font-size: 40px;
+        }
+        .review-section{
+            height:300px;
+            text-align: center;
+            background-color: #8daec4;
+        }
+
+        .shop-footer{
+            height:200px;
+            background-color: #000000;
+            text-align: center;
+            color:white;
+        }
+        .product-name{
+            margin-top: 5px;
+            margin-bottom:5px;
+            text-align: center;
+            font-size:20px;
+        }
+        .price-font{
+            font-size:15px;
+            color:green;
+            margin-top: 3px;
+            text-align:center;
+        }
+        .img-in-card{
+            height:100px;
+            width:130px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            
+        }
+        .img-in-card:hover{
+            width:140px;
+            height:105px;
+        }
+        .offers{
+            font-size:small;
+            margin-top:px;
+        }
+        .popular-brands{
+            height:100px;
+            background-color: #565656;
+            color:#eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 10px;
+            padding:10px;
+        }
+        .img-logo{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow:0 0 10px white;
+
+        }
+        .heading{
+            font-size:30px;
+        }
+        .heading-for-item{
+            text-align: center;
+        }
+        .product{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+</style>
+   
 <body>
-     <h1> beauty and personal care group 6</h1>
-     <h2>Anjali Pise</h2>   
-</body>
+    <div class="tagline">
+        A place where your dreams come true.
+    </div>
+    <div class="navbar">
+        <span style=" padding:5px 25px; font-size: 40px;"> Dream's Land</span>
+
+        <div class="menu-contianer">
+            <span class="menu">
+                Electronics
+            </span>
+            <span class="menu">
+                Clothings
+            </span>
+            <span class="menu">
+                Footwear
+            </span>
+            <span class="menu">
+                Beauty & care
+            </span>
+            <span class="menu">
+                Groceries
+            </span>
+            <span class="menu">
+                Food
+            </span>
+            <span class="menu">
+                Home & Kitchen
+            </span> 
+            <list class="menu">
+                <i class="fa-solid fa-bars "></i>
+            </list>
+        </div>
+    </div> 
+    <div>
+        <img src="./../img/beauty-personal-care/WhatsApp Image 2023-10-15 at 18.21.14.jpeg"  width="100%" height="400">
+        <div class="deals-section">
+            <h2 class="heading-for-item"> Latest-offers on beauty product </h2>
+            <div class="latest-offers">
+    <div class="card">
+        <img src="./../img/beauty-personal-care/beauty img2.jpg"class="img-in-card">
+        <p class="product-name">Lakme foundation</p>
+        <p class="price-font">only Rs 250*</p>
+        <p class= "offers">buy 1 get 1 free</p>
+        <button  > BUY </button>
+    </div>
+ <div class="card">
+    <img src="./../img/beauty-personal-care/serum.jpg"class="img-in-card">
+    <p class="product-name">Serum</p>
+    <p class="price-font">only Rs 500*</p>
+    <p class="offers">buy 2 get 1 free</p>
+         <button> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/beauty-personal-care/compact.jpg"class="img-in-card">
+        <p class="product-name">Compact</p>
+        <p class="price-font">only Rs 75*</p>
+        <p class="offers">buy 1 get 1 free</p>
+        <button> BUY </button>
+    </div> 
+    <div class="card">
+        <img src="./../img/beauty-personal-care/face serum.jpg "class="img-in-card">
+        <p class="product-name">Faceserum</p>
+        <p class="price-font"> only Rs 200*</p>
+        <p class="offers">buy 1 get 1 free</p>
+        <button> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/beauty-personal-care/whitetone.jpg "class="img-in-card">
+        <p class="product-name">Whitetone</p>
+        <p class="price-font"> only Rs 250*</p>
+        <p class="offers">buy 1 get 1 free</p>
+        <button> BUY </button>
+    </div>
+    </div>
+    </div>
+    <h2 class="heading-for-item"> Popular Brands </h2>
+
+    <div class="popular-brands">
+        <img src="./../img/beauty-personal-care/lackme logo.png" class="img-logo">
+        <img src="./../img/beauty-personal-care/hair serum logo.png" class="img-logo">
+        <img src="./../img/beauty-personal-care/cosmatic logo.jpg" class="img-logo">
+        <img src="./../img/beauty-personal-care/skin serum logo.jpg" class="img-logo">
+        <img src="./../img/beauty-personal-care/nivya logo.jpg" class="img-logo">
+    </div>
+    <div>
+    <h2 class="heading-for-item">FACEWASH<b></b></h2>:
+    <div class="product">
+
+      
+        <div class="card">
+            <img src="./../img/beauty-personal-care/lakme.jpg" class="img-in-card">
+            <p class="product-name">Lackme fecewash</p>
+            <p class="price-font">Rs 299*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/mamaearth.jpg" class="img-in-card">
+            <p class="product-name">Mamaearth facewash</p>
+            <p class="price-font">Rs 100*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/nivya.jpg" class="img-in-card">
+            <p class="product-name">Nivya facewash</p>
+            <p class="price-font">Rs 299*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/beauty img5.jpg" class="img-in-card" >
+            <p class="product-name">Himalaya</p>
+            <p class="price-font">Rs 99*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/joy facewash.jpg" class="img-in-card">
+            <p class="product-name">Joy facewash</p>
+            <p class="price-font">Rs 100*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+
+     </div>
+        <h2 class="heading-for-item">CREAMS</h2>
+        <div class="latest-offers">
+
+        <div class="card">
+            <img src="./../img/beauty-personal-care/nivya cream.jpg" class="img-in-card">
+            <p class="product-name">Nivya</p>
+            <p class="price-font">Rs 999*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+
+        <div class="card">
+            <img src="./../img/beauty-personal-care/himalaya cream.jpg" class="img-in-card">
+            <p class="product-name">Himalaya</p>
+            <p class="price-font">Rs 100*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/meglow cream.jpg" class="img-in-card">
+            <p class="product-name">Meglow </p>
+            <p class="price-font">Rs 299*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/lotus.jpg" class="img-in-card" >
+            <p class="product-name">Lotus</p>
+            <p class="price-font">Rs 99*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+         </div>
+         <div class="card">
+            <img src="./../img/beauty-personal-care/lacto calamine face lotion.jpg" class="img-in-card">
+            <p class="product-name">Lacto calamine </p>
+            <p class="price-font">Rs 240*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+
+        </div>
+        <h2 class="heading-for-item">LIPSTICKS</h2>
+            <div class="latest-offers">
+
+        <div class="card">
+            <img src="./../img/beauty-personal-care/sephora lipstick.jpg" class="img-in-card">
+            <p class="product-name">Sephora</p>
+            <p class="price-font">Rs 89*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/MARS creamy matte lipstick.jpg" class="img-in-card">
+            <p class="product-name">MARS creamy matte</p>
+            <p class="price-font">Rs 100*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/maybelline new york.jpg" class="img-in-card">
+            <p class="product-name">Maybelline new york</p>
+            <p class="price-font">Rs 299*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/beauty img4.jpg" class="img-in-card" >
+            <p class="product-name">Lackme</p>
+            <p class="price-font">Rs 245*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/Lotus herbal lipstick.jpg" class="img-in-card">
+            <p class="product-name">Lotus herbal lipstick</p>
+            <p class="price-font">Rs 175*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+
+            </div>
+        <h2 class="heading-for-item">POWDER</h2>
+            <div class="latest-offers">
+
+        <div class="card">
+            <img src="./../img/beauty-personal-care/beauty img6.jpg" class="img-in-card">
+            <p class="product-name">Whitetone</p>
+            <p class="price-font">Rs 500*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/himalaya.jpg" class="img-in-card">
+            <p class="product-name">Himalaya</p>
+            <p class="price-font">Rs 199*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/ponds.jpg" class="img-in-card">
+            <p class="product-name">Ponds</p>
+            <p class="price-font">Rs 299*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/johnson baby.jpg" class="img-in-card" >
+            <p class="product-name">Johnson baby</p>
+            <p class="price-font">Rs 145*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="card">
+            <img src="./../img/beauty-personal-care/z powder.jpg" class="img-in-card">
+            <p class="product-name">Z powder</p>
+            <p class="price-font">Rs 199*</p>
+            <p class="brand-names"></p>
+            <button class="btn">BUY</button>
+        </div>
+
+            </div>
+        <h2 class="heading-for-item">EYELAINER</h2>
+        <div class="latest-offers">
+
+    <div class="card">
+        <img src="./../img/beauty-personal-care/kiko milano precision.jpg" class="img-in-card">
+        <p class="product-name">Kiko milano precision</p>
+        <p class="price-font">Rs 145*</p>
+        <p class="brand-names"></p>
+        <button class="btn">BUY</button>
+    </div>
+    <div class="card">
+        <img src="./../img/beauty-personal-care/dazeller eailyaner.jpg" class="img-in-card">
+        <p class="product-name">Dazeller</p>
+        <p class="price-font">Rs 100*</p>
+        <p class="brand-names"></p>
+        <button class="btn">BUY</button>
+    </div>
+    <div class="card">
+        <img src="./../img/beauty-personal-care/facescanada magneteyes.jpg" class="img-in-card">
+        <p class="product-name">Facescanda magneteys</p>
+        <p class="price-font">Rs 299*</p>
+        <p class="brand-names"></p>
+        <button class="btn">BUY</button>
+    </div>
+    <div class="card">
+        <img src="./../img/beauty-personal-care/manish mahlohtra.png" class="img-in-card" >
+        <p class="product-name">Manish mahlohtra</p>
+        <p class="price-font">Rs 199*</p>
+        <p class="brand-names"></p>
+        <button class="btn">BUY</button>
+    </div>
+    <div class="card">
+        <img src="./../img/beauty-personal-care/even bilena liquid eyeliner.jpg" class="img-in-card">
+        <p class="product-name">Even bilena liquid</p>
+        <p class="price-font">Rs 200*</p>
+        <p class="brand-names"></p>
+        <button class="btn">BUY</button>
+    </div>
+
+</div>
+
+        <div class="shop-footer">
+                <h2> FOOTER </h2>
+        </div>
+    
+        <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
+
+        </body>
 </html>
