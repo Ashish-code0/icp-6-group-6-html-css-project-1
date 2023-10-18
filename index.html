@@ -11,17 +11,15 @@
             color:#8daec4; /*button*/
             color:#bcc8cf; /* text on black div*/
             color :#d1d1d1;
+            color:#262626;
+        }
+        a{
+            text-decoration: none;
+            color: #262626;
         }
         body{
             margin:0;
             padding:0;
-        }
-        .tagline{
-            background-color: #eeeeee;
-            color:#000000;
-            margin:0;
-            text-align: center;
-            font-size:25px;
         }
         .navbar{
             margin-top:0;
@@ -43,18 +41,27 @@
             align-items: center;
         }
         .navbar-menu{
-            background-color: #d1d1d1;
+            background-color: white;
             color:black;
             font-size: 15px;
-            padding:5px 15px;
+            font-weight: bold;
+            padding:5px 25px;
             border:1px solid white;
             margin:15px;
-            border-radius: 5px;
+            border-radius: 10px;
+        }
+        .tagline{
+            background-color: #eeeeee;
+            color:#000000;
+            border: 1px solid #565656;
+            margin:10px 0;
+            text-align: center;
+            font-size:25px;
         }
         .page-header{
             height:200px;
             background-color: #eee;
-            margin: 20px 10px;
+            margin: 20px 0;
             padding:10px;
             display:flex;
             flex-wrap: wrap;
@@ -64,7 +71,6 @@
             height:200px;
             border-radius: 50%;
         }
-       
         .header-desc{
             margin-left:auto;
             margin-right:auto;
@@ -73,18 +79,19 @@
             align-items: center;
         }
         .header-btn{
-            background-color: black;
-            color:rgb(255, 254, 254);
+            background-color: #0099ff;
+            color:white;
             font-size: 15px;
             font-weight:bold;
             border-radius: 10px;
             padding:5px 25px;
+            border:none;
         }
         .header-btn-arrow{
             margin-left:15px;
             padding:5px;
-            color:#000;
-            background-color:#ddd;
+            background-color:#f9f9f9;
+            color:#262626;
             border-radius: 50%;
         }
 
@@ -100,7 +107,7 @@
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 20px 10px;
+            margin: 20px 0;
             padding:10px;
         }
         .special-offers-card{
@@ -129,7 +136,8 @@
         }
         .card-btn{
             padding:5px 15px;
-            background-color:#8daec4 ;
+            background-color:#0099ff ;
+            font-weight: bold;
             color:white;
             border-radius: 5px;
             border:none;
@@ -158,7 +166,7 @@
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 10px 10px;
+            margin: 10px 0;
             padding:10px;
         }
         .popular-products{
@@ -167,7 +175,7 @@
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 20px 10px;
+            margin: 20px 0;
             padding:10px;
         }
         .deals-on-electronics{
@@ -176,7 +184,7 @@
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 20px 10px;
+            margin: 20px 0;
             padding:10px;
         }
         .deals-on-clothing{
@@ -185,7 +193,7 @@
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 20px 10px;
+            margin: 20px 0;
             padding:10px;
         }
         .deals-on-footwear{
@@ -194,7 +202,7 @@
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 20px 10px;
+            margin: 20px 0;
             padding:10px;
         }
         .deals-on-beauty-care{
@@ -203,7 +211,7 @@
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 20px 10px;
+            margin: 20px 0;
             padding:10px;
         }
 
@@ -213,7 +221,7 @@
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 20px 10px;
+            margin: 20px 0;
             padding:10px;
         }
         .deals-on-food{
@@ -222,54 +230,111 @@
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 20px 10px;
+            margin: 20px 0;
             padding:10px;
         }
        
         .review-section{
-            height:300px;
             text-align: center;
             background-color: #8daec4;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .customer-img{
+            width:100px;
+            height:100px;
+        }
+        .customer-name{
+            color:#262626;
+            font-size:25px;
+        }
+        .customer-review{
+            color:#565656;
+            font-size:20px;
         }
 
+        /* Footer Section */
         .shop-footer{
-            height:200px;
             background-color: #000000;
+            color:#bcc8cf;
+            padding:15px;
             text-align: center;
-            color:white;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
-                
+        .footer-sec{
+            width:300px;
+            background-color:#0f0f0f;
+            font-size: 25px;
+            border-radius: 10px;
+            padding:15px;
+            display: flex;
+            flex-direction: column;
+         }
+        .footer-about-logo{
+            height:80px;
+            display:flex;
+            align-items: center;
+        }
+        .footer-shop-logo{
+            height:80px;
+            border-radius:50%;
+        }
+        .footer-shop-name{
+            padding:10px;
+        }
+        .footer-about-desc{
+            text-align: justify;
+            font-size: 18px;
+            padding:15px; 
+        }
+        .footer-data{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .footer-item-list{
+            margin:5px;
+            font-size: 18px;
+            padding:5px;
+        }
+        .footer-anchor{
+            color:#bcc8cf;
+        }
     </style>
 </head>
 <body>
-    <div class="tagline">
-        A place where your dreams come true.
-    </div>
     <div class="navbar">
             <img class="nav-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
         <span> Dream's Land</span>
 
         <div class="navbar-menu-contianer">
+            
             <span class="navbar-menu">
-                Electronics
+                <a href="./pages/electronics.html">Electronics</a>
             </span>
             <span class="navbar-menu">
-                Clothings
+                <a href="./pages/clothings.html">Clothings</a>
             </span>
             <span class="navbar-menu">
-                Footwear
+                <a href="./pages/footwears.html">Footwear</a>
             </span>
             <span class="navbar-menu">
-                Beauty & care
+                <a href="./pages/beauty-personal-care.html">Beauty & care</a>
             </span>
             <span class="navbar-menu">
-                Groceries
+                <a href="./pages/groceries.html">Groceries</a>
             </span>
             <span class="navbar-menu">
-                Food
+                <a href="./pages/food.html">Food</a>
             </span>
             <span class="navbar-menu">
-                Home & Kitchen
+                <a href="./pages/home-kitchen.html">Home & Kitchen</a>
             </span> 
             <list class="navbar-menu">
                 <i class="fa-solid fa-bars "></i>
@@ -277,13 +342,17 @@
         </div>
     </div> 
 
+    <div class="tagline">
+        A place where your dreams come true.
+    </div>
+
     <div class="page-header"> 
               <img class="header-img" src="./img/home-page/header-img.jpg" alt="">
 
         <div class="header-desc">
             <p>Welcome to Your Favourite Shopping Destination </p>
             <p> A online store with ambition of fulfilling your needs at a price lower than your dreams.</p>
-            <button class="header-btn">  
+            <button type="button" class="header-btn">  
                 Explore the Shop 
                 <i class="fa-solid fa-arrow-right header-btn-arrow"></i>
             </button>
@@ -292,7 +361,7 @@
     <hr/><hr/>
 
     <div class="deals-section">
-                 <p class="section-heading"> Special Offers </p>
+            <p class="section-heading"> Special Offers </p>
 
             <div class="special-offers">
                 <div class="special-offers-card">
@@ -503,14 +572,104 @@
             </div>
     </div>
     <hr/>
-    <div class="review-section">
-            <h3> REVIEW SECTION</h3>
+
+        <p class="section-heading"> What do our Customers have to say about us...  </p>
+        <div class="review-section">
+            <div class="special-offers-card">
+                    <img src="./img/home-page/suraj-sir.png" class="customer-img" />
+                    <h3 class="customer-name"> Suraj Sir</h3>
+                    <p class="customer-review"> Had a great experience with them 😊  </p>
+            </div>
+            <div class="special-offers-card">
+                    <img src="./img/home-page/vaibhavi-mam.png" class="customer-img" />
+                    <h3 class="customer-name"> Vaibhavi mam</h3>
+                    <p class="customer-review">  👍  </p>
+            </div>    
+            <div class="special-offers-card">
+                <img src="./img/home-page/anand-sir.png" class="customer-img" />
+                <h3 class="customer-name"> Anand sir</h3>
+                <p class="customer-review">   ✌️ </p>
+            </div>
+            <div class="special-offers-card">
+                <img src="./img/home-page/vaishnavi-mam.png" class="customer-img" />
+                <h3 class="customer-name"> Vaishanavi mam</h3>
+                <p class="customer-review">🥳  </p>
+            </div>
+        </div>
     </div>
     <hr/>
-    <div class="shop-footer">
-            <h3> FOOTER </h3>
-    </div>
 
+
+
+
+    <!-- Footer Section -->
+
+    <div style="background-color: #000; padding-top: 10px;">
+    <div class="shop-footer">
+            <div class="footer-sec">
+                <div class="footer-about-logo">
+                    <img class="footer-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
+                    <span class="footer-shop-name"> Dream's Land</span>
+                </div>
+                <div class="footer-about-desc">
+                    <p>A online shopping experience that you will not experience anywhere else.</p>
+                    <p>Experience the difference with us as your shopping partners.</p>
+                    <p>A group of individuals who wish to enrich your shopping experience.</p>
+                    <span><a class="footer-anchor" href="./pages/about.html"> More about us <i class="fa-solid fa-arrow-right header-btn-arrow"></i> </a></span>
+                </div>
+            </div>
+           
+            <div class="footer-sec">
+                <p> Quick Links </p>
+                <div class="footer-data">
+                    <p class="footer-item-list"><a href="index.html" class="footer-anchor">Home </a></p>
+                    <p class="footer-item-list"><a href="./pages/electronics.html" class="footer-anchor">Electronics </a></p>
+                    <p class="footer-item-list"><a href="./pages/clothings.html" class="footer-anchor">Fashion </a></p>
+                    <p class="footer-item-list"><a href="./pages/footwears.html" class="footer-anchor">Footwears </a></p>
+                    <p class="footer-item-list"><a href="./pages/beauty-personal-care.html" class="footer-anchor"> Beauty & personal care </a></p>
+                    <p class="footer-item-list"><a href="./pages/groceries.html" class="footer-anchor"> Groceries </a></p>
+                    <p class="footer-item-list"><a href="./pages/home-kitchen.html" class="footer-anchor"> Home & Kitchen </a></p>
+                </div>
+            </div>
+            <div class="footer-sec"> 
+                <p> Social :</p>
+                <div class="footer-data">
+                    <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp;  <a href="mailto:suraj@roadtocode.org" class="footer-anchor">suraj@roadtocode.org</a>
+                     </p>
+
+                    <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp; <a href="tel:+918805803087" class="footer-anchor"> +91-8805803087</a>
+                    </p>
+
+                    <p class="footer-item-list"> <i class="fa-brands fa-facebook" style="color: #ffffff;"></i> &nbsp; &nbsp; Facebook </p>
+                    
+                    <p class="footer-item-list"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i> &nbsp; &nbsp; Twitter</p>
+                    
+                    <p class="footer-item-list"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> &nbsp; &nbsp;  Instagram</p>
+                    
+                    <p class="footer-item-list"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> &nbsp; &nbsp; LinkedIn</p>
+                </div>
+            </div>
+            <div class="footer-sec"> 
+                <p> Contact us :</p>
+                <div class="footer-data">
+                    <p class="footer-item-list"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp; &nbsp; <a href="https://goo.gl/maps/2v5cX44ZgVjsnx5Y9" target="blank" class="footer-anchor">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Manjari BK, pune - 412307</a>
+                    </p>
+                    <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp;  <a href="mailto:ashishgore393@gmail.com" class="footer-anchor">ashishgore393@gmail.com</a>
+                     </p>
+
+                    <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp; <a href="tel:+918975004427" class="footer-anchor"> +91-8975004427</a>
+                    </p>
+                </div>
+            </div>
+    </div>
+    <hr/>
+    <p style="text-align: center; font-size: 20px; color: white; background-color: #000; margin: 0; padding:0;"> Made by ICP 6 Group 6 (2023) </p>
+    </div>
     <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
 </body>
 </html>
