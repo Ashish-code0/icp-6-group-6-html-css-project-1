@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -92,12 +93,118 @@
             font-size: 15px;
             color: grey;
         }
-        .shop-footer{
-            height:200px;
-            background-color: #000000;
-            text-align: center;
+        .card-btn{
+            padding:5px 15px;
+            background-color:#0099ff ;
+            font-weight: bold;
             color:white;
+            border-radius: 5px;
+            border:none;
         }
+        .section-heading{
+            margin:10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .categories-img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .shopping-categories{
+            height:100px;
+            background-color: grey;
+            color:#eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 10px;
+            padding:10px;
+        }
+        .shop-footer{
+            background-color: #000000;
+            color:#bcc8cf;
+            padding:15px;
+            text-align: center;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .footer-sec{
+            width:300px;
+            background-color:#0f0f0f;
+            font-size: 25px;
+            border-radius: 10px;
+            padding:15px;
+            display: flex;
+            flex-direction: column;
+         }
+        .footer-about-logo{
+            height:80px;
+            display:flex;
+            align-items: center;
+        }
+        .footer-shop-logo{
+            height:80px;
+            border-radius:50%;
+        }
+        .footer-shop-name{
+            padding:10px;
+        }
+        .footer-about-desc{
+            text-align: justify;
+            font-size: 18px;
+            padding:15px; 
+        }
+        .footer-data{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .footer-item-list{
+            margin:5px;
+            font-size: 18px;
+            padding:5px;
+        }
+        .footer-anchor{
+            color:#bcc8cf;
+        }
+        .name-brand{
+            text-align: center;
+            font-size:35px;
+        }
+    
+
+        .left{
+	margin-top: 30px;
+	flex-basis: 50%;
+	animation: animate 3s linear infinite;
+
+}
+.Right{
+	        flex-basis: 50%;
+            max-width: 400px;
+             margin-right: 100px;
+}
+@keyframes animate{
+	0%{
+		transform: scale(1.1);
+	}
+	50%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.1);
+	}
+}
+
+    
+    
     </style>
 </head>
 <body>
@@ -131,42 +238,52 @@
             </list>
         </div>
     </div>
-    <div class="deals-section">
-        <p><h1> Latest-offers on Footwear </h1></p>
+    <div class="container">
+        <div class="left">
+    <img src="./../img/footwears/img1.jpg">
+        </div>
+
+    
+
+    </div>
+      <div class="deals-section">
+        
+        <p><h1 class="name-brand"> Latest-offers on Footwear </h1></p>
    <div class="latest-offers">
       
     <div class="card">
         <img src="./../img/footwears/1stimage.jpg" class="img-in-card">
         <p class="product-name">Top Deals on Footwear</p>
         <p class="price-font">From ₹₹348</p>
-        <p class="brand-names">Fashion Heel Block Heels Sandals For Women</p>
+        <button class="card-btn"> BUY </button>
     </div>
     <div class="card">
         <img src="./../img/footwears/sandal.jpg" class="img-in-card">
         <p class="product-name">Mochi Sandals</p>
         <p class="price-font">From ₹₹2,490 </p>
-        <p class="brand-names">Mochi Women Chikoo Synthetic Sandals</p>
+        <button class="card-btn"> BUY </button>
     </div>
     <div class="card">
         <img src="./../img/footwears/blacksandal.jpg" class="img-in-card">
         <p class="product-name">Soft Sleeper</p>
         <p class="price-font">From ₹149</p>
-        <p class="brand-names">Black Simmer Slippers for Women</p>
+        <button class="card-btn"> BUY </button>
     </div>
     <div class="card">
         <img src="./../img/footwears/shoes1.jpg" class="img-in-card">
         <p class="product-name">Shoes</p>
         <p class="price-font">From ₹550*</p>
-        <p class="brand-names">Girls Comfortable, Fashionable Shoes</p>
+        <button class="card-btn"> BUY </button>
     </div>
     <div class="card">
         <img src="./../img/footwears/heelsandal.jpg" class="img-in-card">
         <p class="product-name">Heel Sandal</p>
         <p class="price-font">From ₹490*</p>
-        <p class="brand-names">Pink Stylish Latest Party heel sandal</p>
+        <button class="card-btn"> BUY </button>
     </div>
         
    </div>
+<<<<<<< HEAD
    <p> popular brands </p>
    <div class="popular-brands">
         <img src="./../img/footwears/batalogo.jpg" class="img-logo">
@@ -175,10 +292,267 @@
         <img src="./../img/footwears/libertylogo.jpg" class="img-logo">
         <img src="./../img/footwears/mungro.jpg" class="img-logo">
    </div>
+=======
+   
+         <p class="section-heading"> Category </p>
+            <div class="shopping-categories">
+                <img src="./../img/footwears/women category.jpg" class="categories-img">
+                <img src="./../img/footwears/men category.jpg" class="categories-img">
+                <img src="./../img/footwears/child category.jpg" class="categories-img">
+                <img src="./../img/footwears/bride1.jpg" class="categories-img">
+                <img src="./../img/footwears/groom category.jpg" class="categories-img">
+            </div>
+>>>>>>> af289f0dcec5384d8dc9c22a997f8420a6ab4d61
 
-    <div class="shop-footer">
-        <h3> FOOTER </h3>
+   <p class="name-brand"> Girls Footwear</p>
+   <div class="latest-offers">
+      
+    <div class="card">
+        <img src="./../img/footwears/girls1.jpg" class="img-in-card">
+        <p class="product-name">Soft Footwear</p>
+        <p class="price-font">From ₹290</p>
+        <button class="card-btn"> BUY </button>
     </div>
-    <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script> 
+    <div class="card">
+        <img src="./../img/footwears/girls.6.jpg" class="img-in-card">
+        <p class="product-name">Heel Sandals</p>
+        <p class="price-font">From ₹2,490 </p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/girls2.jpg" class="img-in-card">
+        <p class="product-name">Soft Sleeper</p>
+        <p class="price-font">From ₹149</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/girls4.jpg" class="img-in-card">
+        <p class="product-name">Juti Jaypur</p>
+        <p class="price-font">From ₹550*</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/girls5.jpg" class="img-in-card">
+        <p class="product-name">Flat Sandal</p>
+        <p class="price-font">From ₹490*</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+   </div>
+    <p class="name-brand"> Mens Footwear</p>
+   <div class="latest-offers">
+      
+    <div class="card">
+        <img src="./../img/footwears/men1.jpg" class="img-in-card">
+        <p class="product-name">Outdoor Footwear</p>
+        <p class="price-font">From ₹890</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/men3.jpg" class="img-in-card">
+        <p class="product-name">Walkaroo go men </p>
+        <p class="price-font">From ₹560 </p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/men4.jpg" class="img-in-card">
+        <p class="product-name">Men Sandal</p>
+        <p class="price-font">From ₹149</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/men5.jpg" class="img-in-card">
+        <p class="product-name">Rich Luxury</p>
+        <p class="price-font">From ₹550*</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/men6.jpg" class="img-in-card">
+        <p class="product-name">Ajanta Mens Sandal</p>
+        <p class="price-font">From ₹990*</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+   </div>
+    <p class="name-brand">Children Footwear </p>
+   <div class="latest-offers">
+      
+    <div class="card">
+        <img src="./../img/footwears/child1.jpg" class="img-in-card">
+        <p class="product-name">Daily Use for child</p>
+        <p class="price-font">From ₹90</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/child2.jpg" class="img-in-card">
+        <p class="product-name">Casual shoes</p>
+        <p class="price-font">From ₹241 </p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/child3.jpg" class="img-in-card">
+        <p class="product-name">child footwear</p>
+        <p class="price-font">From ₹149</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/child4.jpg" class="img-in-card">
+        <p class="product-name">shoes kids boys</p>
+        <p class="price-font">From ₹250*</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/child6.jpg" class="img-in-card">
+        <p class="product-name">Zaxy naina Sandal</p>
+        <p class="price-font">From ₹490*</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+</div>
+<p class="name-brand">Bride Footwear </p>
+   <div class="latest-offers">
+      
+    <div class="card">
+        <img src="./../img/footwears/bride8.jpg" class="img-in-card">
+        <p class="product-name">Bride Sandal</p>
+        <p class="price-font">From ₹2300</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/bride7.jpg" class="img-in-card">
+        <p class="product-name">White diamond heel sandal</p>
+        <p class="price-font">From ₹7,490 </p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/bride6.jpg" class="img-in-card">
+        <p class="product-name">Red Gold bride sandal</p>
+        <p class="price-font">From ₹5640</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/bride4.jpg" class="img-in-card">
+        <p class="product-name">Golden Sandal for bride</p>
+        <p class="price-font">From ₹600*</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/bride5.jpg" class="img-in-card">
+        <p class="product-name">Heel Sandal</p>
+        <p class="price-font">From ₹990*</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+   </div>
+   <p class="name-brand"> Groom Footwear</p>
+   <div class="latest-offers">
+      
+    <div class="card">
+        <img src="./../img/footwears/groom1.jpg" class="img-in-card">
+        <p class="product-name">Groom Footwear</p>
+        <p class="price-font">From ₹2990</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/groom2.jpg" class="img-in-card">
+        <p class="product-name">Shervani Juti</p>
+        <p class="price-font">From ₹2,490 </p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/groom3.jpg" class="img-in-card">
+        <p class="product-name">Mojari for Groom</p>
+        <p class="price-font">From ₹1600</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/groom4.jpg" class="img-in-card">
+        <p class="product-name">Stylist velvel jutti</p>
+        <p class="price-font">From ₹950*</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="card">
+        <img src="./../img/footwears/groom5.jpg" class="img-in-card">
+        <p class="product-name">Ethenic Shoes</p>
+        <p class="price-font">From ₹2600*</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+   </div>
+   <p class="name-brand"> popular brands </p>
+   <div class="popular-brands">
+        <img src="./../img/footwears/batalogo.jpg" class="img-logo">
+        <img src="./../img/footwears/venuslogo.jpg" class="img-logo">
+        <img src="./../img/footwears/pasion.jpg" class="img-logo">
+        <img src="./../img/footwears/libertylogo.jpg" class="img-logo">
+        <img src="./../img/footwears/mungro.jpg" class="img-logo">
+</div>
+
+
+
+ 
+   </div>
+   <div style="background-color: #000; padding-top: 10px;">
+    <div class="shop-footer">
+            <div class="footer-sec">
+                <div class="footer-about-logo">
+                    <img class="footer-shop-logo" src="./../img/shop-logo.png" alt="shop-logo">
+                    <span class="footer-shop-name"> Dream's Land</span>
+                </div>
+                <div class="footer-about-desc">
+                    <p>A online shopping experience that you will not experience anywhere else.</p>
+                    <p>Experience the difference with us as your shopping partners.</p>
+                    <p>A group of individuals who wish to enrich your shopping experience.</p>
+                    <span><a class="footer-anchor" href="./pages/about.html"> More about us <i class="fa-solid fa-arrow-right header-btn-arrow"></i> </a></span>
+                </div>
+            </div>
+           
+            <div class="footer-sec">
+                <p> Quick Links </p>
+                <div class="footer-data">
+                    <p class="footer-item-list"><a href="index.html" class="footer-anchor">Home </a></p>
+                    <p class="footer-item-list"><a href="./pages/electronics.html" class="footer-anchor">Electronics </a></p>
+                    <p class="footer-item-list"><a href="./pages/clothings.html" class="footer-anchor">Fashion </a></p>
+                    <p class="footer-item-list"><a href="./pages/footwears.html" class="footer-anchor">Footwears </a></p>
+                    <p class="footer-item-list"><a href="./pages/beauty-personal-care.html" class="footer-anchor"> Beauty & personal care </a></p>
+                    <p class="footer-item-list"><a href="./pages/groceries.html" class="footer-anchor"> Groceries </a></p>
+                    <p class="footer-item-list"><a href="./pages/home-kitchen.html" class="footer-anchor"> Home & Kitchen </a></p>
+                </div>
+            </div>
+            <div class="footer-sec"> 
+                <p> Social :</p>
+                <div class="footer-data">
+                    <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp;  <a href="mailto:suraj@roadtocode.org" class="footer-anchor">suraj@roadtocode.org</a>
+                     </p>
+
+                    <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp; <a href="tel:+918805803087" class="footer-anchor"> +91-8805803087</a>
+                    </p>
+
+                    <p class="footer-item-list"> <i class="fa-brands fa-facebook" style="color: #ffffff;"></i> &nbsp; &nbsp; Facebook </p>
+                    
+                    <p class="footer-item-list"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i> &nbsp; &nbsp; Twitter</p>
+                    
+                    <p class="footer-item-list"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> &nbsp; &nbsp;  Instagram</p>
+                    
+                    <p class="footer-item-list"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> &nbsp; &nbsp; LinkedIn</p>
+                </div>
+            </div>
+            <div class="footer-sec"> 
+                <p> Contact us :</p>
+                <div class="footer-data">
+                    <p class="footer-item-list"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp; &nbsp; <a href="https://goo.gl/maps/2v5cX44ZgVjsnx5Y9" target="blank" class="footer-anchor">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Manjari BK, pune - 412307</a>
+                    </p>
+                    <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp;  <a href="mailto:ashishgore393@gmail.com" class="footer-anchor">ashishgore393@gmail.com</a>
+                     </p>
+
+                    <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        &nbsp; &nbsp; <a href="tel:+918975004427" class="footer-anchor"> +91-8975004427</a>
+                    </p>
+                </div>
+            </div>
+    </div>
+    <hr/>
+    <p style="text-align: center; font-size: 20px; color: white; background-color: #000; margin: 0; padding:0;"> Made by ICP 6 Group 6 (2023) </p>
+    </div>
+    <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
 </body>
 </html>
