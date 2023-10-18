@@ -4,10 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home & Kitchen  </title>
+    <style>
+         body{
+            margin:0;
+            padding:0;
+        }
+        .tagline{
+            background-color: #eeeeee;
+            color:#000000;
+            margin:0;
+            text-align: center;
+            font-size:25px;
+        }
+        .navbar{
+            margin-top:0;
+            font-size:25px;
+            background-color: #000;
+            color:#bcc8cf;
+            display:flex;
+            align-items: center;
+        }
+        .menu-contianer{
+            margin-left:auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .menu{
+            background-color: #d1d1d1;
+            color:black;
+            font-size: 15px;
+            padding:5px 15px;
+            border:1px solid white;
+            margin:15px;
+            border-radius: 5px;
+        }
+        .latest-offers-title{
+            font-size: medium;
+            font-weight: bold;
+        }
+        .latest-offers{
+            height:300px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .card{
+            width:250px;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #999;
+        }
+        button{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding:5px 15px;
+            background-color:black;
+            color:white;
+            border-radius: 10px;
+            border:none;
+            cursor: pointer;
+        }
+        .review-section{
+            height:300px;
+            text-align: center;
+            background-color: #8daec4;
+        }
+
+        .shop-footer{
+            height:200px;
+            background-color: #000000;
+            text-align: center;
+            color:white;
+        }
+        .img-in-card{
+            width: 150px;
+            height: 120px;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .product-name{
+            font-size:20px;
+            font-weight: bold;
+        }
+        .price-font{
+            font-size: small;
+            color:green;
+        }
+      
+        
+    </style>
 </head>
 <body>
-     <h1> Group 6 Home and Kitchen page</h1>  
-     <h2> Cleaning Products</h2>
-     <h2> Rohini </h2> 
+    <div class="tagline">
+        A place where your dreams come true.
+    </div>
+    <div class="navbar">
+        <span style=" padding:5px 25px; font-size: 40px;"> Dream's Land</span>
+
+        <div class="menu-contianer">
+            <span class="menu">
+                Electronics
+            </span>
+            <span class="menu">
+                Clothings
+            </span>
+            <span class="menu">
+                Footwear
+            </span>
+            <span class="menu">
+                Beauty & care
+            </span>
+            <span class="menu">
+                Groceries
+            </span>
+            <span class="menu">
+                Food
+            </span>
+            <span class="menu">
+                Home & Kitchen
+            </span> 
+            <list class="menu">
+                <i class="fa-solid fa-bars "></i>
+            </list>
+        </div>
+    </div> 
+    <hr/><hr/>
+    <div class="deals-section">
+                 <p class="latest-offers-title"> Latest-offers on our products</p>
+            <div class="latest-offers">
+               
+                <div class="card">
+                    <img src="./../img/home-kitchen/rabbit.jpg" class="img-in-card">
+                    <p class="product-name">Dettol</p>
+                    <p class="price-font"> ₹95</p>
+                    <p class="offers">Free Dettol Handwash 175 ml</p>
+                    <button> BUY </button>
+
+                </div>
+                <div class="card">
+                    <img src="./../img/home-kitchen/himalaya.jpg" class="img-in-card">
+                    <p class="product-name">Himalaya</p>
+                    <p class="price-font">₹100</p>
+                    <p class="offers">Buy 1 Bottle get free 5 Pouch</p>
+                    <button> BUY </button>
+                </div>
+                <div class="card">
+                    <img src="./../img/home-kitchen/colagate.jpg" class="img-in-card">
+                    <p class="product-name">Colgate</p>
+                    <p class="price-font"> ₹200</p>
+                    <p class="offers">Buy 2 get 1 free save Rs.30</p>
+                    <button> BUY </button>
+                </div>
+                <div class="card">
+                    <img src="./../img/home-kitchen/santoor.jpeg" class="img-in-card">
+                    <p class="product-name">Santoor</p>
+                    <p class="price-font">₹40</p>
+                    <p class="offers">Buy 4 santoor and get Free colgate</p>
+                    <button> BUY </button>
+                </div>
+            </div>
+               <div class="shop-footer">
+                <h3> FOOTER </h3>
+        </div>
+        <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script> 
 </body>
 </html>
