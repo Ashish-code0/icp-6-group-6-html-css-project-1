@@ -8,12 +8,25 @@
          a {
             text-decoration: none;
             color: #262626;
+         }
+        .color-scheme{
+            color:#000000; 
+            color:#565656;/* nav */
+            color:#ffffff; /*background*/
+            color:#eeeeee; /*card-div-background*/
+            color:#8daec4; /*button*/
+            color:#bcc8cf; /* text on black div*/
+            color :#d1d1d1;
+            color:#262626;
         }
         body{
             margin:0;
             padding:0;
         }
-
+        a{
+            text-decoration: none;
+            color: #262626;
+        }
         .navbar{
             margin-top:0;
             font-size:25px;
@@ -22,28 +35,40 @@
             display:flex;
             align-items: center;
         }
-
+        .nav-shop-logo{
+            height:70px;
+            border:1px solid black;
+            border-radius: 50%;
+        } 
 
         .menu-contianer{
             margin-left:auto;
             display:flex;
             justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap;
         }
         .menu{
-            background-color: #d1d1d1;
+            background-color: #fff;
             color:black;
             font-size: 15px;
+            font-weight: bold;
             padding:5px 15px;
             border:1px solid white;
             margin:15px;
             border-radius: 5px;
         }
+        .menu:hover{
+            background-color: #565656;
+            color: #fff;
+            border-radius: 10px;
+            border: none;
+        }
+
         .heading-for-item{
             text-align: center;
         }
         .latest-offers{
-            height:250px;
             background-color: #eee;
             display:flex;
             justify-content: space-around;
@@ -52,7 +77,6 @@
             padding:10px;
         }
         .popular-brands{
-            height:100px;
             background-color: #565656;
             color:#eee;
             display:flex;
@@ -66,7 +90,14 @@
             width: 80px;
             border-radius: 50%;
             padding: 10px;
-
+        }
+        #img-logo-1{
+            height: 60px;
+            width: 70px;
+            border-radius: 0;
+            padding: 0px;
+            margin-top: auto;
+            margin-bottom: auto;
         }
         .card{
             width:200px;
@@ -77,8 +108,9 @@
             border: none;
             display: block;
             justify-content: center;
+            padding: 10px;
+            margin: 10px;   
         }
-
         .img-in-card{
             width: 150px;
             height: 120px;
@@ -90,47 +122,200 @@
             width: 155px;
             height: 125px;
         }
-        .mobile-speaker-img{
+        #mobile-speaker-img{
             width: 70px;
             height: 120px;
             margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
         }
-        .mobile-speaker-img:hover{
+        #mobile-speaker-img:hover{
             width: 75px;
             height: 125px;
         }
-        .headphone-img{
+        #headphone-img{
             width: 90px;
             height: 120px;
             margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
         }
-        .headphone-img:hover{
+        #headphone-img:hover{
             width: 95px;
             height: 125px;
+        }
+        #cctv{
+            width: 100px;
+        }
+        #watch{
+            width: 100px;
         }
         .price-font{
             font-size: small;
             color: green;
         }
+        .card-btn{
+            padding:5px 15px;
+            background-color:#0099ff;
+            font-weight: bold;
+            color:white;
+            border-radius: 5px;
+            border:none;
+            cursor: pointer;
+        }
+        .card-btn:hover{
+            border-radius: 10px;
+            background-color:#000;
+        }
         .brand-names{
             font-size: 15px;
             color: grey;
         }
-        .shop-footer{
-            height:200px;
-            background-color: #000000;
+        .return{
             text-align: center;
-            color:white;
+            padding: 10px;
+            margin: 10px;
         }
+        .top{
+            background-color: #0099ff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 100px;
+            color: #fff;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .shop-footer{
+            background-color: #000000;
+            color:#bcc8cf;
+            padding:15px;
+            text-align: center;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .footer-sec{
+            width:300px;
+            background-color:#0f0f0f;
+            font-size: 25px;
+            border-radius: 10px;
+            padding:15px;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+         }
+        .footer-about-logo{
+            height:80px;
+            display:flex;
+            align-items: center;
+        }
+        .footer-shop-logo{
+            height:80px;
+            border-radius:50%;
+        }
+        .footer-shop-name{
+            padding:10px;
+        }
+        .footer-about-desc{
+            text-align: justify;
+            font-size: 18px;
+            padding:15px; 
+        }
+        .footer-data{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .footer-item-list{
+            margin:5px;
+            font-size: 18px;
+            padding:5px;
+        }
+        .footer-anchor{
+            color:#bcc8cf;
+        }
+        @media only screen and (max-width:700px){
+        .menu-container{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .navbar{
+            flex-direction: column;
+        }
+        .menu{
+            display: block ;
+            margin: 10px;
+            width: 50px;
+            text-align: center;
+
+        }
+        .img-in-card{
+            width: 100px;
+            height: 70px;
+        }
+        .img-in-card:hover{
+            width: 110px;
+            height: 80px;
+        }
+        #mobile-speaker-img{
+            width: 70px;
+            height: 120px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #mobile-speaker-img:hover{
+            width: 75px;
+            height: 125px;
+        }
+        #headphone-img{
+            width: 90px;
+            height: 120px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #headphone-img:hover{
+            width: 95px;
+            height: 125px;
+        }
+    }
+    @media only screen and (max-width:1000px) and (min-width:701px){
+        .menu-container{
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .menu{
+            display: block ;
+            margin: 10px;
+            width: 70px;
+            text-align: center;
+
+        }
+    }
+    @media only screen and (max-width:1200px) and (min-width:1001px){
+        .menu-container{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .menu{
+            display: block ;
+            margin: 10px;
+            width: 90px;
+            text-align: center;
+        }
+    }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <span style=" padding:5px 25px; font-size: 40px;"> Dream's Land</span>
+        <img class="nav-shop-logo" src="./../img/shop-logo.png" alt="shop-logo">
+        <span> Dream's Land</span>
 
         <div class="menu-contianer">
             <a href="./../index.html" class="menu">
@@ -153,52 +338,55 @@
             </a>
             <a href="./home-kitchen.html" class="menu">
                 Home & Kitchen
-            </a> 
+                </a>
             <list class="menu">
                 <i class="fa-solid fa-bars "></i>
             </list>
-        </div>
     </div>
-    <img src="./../img/electronics/big-sale.jpg"  width="100%">
+    </div>
+    <img src="./../img/electronics/big-sale.jpg" width="100%" height="400px">
     <div class="deals-section">
         <h2 class="heading-for-item"> Latest-offers on Laptop </h2>
-        <div class="latest-offers">
+   <div class="latest-offers">
       
-        <div class="card">
-            <img src="./../img/electronics/top-deals-laptop.webp" class="img-in-card">
-            <p class="product-name">Top Deals on Laptop</p>
-            <p class="price-font">From ₹8,990*</p>
-            <p class="brand-names">Asus, HP, Lenovo & More</p>
-        </div>
-        <div class="card">
-            <img src="./../img/electronics/icore-laptop.webp" class="img-in-card">
-            <p class="product-name">Core i5 Laptops</p>
-            <p class="price-font">From ₹29,990*</p>
-            <p class="brand-names">Asus, HP, Lenovo & More</p>
-        </div>
-        <div class="card">
-            <img src="./../img/electronics/gaming-laptop.webp" class="img-in-card">
-            <p class="product-name">Gaming Laptops</p>
-            <p class="price-font">From ₹39,990*</p>
-            <p class="brand-names">Asus, MSI, Lenovo & More</p>
-        </div>
-        <div class="card">
-            <img src="./../img/electronics/thin-laptop.webp" class="img-in-card">
-            <p class="product-name">Thin and Light Laptops</p>
-            <p class="price-font">From ₹8,990*</p>
-            <p class="brand-names">Asus, HP, Infinix & More</p>
-        </div>
-        <div class="card">
-            <img src="./../img/electronics/chromebooks.webp" class="img-in-card">
-            <p class="product-name">Chromebooks</p>
-            <p class="price-font">From ₹9,990*</p>
-            <p class="brand-names">Asus, HP, Lenovo & More</p>
-        </div>
-            
+    <div class="card">
+        <img src="./../img/electronics/top-deals-laptop.webp" class="img-in-card">
+        <p class="product-name">Top Deals on Laptop</p>
+        <p class="price-font">From ₹8,990*</p>
+        <button class="card-btn"> BUY </button>
+        <p class="brand-names">Asus, HP, Lenovo & More</p>
+    </div>
+    <div class="card">
+        <img src="./../img/electronics/icore-laptop.webp" class="img-in-card">
+        <p class="product-name">Core i5 Laptops</p>
+        <p class="price-font">From ₹29,990*</p>
+        <button class="card-btn"> BUY </button>
+        <p class="brand-names">Asus, HP, Lenovo & More</p>
+    </div>
+    <div class="card">
+        <img src="./../img/electronics/gaming-laptop.webp" class="img-in-card">
+        <p class="product-name">Gaming Laptops</p>
+        <p class="price-font">From ₹39,990*</p>
+        <button class="card-btn"> BUY </button>
+        <p class="brand-names">Asus, MSI, Lenovo & More</p>
+    </div>
+    <div class="card">
+        <img src="./../img/electronics/thin-laptop.webp" class="img-in-card">
+        <p class="product-name">Thin and Light Laptops</p>
+        <p class="price-font">From ₹8,990*</p>
+        <button class="card-btn"> BUY </button>
+        <p class="brand-names">Asus, HP, Infinix & More</p>
+    </div>
+    <div class="card">
+        <img src="./../img/electronics/chromebooks.webp" class="img-in-card">
+        <p class="product-name">Chromebooks</p>
+        <p class="price-font">From ₹9,990*</p>
+        <button class="card-btn"> BUY </button>
+        <p class="brand-names">Asus, HP, Lenovo & More</p>
+    </div>
+        
    </div>
-
     <h2 class="heading-for-item"> Popular Brands </h2>
-
     <div class="popular-brands">
         <img src="./../img/electronics/asus-logo.png" class="img-logo">
         <img src="./../img/electronics/hp-logo.png" class="img-logo">
@@ -206,47 +394,213 @@
         <img src="./../img/electronics/lenovo-logo.png" class="img-logo">
         <img src="./../img/electronics/dell-logo.png" class="img-logo">
     </div>
-
     <img src="./../img/electronics/special-offer.jpg" width="100%">
     <h2 class="heading-for-item">Best Of Headphones & Speakers</h2>
-    
     <div class="latest-offers">
       
         <div class="card">
             <img src="./../img/electronics/top-soundbar.webp" class="img-in-card">
             <p class="product-name">Top Soundbars</p>
             <p class="price-font">From ₹999*</p>
+            <button class="card-btn"> BUY </button>
             <p class="brand-names">JBL, boAt & more</p>
         </div>
         <div class="card">
-            <img src="./../img/electronics/top-anc.webp" class="headphone-img">
+            <img src="./../img/electronics/top-anc.webp" class="img-in-card" id="headphone-img">
             <p class="product-name">Top ANC Headphones</p>
             <p class="price-font">Grab Now</p>
+            <button class="card-btn"> BUY </button>
             <p class="brand-names">Sony, Bose & more</p>
         </div>
         <div class="card">
-            <img src="./../img/electronics/best-truewireless.webp" class="headphone-img">
+            <img src="./../img/electronics/best-truewireless.webp" class="img-in-card" id="headphone-img">
             <p class="product-name">Best Truewireless Headphones</p>
             <p class="price-font">Grab Now</p>
+            <button class="card-btn"> BUY </button>
             <p class="brand-names">boAt, Oneplus & more</p>
         </div>
         <div class="card">
-            <img src="./../img/electronics/mobile-speaker.webp" class="mobile-speaker-img" >
+            <img src="./../img/electronics/mobile-speaker.webp" 
+            class="img-in-card" id="mobile-speaker-img" >
             <p class="product-name">Best selling Mobile Speakers</p>
             <p class="price-font">From ₹499*</p>
+            <button class="card-btn"> BUY </button>
             <p class="brand-names">Sony, boAt & more</p>
         </div>
         <div class="card">
-            <img src="./../img/electronics/smart-speakers.webp" class="headphone-img">
+            <img src="./../img/electronics/smart-speakers.webp"  class="img-in-card" id="headphone-img">
             <p class="product-name">Top Smart Speakers</p>
             <p class="price-font">Buy Now</p>
+            <button class="card-btn"> BUY </button>
             <p class="brand-names">Google, Apple & more</p>
         </div>
-            
-       </div>
-    <div class="shop-footer">
-        <h3> FOOTER </h3>
     </div>
+    <hr>
+        <h2 class="heading-for-item"> Popular Brands </h2>
+        <hr>
+        <div class="popular-brands">
+            <img src="./../img/electronics/boat-logo-2.png" class="img-logo" id="img-logo-1">
+            <img src="./../img/electronics/bose-logo-1.png" class="img-logo" id="img-logo-1">
+            <img src="./../img/electronics/OnePlus_Logo.png" class="img-logo" id="img-logo-1">
+            <img src="./../img/electronics/jbl-logo-2.png" class="img-logo" id="img-logo-1">
+            <img src="./../img/electronics/sony-logo-2.png" class="img-logo" id="img-logo-1">
+        </div>
+        <hr>
+        <img src="./../img/electronics/accessories-offer.png" width="100%" height="300px">
+        <h2 class="heading-for-item"> Photography Camera & Accessories </h2>
+        <hr>
+        <div class="latest-offers">
+      
+        <div class="card">
+            <img src="./../img/electronics/tripod.jpg" class="img-in-card">
+            <p class="product-name">Tygot Adjustable Aluminium Alloy Tripod Stand</p>
+            <p class="price-font">From ₹325*</p>
+            <button class="card-btn"> BUY </button>
+            <p class="brand-names">Tygot</p>
+        </div>
+        <div class="card">
+            <img src="./../img/electronics/ring-light.jpg" class="img-in-card">
+            <p class="product-name">Tygot 10 Inches Big LED Ring Light for Camera</p>
+            <p class="price-font">From ₹648*</p>
+            <button class="card-btn"> BUY </button>
+            <p class="brand-names">Tygot</p>
+        </div>
+        <div class="card">
+            <img src="./../img/electronics/helmet-cam.jpg" class="img-in-card">
+            <p class="product-name">HIFFIN® Helmet Chin Strap Mount with Mobile Clip</p>
+            <p class="price-font">From ₹359*</p>
+            <button class="card-btn"> BUY </button>
+            <p class="brand-names">HIFFIN®</p>
+        </div>
+        <div class="card">
+            <img src="./../img/electronics/cctv.jpg" class="img-in-card" id="cctv">
+            <p class="product-name">CP PLUS 2MP Full HD Smart Wi-Fi CCTV</p>
+            <p class="price-font">From ₹1299*</p>
+            <button class="card-btn"> BUY </button>
+            <p class="brand-names">CP Plus</p>
+        </div>
+        <div class="card">
+            <img src="./../img/electronics/tripod-mini.jpg" class="img-in-card">
+            <p class="product-name">Tygot Gorilla Tripod/Mini 33 CM (13 Inch) Tripod for Mobile</p>
+            <p class="price-font">From ₹299*</p>
+            <button class="card-btn"> BUY </button>
+            <p class="brand-names">Tygot</p>
+        </div>
+            
+   </div>
+   <hr>
+   <img src="./../img/electronics/watch-sale.jpg" width="100%" height="400px">
+    <h2 class="heading-for-item">Bestselling Smartwatches</h2>
+    <hr>
+    <div class="latest-offers">
+      
+        <div class="card">
+            <img src="./../img/electronics/boat-wave-lite-smart.jpg" class="img-in-card" id="watch">
+            <p class="product-name">boAt Wave Lite Smart Watch</p>
+            <p class="price-font">From ₹999*</p>
+            <button class="card-btn"> BUY </button>
+            <p class="brand-names">boAt</p>
+        </div>
+        <div class="card">
+            <img src="./../img/electronics/fire-boltt-ninja-3.jpg" class="img-in-card" id="watch">
+            <p class="product-name">Fire-Boltt Ninja 3 Smartwatch</p>
+            <p class="price-font">Grab Now ₹1099*</p>
+            <button class="card-btn"> BUY </button>
+            <p class="brand-names">Fire-Boltt</p>
+        </div>
+        <div class="card">
+            <img src="./../img/electronics/tokdis-mx-1-pro.jpg" class="img-in-card" id="watch">
+            <p class="product-name">Tokdis MX-1 Pro Bluetooth Calling Smartwatch</p>
+            <p class="price-font">Grab Now ₹649*</p>
+            <button class="card-btn"> BUY </button>
+            <p class="brand-names">Tokdis</p>
+        </div>
+        <div class="card">
+            <img src="./../img/electronics/noise-colorfit-pulse.jpg" class="img-in-card" id="watch">
+            <p class="product-name">Noise ColorFit Pulse Grand Smart Watch</p>
+            <p class="price-font">From ₹2199*</p>
+            <button class="card-btn"> BUY </button>
+            <p class="brand-names">Noise</p>
+        </div>
+        <div class="card">
+            <img src="./../img/electronics/fire-boltt-ninja-call.jpg" class="img-in-card" id="watch">
+            <p class="product-name">Fire-Boltt Ninja Call Pro Smart Watch</p>
+            <p class="price-font">Buy Now ₹1049*</p>
+            <button class="card-btn"> BUY </button>
+            <p class="brand-names">Fire-Boltt</p>
+        </div>
+    </div>
+    <hr>
+        <div class="return">
+            <a href="#" class="top">Return To Top</a>
+        </div>
+
+        <div style="background-color: #000; padding-top: 10px;">
+            <div class="shop-footer">
+                    <div class="footer-sec">
+                        <div class="footer-about-logo">
+                            <img class="footer-shop-logo" src="./../img/shop-logo.png" alt="shop-logo">
+                            <span class="footer-shop-name"> Dream's Land</span>
+                        </div>
+                        <div class="footer-about-desc">
+                            <p>A online shopping experience that you will not experience anywhere else.</p>
+                            <p>Experience the difference with us as your shopping partners.</p>
+                            <p>A group of individuals who wish to enrich your shopping experience.</p>
+                            <span><a class="footer-anchor" href="./pages/about.html"> More about us <i class="fa-solid fa-arrow-right header-btn-arrow"></i> </a></span>
+                        </div>
+                    </div>
+                   
+                    <div class="footer-sec">
+                        <p> Quick Links </p>
+                        <div class="footer-data">
+                            <p class="footer-item-list"><a href="index.html" class="footer-anchor">Home </a></p>
+                            <p class="footer-item-list"><a href="./pages/electronics.html" class="footer-anchor">Electronics </a></p>
+                            <p class="footer-item-list"><a href="./pages/clothings.html" class="footer-anchor">Fashion </a></p>
+                            <p class="footer-item-list"><a href="./pages/footwears.html" class="footer-anchor">Footwears </a></p>
+                            <p class="footer-item-list"><a href="./pages/beauty-personal-care.html" class="footer-anchor"> Beauty & personal care </a></p>
+                            <p class="footer-item-list"><a href="./pages/groceries.html" class="footer-anchor"> Groceries </a></p>
+                            <p class="footer-item-list"><a href="./pages/home-kitchen.html" class="footer-anchor"> Home & Kitchen </a></p>
+                        </div>
+                    </div>
+                    <div class="footer-sec"> 
+                        <p> Social :</p>
+                        <div class="footer-data">
+                            <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                                &nbsp; &nbsp;  <a href="mailto:suraj@roadtocode.org" class="footer-anchor">suraj@roadtocode.org</a>
+                             </p>
+        
+                            <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                                &nbsp; &nbsp; <a href="tel:+918805803087" class="footer-anchor"> +91-8805803087</a>
+                            </p>
+        
+                            <p class="footer-item-list"> <i class="fa-brands fa-facebook" style="color: #ffffff;"></i> &nbsp; &nbsp; Facebook </p>
+                            
+                            <p class="footer-item-list"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i> &nbsp; &nbsp; Twitter</p>
+                            
+                            <p class="footer-item-list"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> &nbsp; &nbsp;  Instagram</p>
+                            
+                            <p class="footer-item-list"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> &nbsp; &nbsp; LinkedIn</p>
+                        </div>
+                    </div>
+                    <div class="footer-sec"> 
+                        <p> Contact us :</p>
+                        <div class="footer-data">
+                            <p class="footer-item-list"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                                &nbsp; &nbsp; &nbsp; <a href="https://goo.gl/maps/2v5cX44ZgVjsnx5Y9" target="blank" class="footer-anchor">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Manjari BK, pune - 412307</a>
+                            </p>
+                            <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                                &nbsp; &nbsp;  <a href="mailto:ashishgore393@gmail.com" class="footer-anchor">ashishgore393@gmail.com</a>
+                             </p>
+        
+                            <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                                &nbsp; &nbsp; <a href="tel:+918975004427" class="footer-anchor"> +91-8975004427</a>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            <hr/>
+            <p style="text-align: center; font-size: 20px; color: white; background-color: #000; margin: 0; padding:0;"> Made by ICP 6 Group 6 (2023) </p>
+            </div>
 
     <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script> 
 </body>
