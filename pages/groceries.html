@@ -79,7 +79,7 @@
 
         .latest-offers
         {
-            height:250px;
+           
             background-color: #eee;
             display:flex;
             justify-content: space-around;
@@ -127,6 +127,7 @@
             border: none;
             display: block;
             justify-content: center;
+            margin:10px;
         }
 
         .img-in-card
@@ -362,6 +363,32 @@
             color:#bcc8cf;
         }
 
+        @media only screen and (max-width:700px){
+        .navbar-menu-container{
+            width: 100vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .navbar{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .navbar-menu{
+          
+            margin: 10px;
+            width: 50px;
+            text-align: center;
+
+        }
+        .img-in-card{
+            width: 100px;
+            height: 70px;
+        }
+        .img-in-card:hover{
+            width: 110px;
+            height: 80px;
+        }
+    }
         
     </style>
 </head>
