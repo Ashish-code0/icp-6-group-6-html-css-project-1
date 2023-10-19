@@ -358,7 +358,7 @@
             padding: 15px;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
         }
         .review-section-card {
             border: 1px solid #eee;
@@ -391,7 +391,20 @@
             display: flex;
             align-items: center;
         }
+        .return-top-btn{
+            color:black;
+            position:fixed;
+            font-size: 10px;
+            font-weight: bolder;
+            bottom:10px;
+            right:10px;
+            background-color: #fff;
+            border: 2px solid #565656;
+            padding:5px;
+            border-radius: 20px;
 
+        }
+        
         /* Footer Section */
         .shop-footer {
             background-color: #000000;
@@ -402,7 +415,6 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
-
         .footer-sec {
             width: 300px;
             background-color: #0f0f0f;
@@ -887,10 +899,10 @@
 </head>
 
 <body>
-    <div class="tagline">
+    <div class="tagline" >
         A place where your dreams come true.
     </div>
-    <div class="navbar">
+    <div class="navbar" id="home-top">
         <div class="navbar-name-logo">
             <img class="nav-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
             <span> Dream's Land</span>
@@ -1490,14 +1502,16 @@
             </div>
             <p class="customer-review">🥳 </p>
         </div>
+        <a href="#home-top"><i class="fa-solid fa-arrow-up return-top-btn" style="color: #000000;"> Return to top</i></a>
     </div>
-    </div>
+    
 
-
+    
 
     <!-- Footer Section -->
     <div style="background-color: #000; padding-top: 10px; margin-top: 10px;">
         <div class="shop-footer">
+          
             <div class="footer-sec">
                 <div class="footer-about-logo">
                     <img class="footer-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
@@ -1535,8 +1549,8 @@
                 <p> Social :</p>
                 <div class="footer-data">
                     <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp; <a href="mailto:suraj@roadtocode.org"
-                            class="footer-anchor">suraj@roadtocode.org</a>
+                        &nbsp; &nbsp; <a href="mailto:ashishgore382@gmail.com"
+                            class="footer-anchor">ashishgore382@gmail.com</a>
                     </p>
 
                     <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
@@ -1559,10 +1573,10 @@
             <div class="footer-sec">
                 <p> Contact us :</p>
                 <div class="footer-data">
+                    
                     <p class="footer-item-list"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp; &nbsp; <a href="https://goo.gl/maps/2v5cX44ZgVjsnx5Y9" target="blank"
-                            class="footer-anchor">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Manjari BK,
-                            pune - 412307</a>
+                        &nbsp; &nbsp; <a href="https://maps.app.goo.gl/N3ngnED1vBDYVvj19" target="blank"
+                            class="footer-anchor"> B. D. College of Engineering, Wardha</a>
                     </p>
                     <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
                         &nbsp; &nbsp; <a href="mailto:ashishgore393@gmail.com"
