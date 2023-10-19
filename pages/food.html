@@ -9,7 +9,10 @@
             margin:0;
             padding:0;
         }
-        .a{ text-decoration:none;
+        
+        a {
+            text-decoration: none;
+            color: #262626;
         }
         .tagline{
             background-color: #eeeeee;
@@ -38,13 +41,20 @@
             align-items: center;
         }
         .navbar-menu{
-            background-color: #d1d1d1;
+            background-color: #fff;
             color:black;
             font-size: 15px;
+            font-weight: bold;
             padding:5px 15px;
             border:1px solid white;
             margin:15px;
             border-radius: 5px;
+        }
+        .navbar-menu:hover{
+            background-color: #565656;
+            color: #fff;
+            border-radius: 10px;
+            border: none;
         }
         .section-heading{
             margin:10px 0;
@@ -101,18 +111,7 @@
             border:none;
             box-shadow: 0px 0px 5px  2px lightblue;
         }
-
-        .card-btn:hover{
-            border-radius: 10px;
-            background-color:black;
-        }
-          .shop-footer{
-            height:200px;
-            background-color:black;
-            text-align: center;
-            color:white;
-        }
-
+        
         .shopping-categories{
             height:100px;
             background-color: #565656;
@@ -201,6 +200,50 @@
             padding:15px; 
         }
         .footer-data{
+        .shop-footer {
+
+            background-color: #000;
+            color: #bcc8cf;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .footer-sec {
+            width: 300px;
+            background-color: #0f0f0f;
+            font-size: 25px;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-about-logo {
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-shop-logo {
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .footer-shop-name {
+            padding: 10px;
+        }
+
+        .footer-about-desc {
+            text-align: justify;
+            font-size: 18px;
+            padding: 15px;
+        }
+
+        .footer-data {
+
             margin-left: 20px;
             margin-top: 20px;
             font-size: 18px;
@@ -284,8 +327,25 @@
             text-align: center;
         }
     }
-      
-        
+
+
+        .footer-item-list {
+            margin: 5px;
+            font-size:18px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .footer-item-list:hover {
+           color:#ff9800;
+
+        }
+        .footer-anchor {
+            color: #bcc8cf;
+        }
+        .footer-anchor:hover {
+            color: #ff9800;
+        }  
+
         </style>
 </head>
 <body>
@@ -294,27 +354,27 @@
     <span> Dream's Land</span>
 
     <div class="navbar-menu-contianer">
-        <span class="navbar-menu">
-            Electronics
-        </span>
-        <span class="navbar-menu">
+        <a href="./../index.html" class="navbar-menu">
+            Home
+        </a>
+        <a href="./clothings.html" class="navbar-menu">
             Clothings
-        </span>
-        <span class="navbar-menu">
+        </a>
+        <a href="./footwears.html" class="navbar-menu">
             Footwear
-        </span>
-        <span class="navbar-menu">
+        </a>
+        <a href="./beauty-personal-care.html" class="navbar-menu">
             Beauty & care
-        </span>
-        <span class="navbar-menu">
+        </a>
+        <a href="./groceries.html" class="navbar-menu">
             Groceries
-        </span>
-        <span class="navbar-menu">
-            Food
-        </span>
-        <span class="navbar-menu">
+        </a>
+        <a href="./electronics.html" class="navbar-menu">
+            Electronics
+        </a>
+        <a href="./home-kitchen.html" class="navbar-menu">
             Home & Kitchen
-        </span> 
+            </a>
         <list class="navbar-menu">
             <i class="fa-solid fa-bars "></i>
         </list>
@@ -328,39 +388,40 @@
        <img src="./../img/food/pista.webp" class="card-img">
        <p class="card-title">Rostaa</p>
        <p class="discount-desc">Roastes & salted Pistachios</p>
-       <p class="category-name">rs 239.00 <br> <strike>379rs</strike> &nbsp;36% off</p>
+       <p class="category-name">rs 239.00 <br> <del>379rs</del> &nbsp;36% off</p>
        <button class="card-btn"> BUY </button>
    </div>
    <div class="special-offers-card">
        <img src="./../img/food/almonds.jpg" class="card-img">
        <p class="card-title">Rostaa </p>
        <p class="discount-desc"> Rosted & salted value pack</p>
-       <p class="category-name">rs 369.00 <br> <strike>500rs</strike>&nbsp; 26% off</p>
+       <p class="category-name">rs 369.00 <br> <del>500rs</del>&nbsp; 26% off</p>
        <button class="card-btn"> BUY </button>
    </div>
    <div class="special-offers-card">
        <img src="./../img/food/ginger.webp" class="card-img">
        <p class="card-title">Prov Tm</p>
        <p class="discount-desc"> Figs Anjeer</p>
-       <p class="category-name">789.00<br> <strike>1,025.00rs</strike>&nbsp; 21% off</p>
+       <p class="category-name">789.00<br> <del>1,025.00rs</del>&nbsp; 21% off</p>
        <button class="card-btn"> BUY </button>
    </div>
    <div class="special-offers-card">
        <img src="./../img/food/walnut.webp" class="card-img">
        <p class="card-title">Californian </p>
        <p class="discount-desc"> Inshell Walnut</p>
-       <p class="category-name">269.00<br> <strike>499.00rs</strike>&nbsp; 46% off</p>
+       <p class="category-name">269.00<br> <del>499.00rs</del>&nbsp; 46% off</p>
        <button class="card-btn"> BUY </button>
    </div>
    <div class="special-offers-card">
        <img src="./../img/food/kishmish123.jpg" class="card-img">
        <p class="card-title">	20-20 Dry Fruits</p>
        <p class="discount-desc">  Black Kishmish With Seed</p>
-       <p class="category-name">₹249.00<br> <strike>₹295.00</strike>
+       <p class="category-name">₹249.00<br> <del>₹295.00</del>
         15% Off</p>
        <button class="card-btn"> BUY </button>
    </div>
 </div>
+
 
 <hr>
 
@@ -419,6 +480,8 @@
 </div>
 </div> 
 <div class="deals-section">
+=======
+>>>>>>> c369f28c8fe9ec7d6c4b41aa2cb6797b5282b7f5
 <p class="section-heading">Baked just right!</p>
 
 <div class="special-offers">
@@ -459,14 +522,7 @@
 <button class="card-btn"> BUY </button>
 </div>
 </div>
-<hr/>
-
-</list>
-</div>
-</div> 
-<div class="deals-section">
 <p class="section-heading">Helps You Stay Sober!</p>
-
 <div class="special-offers">
 <div class="special-offers-card">
 <img src="./../img/food/40174619_4-budweiser-00-non-alcoholic-beer.webp" class="card-img">
@@ -559,18 +615,21 @@
     M.R.P.: ₹260</p>
 <button class="card-btn"> BUY </button>
 </div>
+=======
+
+>>>>>>> c369f28c8fe9ec7d6c4b41aa2cb6797b5282b7f5
 </div>
 
 
 <p class="section-heading"> Shop By Category </p>
 <div class="shopping-categories">
-   <img src="./../img/home-page/nestle.jpg" class="categories-img">
-   <img src="./../img/home-page/Knorr-logo-tumb.jpg" class="categories-img">
-   <img src="./../img/home-page/amul-dairy-logo.png" class="categories-img">
-   <img src="./../img/home-page/mondelez.png" class="categories-img">
-   <img src="./../img/home-page/hersheys.png" class="categories-img">
-   <img src="./../img/home-page/general mills.png" class="categories-img">
-   <img src="./../img/home-page/kraft.jpeg" class="categories-img">
+   <img src="./../img/food/nestle.jpg" class="categories-img">
+   <img src="./../img/food/Knorr-logo-tumb.jpg" class="categories-img">
+   <img src="./../img/food/amul-dairy-logo.png" class="categories-img">
+   <img src="./../img/food/mondelez.png" class="categories-img">
+   <img src="./../img/food/hersheys.png" class="categories-img">
+   <img src="./../img/food/general mills.png" class="categories-img">
+   <img src="./../img/food/kraft.jpeg" class="categories-img">
 </div>
 
 <hr/>
@@ -579,68 +638,89 @@
     <a href="#" class="top">Return To Top</a>
 </div>
 
-<div style="background-color: #000; padding-top: 10px;">
+<div style="background-color: #000; padding-top: 10px; margin-top: 10px;">
     <div class="shop-footer">
-            <div class="footer-sec">
-                <div class="footer-about-logo">
-                    <img class="footer-shop-logo" src="./../img/shop-logo.png" alt="shop-logo">
-                    <span class="footer-shop-name"> Dream's Land</span>
-                </div>
-                <div class="footer-about-desc">
-                    <p>A online shopping experience that you will not experience anywhere else.</p>
-                    <p>Experience the difference with us as your shopping partners.</p>
-                    <p>A group of individuals who wish to enrich your shopping experience.</p>
-                    <span><a class="footer-anchor" href="./pages/about.html"> More about us <i class="fa-solid fa-arrow-right header-btn-arrow"></i> </a></span>
-                </div>
+        <div class="footer-sec">
+            <div class="footer-about-logo">
+                <img class="footer-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
+                <span class="footer-shop-name"> Dream's Land</span>
             </div>
-           
-            <div class="footer-sec">
-                <p> Quick Links </p>
-                <div class="footer-data">
-                    <p class="footer-item-list"><a href="index.html" class="footer-anchor">Home </a></p>
-                    <p class="footer-item-list"><a href="./pages/electronics.html" class="footer-anchor">Electronics </a></p>
-                    <p class="footer-item-list"><a href="./pages/clothings.html" class="footer-anchor">Fashion </a></p>
-                    <p class="footer-item-list"><a href="./pages/footwears.html" class="footer-anchor">Footwears </a></p>
-                    <p class="footer-item-list"><a href="./pages/beauty-personal-care.html" class="footer-anchor"> Beauty & personal care </a></p>
-                    <p class="footer-item-list"><a href="./pages/groceries.html" class="footer-anchor"> Groceries </a></p>
-                    <p class="footer-item-list"><a href="./pages/home-kitchen.html" class="footer-anchor"> Home & Kitchen </a></p>
-                </div>
+            <div class="footer-about-desc">
+                <p>A online shopping experience that you will not experience anywhere else.</p>
+                <p>Experience the difference with us as your shopping partners.</p>
+                <p>A group of individuals who wish to enrich your shopping experience.</p>
+                <span><a class="footer-anchor" href="./pages/about.html"> More about us <i
+                            class="fa-solid fa-arrow-right header-btn-arrow"></i> </a></span>
             </div>
-            <div class="footer-sec"> 
-                <p> Social :</p>
-                <div class="footer-data">
-                    <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp;  <a href="mailto:suraj@roadtocode.org" class="footer-anchor">suraj@roadtocode.org</a>
-                     </p>
+        </div>
+        <hr />
+        <div class="footer-sec">
+            <p> Quick Links </p>
+            <div class="footer-data">
+                <p class="footer-item-list"><a href="index.html" class="footer-anchor">Home </a></p>
+                <p class="footer-item-list"><a href="./pages/electronics.html" class="footer-anchor">Electronics
+                    </a></p>
+                <p class="footer-item-list"><a href="./pages/clothings.html" class="footer-anchor">Fashion </a></p>
+                <p class="footer-item-list"><a href="./pages/footwears.html" class="footer-anchor">Footwears </a>
+                </p>
+                <p class="footer-item-list"><a href="./pages/beauty-personal-care.html" class="footer-anchor">
+                        Beauty & personal care </a></p>
+                <p class="footer-item-list"><a href="./pages/groceries.html" class="footer-anchor"> Groceries </a>
+                </p>
+                <p class="footer-item-list"><a href="./pages/food.html" class="footer-anchor"> Food </a>
+                </p>
+                <p class="footer-item-list"><a href="./pages/home-kitchen.html" class="footer-anchor"> Home &
+                        Kitchen </a></p>
+            </div>
+        </div>
+        <div class="footer-sec">
+            <p> Social :</p>
+            <div class="footer-data">
+                <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                    &nbsp; &nbsp; <a href="mailto:suraj@roadtocode.org"
+                        class="footer-anchor">suraj@roadtocode.org</a>
+                </p>
 
-                    <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp; <a href="tel:+918805803087" class="footer-anchor"> +91-8805803087</a>
-                    </p>
+                <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                    &nbsp; &nbsp; <a href="tel:+918805803087" class="footer-anchor"> +91-8805803087</a>
+                </p>
 
-                    <p class="footer-item-list"> <i class="fa-brands fa-facebook" style="color: #ffffff;"></i> &nbsp; &nbsp; Facebook </p>
-                    
-                    <p class="footer-item-list"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i> &nbsp; &nbsp; Twitter</p>
-                    
-                    <p class="footer-item-list"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> &nbsp; &nbsp;  Instagram</p>
-                    
-                    <p class="footer-item-list"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> &nbsp; &nbsp; LinkedIn</p>
-                </div>
-            </div>
-            <div class="footer-sec"> 
-                <p> Contact us :</p>
-                <div class="footer-data">
-                    <p class="footer-item-list"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp; &nbsp; <a href="https://goo.gl/maps/2v5cX44ZgVjsnx5Y9" target="blank" class="footer-anchor">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Manjari BK, pune - 412307</a>
-                    </p>
-                    <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp;  <a href="mailto:ashishgore393@gmail.com" class="footer-anchor">ashishgore393@gmail.com</a>
-                     </p>
+                <p class="footer-item-list"> <i class="fa-brands fa-facebook" style="color: #ffffff;"></i> &nbsp;
+                    &nbsp; Facebook </p>
 
-                    <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp; <a href="tel:+918975004427" class="footer-anchor"> +91-8975004427</a>
-                    </p>
-                </div>
+                <p class="footer-item-list"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i> &nbsp;
+                    &nbsp; Twitter</p>
+
+                <p class="footer-item-list"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> &nbsp;
+                    &nbsp; Instagram</p>
+
+                <p class="footer-item-list"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> &nbsp;
+                    &nbsp; LinkedIn</p>
             </div>
+        </div>
+        <div class="footer-sec">
+            <p> Contact us :</p>
+            <div class="footer-data">
+                <p class="footer-item-list"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                    &nbsp; &nbsp; &nbsp; <a href="https://goo.gl/maps/2v5cX44ZgVjsnx5Y9" target="blank"
+                        class="footer-anchor">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Manjari BK,
+                        pune - 412307</a>
+                </p>
+                <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                    &nbsp; &nbsp; <a href="mailto:ashishgore393@gmail.com"
+                        class="footer-anchor">ashishgore393@gmail.com</a>
+                </p>
+
+                <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                    &nbsp; &nbsp; <a href="tel:+918975004427" class="footer-anchor"> +91-8975004427</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <p style="text-align: center; font-size: 20px; color: white; background-color: #000; margin: 0; padding:0; border-top: 1px solid white;">
+        Made by ICP 6 Group 6 (2023) </p>
+</div>
     </div>
 <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
 </body>
