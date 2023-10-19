@@ -9,6 +9,10 @@
 
 
     <style>
+        a {
+            text-decoration: none;
+            color: #262626;
+        }
         body{
             margin:0;
             padding:0;
@@ -20,6 +24,103 @@
             color:#bcc8cf;
             display:flex;
             align-items: center;
+        }
+        .nav-shop-logo{
+            height:70px;
+            border:1px solid black;
+            border-radius: 50%;
+
+        }
+        .navbar-menu-contianer {
+            margin-left: auto;
+            display: flex;
+            margin-right: 50px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar-menu {
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px 20px;
+            border: 1px solid white;
+            margin: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .navbar-menu:hover{
+            background-color: #565656;
+            color: #fff;
+            border-radius: 15px;
+            border: none;
+        }
+        .navbar-sub-menu {
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px 25px;
+            border: 1px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        ul {
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            display: block;
+        }
+
+        li ul {
+            display: none;
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 5px 15px 5px 15px;
+            white-space: nowrap;
+        }
+
+        li:hover ul {
+            display: block;
+            position: absolute;
+        }
+
+        li:hover li {
+            float: none;
+            font-size: 15px;
+        }
+
+        li:hover a {
+            background: white
+        }
+
+        li:hover li a:hover {
+            background: #ccc;
+        }
+        .desc{
+            margin-left:auto;
+            margin-right:auto;
+            padding:15px;
+            font-size: 25px;
+            align-items: left;
+        }
+        .header-btn{
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #e67300;
+            color:#fff;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
         }
         .electronic-logo{
             height: 30px;
@@ -100,6 +201,11 @@
             color:white;
             border-radius: 5px;
             border:none;
+            cursor:pointer;
+        }
+        .card-btn:hover{
+            border-radius: 10px;
+            background-color:#000000;
         }
         .section-heading{
             margin:10px 0;
@@ -178,6 +284,24 @@
             text-align: center;
             font-size:35px;
         }
+        .img-in-card{
+            width: 100px;
+            height: 70px;
+        }
+        .img-in-card:hover{
+            width: 110px;
+            height: 80px;
+        }
+        .container1{
+    display: flex;
+    align-items: left;
+  }
+  .off-deal{
+    font-size: 50px;
+    color: #000000;
+
+  }
+  
     
 
         .left{
@@ -185,11 +309,6 @@
 	flex-basis: 50%;
 	animation: animate 3s linear infinite;
 
-}
-.Right{
-	        flex-basis: 50%;
-            max-width: 400px;
-             margin-right: 100px;
 }
 @keyframes animate{
 	0%{
@@ -202,6 +321,36 @@
 		transform: scale(1.1);
 	}
 }
+.container1{
+    display: flex;
+    align-items: left;
+  }
+  @media only screen and (max-width:1000px) and (min-width:701px){
+        .menu-container{
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .menu{
+            display: block ;
+            margin: 10px;
+            width: 70px;
+            text-align: center;
+
+        }
+    }
+    @media only screen and (max-width:1200px) and (min-width:1001px){
+        .menu-container{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .menu{
+            display: block ;
+            margin: 10px;
+            width: 90px;
+            text-align: center;
+        }
+    }
 
     
     
@@ -209,43 +358,92 @@
 </head>
 <body>
     <div class="navbar">
-        <span style=" padding:5px 25px; font-size: 40px;"> Dream's Land</span>
+        <img href="./../index.html" class="nav-shop-logo" src="./../img/shop-logo.png" alt="shop-logo">
+        <span href="./../index.html"> Dream's Land</span>
 
-        <div class="menu-contianer">
-            <span class="menu">
-                Home
-            </span>
-            <span class="menu">
-                Clothings
-            </span>
-            <span class="menu">
-                Footwear
-            </span>
-            <span class="menu">
-                Beauty & care
-            </span>
-            <span class="menu">
-                Groceries
-            </span>
-            <span class="menu">
-                Food
-            </span>
-            <span class="menu">
-                Home & Kitchen
-            </span> 
-            <list class="menu">
+        <ul class="menu-contianer">
+            <li >
+                <a href="./../index.html" class="menu">Home</a>
+            </li>
+            <li class="menu"> Fashion
+                <ul>
+                    <li class="navbar-sub-menu">
+                        <a href="./clothings.html">Clothings</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./footwears.html">Footwear</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./beauty-personal-care.html">Beauty & care</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="menu"> Home and groceries
+                <ul>
+                    <li class="navbar-sub-menu">
+                        <a href="./food.html">Food</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./home-kitchen.html">Home & Kitchen</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./groceries.html">Groceries</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="menu">
                 <i class="fa-solid fa-bars "></i>
-            </list>
-        </div>
+                <ul>
+                    <li class="navbar-sub-menu">
+                        <a href="./clothings.html">Clothings</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./footwears.html">Footwear</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./beauty-personal-care.html">Beauty & care</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./food.html">Food</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./home-kitchen.html">Home & Kitchen</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./groceries.html">Groceries</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./about.html"> About</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./contact.html"> Contact</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
-    <div class="container">
+    </div>
+    <hr>
+    <div class="container1">
         <div class="left">
     <img src="./../img/footwears/img1.jpg">
         </div>
+        <div class="desc">
+            <p>Welcome to Your Favourite Footwear Shop </p>
+            <p class ="off-deal"> 50% Off</p>
+            <p> For 10 days Only</p>
+            <p> Hurry up.....</p>
+            <button type="button" class="header-btn">  
+                Shopping Now 
+            </button>
 
+        
+        </div>
+
+            </div>
     
-
-    </div>
       <div class="deals-section">
         
         <p><h1 class="name-brand"> Latest-offers on Footwear </h1></p>
@@ -283,7 +481,7 @@
     </div>
         
    </div>
-   
+
          <p class="section-heading"> Category </p>
             <div class="shopping-categories">
                 <img src="./../img/footwears/women category.jpg" class="categories-img">
@@ -494,13 +692,14 @@
             <div class="footer-sec">
                 <p> Quick Links </p>
                 <div class="footer-data">
-                    <p class="footer-item-list"><a href="index.html" class="footer-anchor">Home </a></p>
-                    <p class="footer-item-list"><a href="./pages/electronics.html" class="footer-anchor">Electronics </a></p>
-                    <p class="footer-item-list"><a href="./pages/clothings.html" class="footer-anchor">Fashion </a></p>
-                    <p class="footer-item-list"><a href="./pages/footwears.html" class="footer-anchor">Footwears </a></p>
-                    <p class="footer-item-list"><a href="./pages/beauty-personal-care.html" class="footer-anchor"> Beauty & personal care </a></p>
-                    <p class="footer-item-list"><a href="./pages/groceries.html" class="footer-anchor"> Groceries </a></p>
-                    <p class="footer-item-list"><a href="./pages/home-kitchen.html" class="footer-anchor"> Home & Kitchen </a></p>
+                    <p class="footer-item-list"><a href="./../index.html" class="footer-anchor">Home </a></p>
+                    <p class="footer-item-list"><a href="./../pages/electronics.html" class="footer-anchor">Electronics </a></p>
+                    <p class="footer-item-list"><a href="./../pages/clothings.html" class="footer-anchor">Fashion </a></p>
+                    <p class="footer-item-list"><a href="./../pages/footwears.html" class="footer-anchor">Footwears </a></p>
+                    <p class="footer-item-list"><a href="./../pages/beauty-personal-care.html" class="footer-anchor"> Beauty & personal care </a></p>
+                    <p class="footer-item-list"><a href="./../pages/groceries.html" class="footer-anchor"> Groceries </a></p>
+                    <p class="footer-item-list"><a href="./../pages/food.html" class="footer-anchor"> Food </a></p>
+                    <p class="footer-item-list"><a href="./../pages/home-kitchen.html" class="footer-anchor"> Home & Kitchen </a></p>
                 </div>
             </div>
             <div class="footer-sec"> 

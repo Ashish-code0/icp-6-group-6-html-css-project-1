@@ -1,296 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title> Home </title>
     <style>
-        .color-scheme{
-            color:#000000; 
-            color:#565656;/* nav */
-            color:#ffffff; /*background*/
-            color:#eeeeee; /*card-div-background*/
-            color:#8daec4; /*button*/
-            color:#bcc8cf; /* text on black div*/
-            color :#d1d1d1;
-            color:#262626;
+        .color-scheme {
+            color: #000000;
+            color: #565656;/* nav */
+            color: #ffffff;/*background*/
+            color: #eeeeee;/*card-div-background*/
+            color: #8daec4;/*button*/
+            color: #bcc8cf;/* text on black div*/
+            color: #d1d1d1;
+            color: #262626;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: #262626;
         }
-        body{
-            margin:0;
-            padding:0;
+
+        body {
+            margin: 0;
+            padding: 0;
         }
-        .navbar{
-            margin-top:0;
-            font-size:40px;
+
+        .navbar {
+            margin-top: 0;
+            font-size: 40px;
             background-color: #000;
-            color:#bcc8cf;
-            display:flex;
+            color: #bcc8cf;
+            display: flex;
             align-items: center;
         }
-        .nav-shop-logo{
-            height:70px;
-            border:1px solid black;
-            border-radius: 50%;
-        } 
-        .navbar-menu-contianer{
-            margin-left:auto;
-            display:flex;
-            justify-content: space-around;
+
+        .navbar-name-logo {
+            display: flex;
             align-items: center;
         }
-        .navbar-menu{
-            background-color: white;
-            color:black;
-            font-size: 15px;
-            font-weight: bold;
-            padding:5px 25px;
-            border:1px solid white;
-            margin:15px;
-            border-radius: 10px;
-        }
-        .tagline{
-            background-color: #eeeeee;
-            color:#000000;
-            border: 1px solid #565656;
-            margin:10px 0;
-            text-align: center;
-            font-size:25px;
-        }
-        .page-header{
-            height:200px;
-            background-color: #eee;
-            margin: 20px 0;
-            padding:10px;
-            display:flex;
-            flex-wrap: wrap;
-        }
-        .header-img{
-            margin:5px 30px;
-            height:200px;
-            border-radius: 50%;
-        }
-        .header-desc{
-            margin-left:auto;
-            margin-right:auto;
-            padding:15px;
-            font-size: 25px;
-            align-items: center;
-        }
-        .header-btn{
-            background-color: #0099ff;
-            color:white;
-            font-size: 15px;
-            font-weight:bold;
-            border-radius: 10px;
-            padding:5px 25px;
-            border:none;
-        }
-        .header-btn-arrow{
-            margin-left:15px;
-            padding:5px;
-            background-color:#f9f9f9;
-            color:#262626;
+
+        .nav-shop-logo {
+            height: 70px;
+            border: 1px solid black;
             border-radius: 50%;
         }
 
-        .section-heading{
-            margin:10px 0;
+        .navbar-menu-contianer {
+            margin-left: auto;
+            display: flex;
+            margin-right: 50px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar-menu {
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px 20px;
+            border: 1px solid white;
+            margin: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .navbar-menu:hover{
+            background-color: #565656;
+            color: #fff;
+            border-radius: 15px;
+            border: none;
+        }
+        .navbar-sub-menu {
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px 25px;
+            border: 1px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        ul {
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            display: block;
+        }
+
+        li ul {
+            display: none;
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 5px 15px 5px 15px;
+            white-space: nowrap;
+        }
+
+        li:hover ul {
+            display: block;
+            position: absolute;
+        }
+
+        li:hover li {
+            float: none;
+            font-size: 15px;
+        }
+
+        li:hover a {
+            background: white
+        }
+
+        li:hover li a:hover {
+            background: #ccc;
+        }
+
+        .tagline {
+            background-color: #fff;
+            color: #000;
+            margin-bottom: 5px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .page-header {
+            
+            background-color: #eee;
+            margin: 20px 0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #ffa41c;
+        }
+
+        .header-img {
+            margin: 5px 40px;
+            height: 200px;
+            flex-basis: 30%;
+            animation: animate 3s linear infinite;
+
+        }
+        @keyframes animate{
+            0%{
+                transform: scale(1.1);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.1);
+            }
+        }
+
+        .header-desc {
+            background-color: #f2f2f2;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            font-size: 25px;
+            align-items: center;
+        }
+
+        .header-btn {
+            background-color: #e67300;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 5px 25px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .header-btn-arrow {
+            margin-left: 15px;
+            padding: 5px;
+            background-color: #f9f9f9;
+            color: #262626;
+            border-radius: 50%;
+        }
+
+        .section-heading {
+            margin-top: 20px;
             text-align: center;
             font-size: 30px;
             font-weight: bolder;
         }
 
-        .special-offers{
+        .special-offers {
             background-color: #eee;
-            display:flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 20px 0;
-            padding:10px;
-        }
-        .special-offers-card{
-            width:200px;
-            border:1px solid #eee;
-            text-align: center;
-            padding:25px 20px;
-            margin:10px 20px;
-            background-color: white;
-            border-radius: 10px;
-        }
-        .card-img{
-            width: 120px;
-            height: 120px;
-        }
-        .card-title{
-            font-size: 15px;
-        }
-        .discount-desc{
-            font-size:medium;
-            color: green;
-        }
-        .category-name{
-            font-size: 15px;
-            color: grey;
-        }
-        .card-btn{
-            padding:5px 15px;
-            background-color:#0099ff ;
-            font-weight: bold;
-            color:white;
-            border-radius: 5px;
-            border:none;
-        }
-
-        .shopping-categories{
-            height:100px;
-            background-color: #565656;
-            color:#eee;
-            display:flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 10px 10px;
-            padding:10px;
-        }
-        .categories-img{
-            height: 80px;
-            width: 80px;
-            border-radius: 50%;
-            padding: 10px;
-        }
-        .popular-brands{
-            height:100px;
-            background-color: #565656;
-            color:#eee;
-            display:flex;
+            display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             margin: 10px 0;
-            padding:10px;
+            padding: 10px;
+            position: relative;
+            border-bottom:2px solid #ffa41c; 
         }
-        .popular-products{
-            height:250px;
-            background-color: #eee;
-            display:flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 20px 0;
-            padding:10px;
+        .special-offers-card{
+            width: 200px;
+            border: 1px solid #eee;
+            text-align: center;
+            padding: 20px 20px;
+            margin: 10px 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.5);
         }
-        .deals-on-electronics{
-            height:250px;
-            background-color: #eee;
-            display:flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 20px 0;
-            padding:10px;
+        .special-offers-card:hover{
+            background-color: #f8f8f8;
+            box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.8);
         }
-        .deals-on-clothing{
-            height:250px;
-            background-color: #eee;
-            display:flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 20px 0;
-            padding:10px;
-        }
-        .deals-on-footwear{
-            height:250px;
-            background-color: #eee;
-            display:flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 20px 0;
-            padding:10px;
-        }
-        .deals-on-beauty-care{
-            height:250px;
-            background-color: #eee;
-            display:flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 20px 0;
-            padding:10px;
+        .special-card-img {
+            width: 150px;
         }
 
-        .deals-on-groceries{
-            height:250px;
+        .special-card-title {
+            font-size: 18px;
+        }
+
+        .discount-desc {
+            font-size: medium;
+            color: green;
+        }
+        .card-btn {
+            padding: 5px 15px;
+            background-color: #0099ff;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .category-name {
+            font-size: 15px;
+            color: grey;
+        }
+        .card-btn:hover {
+            background-color: #000;
+            color: white;
+            padding: 7px 20px;
+            border-left: 3px solid #ffa41c;
+            border-bottom: 3px solid #ffa41c;
+        }       
+        .right-arrow {
+            position: absolute;
+            top: 45%;
+            right: 20px;
+            padding: 8px;
+            background-color: white;
+            color: #565656;
+            border-radius: 50%;
+            font-size: 30px;
+            box-shadow: 0 0 4px 2px grey;
+        }
+        .right-arrow:hover {
+            box-shadow: 0 0 4px 2px #0099ff;
+        }
+        .shopping-categories {
+            background-color: #565656;
+            color: #eee;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 10px 10px;
+            padding: 10px;
+            border-bottom:2px solid #ffa41c;
+        }
+        .categories-img {
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            padding: 2px;
+        }
+        .categories-img:hover {
+            height: 100px;
+            width: 100px;
+            box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+        }
+        .popular-brands {
+            height:100px;
+            background-color: #565656;
+            color: #eee;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom:2px solid #ffa41c;
+        }
+        .products-sec {
             background-color: #eee;
-            display:flex;
+            display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             margin: 20px 0;
-            padding:10px;
+            padding: 10px;
+            position: relative;
+            border-bottom:2px solid #ffa41c;
         }
-        .deals-on-food{
-            height:250px;
-            background-color: #eee;
-            display:flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 20px 0;
-            padding:10px;
+        .product-cards {
+            width: 200px;
+            border: 1px solid #eee;
+            text-align: center;
+            padding: 20px 20px;
+            margin: 10px 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.5);
         }
-       
-        .review-section{
+        .product-cards:hover {
+            background-color: #f8f8f8;
+            box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.8);
+           
+        }
+        .card-sell-img {
+            height: 150px;
+        }
+        .product-title {
+            font-size: 15px;
+        }
+        .product-discount {
+            font-size: 16px;
+            color: green;
+        }
+        .offer-price {
+            font-size: 18px;
+            color: #565656;
+        }
+        .product-btn {
+            padding: 7px 20px;
+            background-color: #0099ff;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .product-btn:hover {
+            padding: 10px 25px;
+            background-color: black;
+            border-left: 3px solid #ffa41c;
+            border-bottom: 3px solid #ffa41c;
+        }
+        .review-section {
             text-align: center;
             background-color: #8daec4;
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .customer-img{
-            width:100px;
-            height:100px;
-        }
-        .customer-name{
-            color:#262626;
-            font-size:25px;
-        }
-        .customer-review{
-            color:#565656;
-            font-size:20px;
-        }
-
-        /* Footer Section */
-        .shop-footer{
-            background-color: #000000;
-            color:#bcc8cf;
-            padding:15px;
-            text-align: center;
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .footer-sec{
-            width:300px;
-            background-color:#0f0f0f;
-            font-size: 25px;
-            border-radius: 10px;
-            padding:15px;
+            padding: 15px;
+            margin-bottom: 40px;
             display: flex;
-            flex-direction: column;
-         }
-        .footer-about-logo{
-            height:80px;
-            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .review-section-card {
+            height:180px;
+            width:280px;
+            border: 1px solid #eee;
+            text-align: center;
+            padding: 10px 30px;
+            margin: 10px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-wrap: wrap;
             align-items: center;
         }
-        .footer-shop-logo{
-            height:80px;
-            border-radius:50%;
+        .reviewer-detail{
+            width:100px;
         }
-        .footer-shop-name{
-            padding:10px;
+        .customer-img {
+            width: 80px;
+            height: 80px;
         }
-        .footer-about-desc{
+        .customer-name {
+            color: #262626;
+            font-size: 18px;
+        }
+        .customer-review {
+            width: 140px;
+            color: #565656;
+            margin-left: 20px;
+            font-size: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .return-top-btn{
+            position: absolute;
+            font-size: 13px;
+            font-weight: bolder;
+            bottom:-33px;
+            right:10px;
+            background-color: #0099ff;
+            border: 2px solid #565656;
+            color:white;
+            padding:5px;
+            border-radius: 20px;
+        }
+        /* Footer Section */
+        .shop-footer {
+            background-color: #000000;
+            color: #bcc8cf;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .footer-sec {
+            width: 300px;
+            background-color: #0f0f0f;
+            font-size: 25px;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-about-logo {
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+        .footer-shop-logo {
+            height: 80px;
+            border-radius: 50%;
+        }
+        .footer-shop-name {
+            padding: 10px;
+        }
+        .footer-about-desc {
             text-align: justify;
             font-size: 18px;
-            padding:15px; 
+            padding: 15px;
         }
-        .footer-data{
+        .footer-data {
             margin-left: 20px;
             margin-top: 20px;
             font-size: 18px;
@@ -298,314 +453,1078 @@
             flex-direction: column;
             align-items: flex-start;
         }
-        .footer-item-list{
-            margin:5px;
-            font-size: 18px;
-            padding:5px;
+        .footer-item-list {
+            margin: 5px;
+            font-size:18px;
+            padding: 5px;
+            cursor: pointer;
         }
-        .footer-anchor{
-            color:#bcc8cf;
+        .footer-item-list:hover {
+           color:#ff9800;
+
+        }
+        .footer-anchor {
+            color: #bcc8cf;
+        }
+        .footer-anchor:hover {
+            color: #ff9800;
+        }
+        @media only screen and (max-width:700px) {
+            hr{
+                display:none;
+            }
+            .navbar {
+                font-size: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar-menu {
+                background-color: white;
+                color: black;
+                font-size: 15px;
+                font-weight: bold;
+                padding: 5px 15px;
+                border: 1px solid white;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .navbar-sub-menu {
+                background-color: white;
+                color: black;
+                font-size: 15px;
+                font-weight: bold;
+                padding: 5px 25px;
+                border: 1px solid white;
+                border-radius: 10px;
+            }    
+            .page-header {
+                height: auto;
+                margin: 10px 0;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .header-img {
+                margin: 25px 10px;
+                height: 125px;
+            }
+            .header-desc {
+                width: 350px;
+                margin-left:auto;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 10px;
+                font-weight: bold;
+                font-size: 15px;
+                align-items: flex-start;
+            }
+            .header-btn {
+                font-size: 15px;
+                font-weight: bold;
+                padding: 2px 25px;
+            }
+
+            .section-heading {
+                font-size: 25px;
+            }
+
+            .special-offers {
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+            }
+            .special-offers-card{
+                height: 200px;
+                width: 80vw;
+                padding: 10px 10px;
+                margin: 10px 10px;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+            }
+            .special-card-desc{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .special-card-img {
+                height: 150px;
+                margin: 15px;
+            }
+            .right-arrow {
+                top:10px;
+                right:10px;
+                color:#565656;
+                font-size: 15px;
+            }
+            .shopping-categories {
+                height: auto;
+                padding:20px;
+            }
+            .categories-img {
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                padding: 10px;
+                margin:5px 10px;
+            }
+            .products-sec {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .product-cards {
+                height: 200px;
+                width: 80vw;
+                padding: 10px 10px;
+                margin: 10px 10px;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+            }
+            .card-sell-img {
+                height: 150px;
+                margin:0 25px;
+            }
+            .card-desc{
+                width:300px;
+                margin-left:20px;
+                text-align: center;
+            }
+            .review-section-card {
+                height:150px;
+                width:200px;
+                padding: 10px 15px;
+                margin: 10px 15px;
+            }
+             .reviewer-detail{
+               width:70px;
+            }
+
+            .customer-img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .customer-name {
+                color: #262626;
+                font-size: 15px;
+            }
+
+            .customer-review {
+                width: 90px;
+                font-size: 15px;
+                text-align: center;
+            }
+
+            .shop-footer {
+                background-color: #000000;
+                color: #bcc8cf;
+                padding: 15px;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .footer-sec {
+                width: auto;
+                margin: 15px 0;
+                font-size: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .footer-about-logo {
+                height: 60px;
+            }
+
+            .footer-shop-logo {
+                height: 60px;
+            }
+
+            .footer-about-desc {
+                font-size: 15px;
+            }
+
+            .footer-data {
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-item-list {
+                margin: 5px;
+                font-size: 15px;
+                padding: 5px;
+            }
+        }
+        @media only screen and (min-width:701px) and (max-width:1000px) {
+            .navbar {
+                font-size: 25px;
+                display: flex;
+                align-items: center;
+            }
+            .navbar-menu {
+                font-size: 15px;          
+                padding: 5px 15px;
+                margin: 10px; 
+            }
+            .page-header {
+                height: auto;
+                margin: 10px 0;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .header-img {
+                margin: 20px;
+                height: 160px;
+
+            }
+
+            .header-desc {
+                width: 400px;
+                font-size: 18px;
+            }
+
+            .header-btn {
+                font-size: 16px;
+                font-weight: bold;
+                padding: 3px 25px;
+            }
+
+            .section-heading {
+                font-size: 25px;
+                margin-top: 30px;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .special-offers {
+                background-color: #eee;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin: 10px 0;
+                padding: 10px;
+                position: relative;
+            }
+            .products-sec {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 20px 0;
+                padding: 10px;
+                position: relative;
+                border-bottom:2px solid #ffa41c;
+            }
+            .product-cards {
+                margin: 10px auto;
+            }
+                   
+            .right-arrow {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                font-size: 20px;
+                padding: 4px;
+                
+            }
+            .shopping-categories {
+                height: auto;
+                padding:20px;
+            }
+            .categories-img {
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+                padding: 10px;
+                margin:5px 10px;
+            }
+            .shop-footer {
+                background-color: #000000;
+                color: #bcc8cf;
+                padding: 15px;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .footer-sec {
+                width: auto;
+                margin: 15px 0;
+                font-size: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .footer-about-logo {
+                height: 60px;
+            }
+
+            .footer-shop-logo {
+                height: 60px;
+            }
+
+            .footer-about-desc {
+                font-size: 15px;
+            }
+
+            .footer-data {
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-item-list {
+                margin: 5px;
+                font-size: 15px;
+                padding: 5px;
+            }
+            }
+            @media only screen and (min-width:1001px) and (max-width:1300px) {
+            .navbar {
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+            }
+            hr{
+                display:none;
+            }
+            .header-img {
+                margin: 20px;
+                height: 180px;
+            }
+
+            .header-desc {
+                width: 400px;
+                font-size: 20px;
+            }
+
+            .header-btn {
+                font-size: 16px;
+                font-weight: bold;
+                padding: 3px 25px;
+            }
+
+            .section-heading {
+                font-size: 25px;
+                margin-top: 30px;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .special-offers {
+                background-color: #eee;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin: 10px 0;
+                padding: 10px;
+                position: relative;
+            }
+            .products-sec {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 20px 0;
+                padding: 10px;
+                position: relative;
+                border-bottom:2px solid #ffa41c;
+            }
+            .product-cards {
+                margin: 10px auto;
+            }
+                   
+            .right-arrow {
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                padding: 4px;
+                font-size: 30px;
+            }
+            .shopping-categories {
+                height: auto;
+                padding:20px;
+            }
+            .categories-img {
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+                padding: 10px;
+                margin:5px 10px;
+            }
+            .categories-img:hover{
+                height: 80px;
+                width: 80px;
+            } 
+            .shop-footer {
+                background-color: #000000;
+                color: #bcc8cf;
+                padding: 15px;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .footer-sec {
+                width: 400px;
+                margin: 15px 0;
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .footer-about-desc {
+                font-size: 15px;
+            }
+
+            .footer-data {
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-item-list {
+                margin: 5px;
+                font-size: 15px;
+                padding: 5px;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="navbar">
-            <img class="nav-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
-        <span> Dream's Land</span>
-
-        <div class="navbar-menu-contianer">
-            
-            <span class="navbar-menu">
-                <a href="./pages/electronics.html">Electronics</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/clothings.html">Clothings</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/footwears.html">Footwear</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/beauty-personal-care.html">Beauty & care</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/groceries.html">Groceries</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/food.html">Food</a>
-            </span>
-            <span class="navbar-menu">
-                <a href="./pages/home-kitchen.html">Home & Kitchen</a>
-            </span> 
-            <list class="navbar-menu">
-                <i class="fa-solid fa-bars "></i>
-            </list>
-        </div>
-    </div> 
-
-    <div class="tagline">
+    <div class="tagline" >
         A place where your dreams come true.
     </div>
+    <div class="navbar" id="home-top">
+        <div class="navbar-name-logo">
+            <img class="nav-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
+            <span> Dream's Land</span>
+        </div>
+        <ul class="navbar-menu-contianer">
 
-    <div class="page-header"> 
-              <img class="header-img" src="./img/home-page/header-img.jpg" alt="">
+            <li class="navbar-menu" style="padding:0 25px;">
+                <a href="./pages/electronics.html">Electronics</a>
+            </li>
+            <li class="navbar-menu"> Fashion
+                <ul>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/clothings.html">Clothings</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/footwears.html">Footwear</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/beauty-personal-care.html">Beauty & care</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="navbar-menu"> Home and groceries
+                <ul>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/food.html">Food</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/home-kitchen.html">Home & Kitchen</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/groceries.html">Groceries</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="navbar-menu">
+                <i class="fa-solid fa-bars "></i>
+                <ul>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/clothings.html">Clothings</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/footwears.html">Footwear</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/beauty-personal-care.html">Beauty & care</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/food.html">Food</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/home-kitchen.html">Home & Kitchen</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/groceries.html">Groceries</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/about.html"> About</a>
+                    </li>
+                    <li class="navbar-sub-menu">
+                        <a href="./pages/contact.html"> Contact</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="page-header">
+        <img class="header-img" src="./img/home-page/header-img1.jpg" >
 
         <div class="header-desc">
             <p>Welcome to Your Favourite Shopping Destination </p>
             <p> A online store with ambition of fulfilling your needs at a price lower than your dreams.</p>
-            <button type="button" class="header-btn">  
-                Explore the Shop 
+            <button type="button" class="header-btn">
+                Explore the Shop
                 <i class="fa-solid fa-arrow-right header-btn-arrow"></i>
             </button>
-        </div>        
-    </div>  
-    <hr/><hr/>
+        </div>
+    </div>
+
 
     <div class="deals-section">
-            <p class="section-heading"> Special Offers </p>
+        <p class="section-heading"> Special Offers </p>
 
-            <div class="special-offers">
-                <div class="special-offers-card">
-                    <img src="./img/home-page/elctronics.png" class="card-img">
+        <div class="special-offers" id="discount-offers">
+            <div class="special-offers-card">
+                <img src="./img/home-page/electronics-top-deal.webp" class="special-card-img">
+                <div class="special-card-desc">
                     <p class="card-title">Top Deals on Electronics</p>
-                    <p class="discount-desc"> Upto 50% of</p>
+                    <p class="discount-desc"> Upto 50% off</p>
                     <p class="category-name">Mobile, Laptops, Earphones and More</p>
                     <button class="card-btn"> BUY </button>
                 </div>
-                <div class="special-offers-card">
-                    <img src="./img/home-page/footwear.png" class="card-img">
+            </div>
+            <div class="special-offers-card">
+                <img src="./img/home-page/footware-top-deal.jpg" class="special-card-img">
+                <div class="special-card-desc">
                     <p class="card-title">Top Deals on Footwear</p>
-                    <p class="discount-desc"> Upto 40% of</p>
+                    <p class="discount-desc"> Upto 40% off</p>
                     <p class="category-name">Shoes, Sandals, Slippers and More</p>
                     <button class="card-btn"> BUY </button>
                 </div>
-                <div class="special-offers-card">
-                    <img src="./img/home-page/clothings.png" class="card-img">
+            </div>
+            <div class="special-offers-card">
+                <img src="./img/home-page/fashion-top-deal.jpg" class="special-card-img">
+                <div class="special-card-desc">
                     <p class="card-title">Top Deals on Clothings</p>
-                    <p class="discount-desc"> Upto 30% of</p>
+                    <p class="discount-desc"> Upto 30% off</p>
                     <p class="category-name">Shirts, Trousers, Sarees and More</p>
                     <button class="card-btn"> BUY </button>
                 </div>
-                <div class="special-offers-card">
-                    <img src="./img/home-page/beauty1.png" class="card-img">
+            </div>
+            <div class="special-offers-card">
+                <img src="./img/home-page/beauty-top-deal.jpg" class="special-card-img">
+                <div class="special-card-desc">
                     <p class="card-title">Top Deals on beauty and care</p>
-                    <p class="discount-desc"> Upto 50% of</p>
+                    <p class="discount-desc"> Upto 50% off</p>
                     <p class="category-name">Hair care, Skincare and Make-up More</p>
                     <button class="card-btn"> BUY </button>
-                </div>
-                <div class="special-offers-card">
-                    <img src="./img/home-page/grocery1.png" class="card-img">
+            </div>
+            </div>
+            <div class="special-offers-card">
+                <img src="./img/home-page/grocery-top-deal.jfif" class="special-card-img">
+                <div class="special-card-desc">
                     <p class="card-title">Top Deals on Groceries</p>
-                    <p class="discount-desc"> Upto 50% of</p>
+                    <p class="discount-desc"> Upto 50% off</p>
                     <p class="category-name">Grains, Dairy, Spices, Flours and More</p>
                     <button class="card-btn"> BUY </button>
                 </div>
             </div>
+            <i class="fa-solid fa-arrow-right right-arrow"></i>
+        </div>
 
-            <hr/>
+        <p class="section-heading"> Shop By Category </p>
+        <div class="shopping-categories">
+            <a href="#discount-offers"><img src="img/home-page/discount.png" class="categories-img"></a>
+            <a href="./pages/electronics.html"><img src="img/home-page/iphone.webp" class="categories-img"></a>
+            <a href="./pages/electronics.html"><img src="img/home-page/laptop-catgory.webp" class="categories-img"></a>
+            <a href="./pages/clothings.html"><img src="img/home-page/fashion-category.jpg" class="categories-img"></a>
+            <a href="./pages/home-kitchen.html"> <img src="img/home-page/cleaning-category.jpg" class="categories-img"> </a>
+            <a href="./pages/beauty-personal-care.html"> <img src="img/home-page/beauty-catgory.webp" class="categories-img"></a>
+            <a href="./pages/groceries.html"> <img src="img/home-page/groceries-category.webp" class="categories-img"></a>
+        </div>
 
-            <p class="section-heading"> Shop By Category </p>
-            <div class="shopping-categories">
-                <img src="img/home-page/top-offer.webp" class="categories-img">
-                <img src="img/home-page/category-laptop.webp" class="categories-img">
-                <img src="img/home-page/category-mobiles.webp" class="categories-img">
-                <img src="img/home-page/clothings.webp" class="categories-img">
-                <img src="img/home-page/home.webp" class="categories-img">
-                <img src="img/home-page/beauty.png" class="categories-img">
-                <img src="img/home-page/grocery.png" class="categories-img">
+        <p class="section-heading"> Popular Products </p>
+        <div class="products-sec">
+            <div class="product-cards">
+                <img src="./img/home-page/hair-serum.jpg" class="card-sell-img">
+                <div class="card-desc">
+                    <p class="product-title">Minimalist Hair Growth Serum With Redensyl, Anagain, Procapil, Capixyl &
+                        Baicapil</p>
+                    <p class="product-discount"> 30% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
             </div>
+            <div class="product-cards">
+                <img src="./img/home-page/trolley-bag.jpg" class="card-sell-img">
 
-            <hr/>
+                <div class="card-desc">
+                    <p class="product-title">Safari Pentagon 55 Cms Small Cabin Polypropylene Hard Sided Trolley Bag,
+                        Cyan Blue</p>
+                    <p class="product-discount"> 27% off</p>
+                    <p class="offer-price">₹2,299</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/mixer.jpg" class="card-sell-img">
 
-            <p class="section-heading"> popular products </p>
-            <div class="popular-products">
-                
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-                 <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
+                <div class="card-desc">
+                    <p class="product-title">Philips HL7756/00 Mixer Grinder 750 Watt, 3 Speed Control and Pulse
+                        function</p>
+                    <p class="product-discount"> 43% off</p>
+                    <p class="offer-price">₹2,9999</p>
+                    <button class="product-btn"> BUY </button>
                 </div>
             </div>
-            <hr/>
-            <p class="section-heading"> Electronics deals </p>
-            <div class="deals-on-electronics">
-               
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-                 <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-                 <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-            </div>
-            <hr/>
-            <p class="section-heading"> Clothing deals </p>
-            <div class="deals-on-clothing">
-               
-                 <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-                 <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-            </div>
-            <hr/>
-                <p class="section-heading"> popular brands </p>
-            <div class="popular-brands">
-                
-            </div>
-            <hr/>
-            <p class="section-heading"> footwear deals </p>
-            <div class="deals-on-footwear">
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-            </div>
-            <hr/>
-            <p class="section-heading"> beauty  & personal care dels </p>
-            <div class="deals-on-beauty-care">
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-            </div>
-            <hr/>
-            <p class="section-heading"> popular-brands </p>
-            <div class="popular-brands">
-                
-            </div>
-            <hr/>
-            <p class="section-heading"> groceries deals </p>
-            <div class="deals-on-groceries">
-                
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-            </div>
-            <hr/>
-            <p class="section-heading"> Packaged food deals </p>
-            <div class="deals-on-food">
-                
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div> 
-                <div class="special-offers-card">
-                    <h4> cards</h4>
-                    <button class="card-btn"> BUY </button>
-                </div>
-            </div>
-    </div>
-    <hr/>
+            <div class="product-cards">
+                <img src="./img/home-page/perfume-set.webp" class="card-sell-img">
 
-        <p class="section-heading"> What do our Customers have to say about us...  </p>
-        <div class="review-section">
-            <div class="special-offers-card">
-                    <img src="./img/home-page/suraj-sir.png" class="customer-img" />
-                    <h3 class="customer-name"> Suraj Sir</h3>
-                    <p class="customer-review"> Had a great experience with them 😊  </p>
+                <div class="card-desc">
+                    <p class="product-title">DJOKR Perfume Gift Set for Men Pack of 4x20 ML | Eau De Parfum |</p>
+                    <p class="product-discount"> 15% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
             </div>
-            <div class="special-offers-card">
-                    <img src="./img/home-page/vaibhavi-mam.png" class="customer-img" />
-                    <h3 class="customer-name"> Vaibhavi mam</h3>
-                    <p class="customer-review">  👍  </p>
-            </div>    
-            <div class="special-offers-card">
-                <img src="./img/home-page/anand-sir.png" class="customer-img" />
-                <h3 class="customer-name"> Anand sir</h3>
-                <p class="customer-review">   ✌️ </p>
+            <div class="product-cards">
+                <img src="./img/home-page/tshirt.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Urbano Fashion Men's Printed Full Sleeve Slim Fit Cotton T-Shirt</p>
+                    <p class="product-discount"> 70% off</p>
+                    <p class="offer-price">₹399</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
             </div>
-            <div class="special-offers-card">
-                <img src="./img/home-page/vaishnavi-mam.png" class="customer-img" />
-                <h3 class="customer-name"> Vaishanavi mam</h3>
-                <p class="customer-review">🥳  </p>
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-right right-arrow"></i>
+                </a>
+        </div>
+
+        <p class="section-heading"> Electronics deals </p>
+        <div class="products-sec">
+            <div class="product-cards">
+                <img src="./img/home-page/hair-serum.jpg" class="card-sell-img">
+                <div class="card-desc">
+                    <p class="product-title">Minimalist Hair Growth Serum With Redensyl, Anagain, Procapil, Capixyl &
+                        Baicapil</p>
+                    <p class="product-discount"> 30% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
             </div>
+            <div class="product-cards">
+                <img src="./img/home-page/trolley-bag.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Safari Pentagon 55 Cms Small Cabin Polypropylene Hard Sided Trolley Bag,
+                        Cyan Blue</p>
+                    <p class="product-discount"> 27% off</p>
+                    <p class="offer-price">₹2,299</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/mixer.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Philips HL7756/00 Mixer Grinder 750 Watt, 3 Speed Control and Pulse
+                        function</p>
+                    <p class="product-discount"> 43% off</p>
+                    <p class="offer-price">₹2,9999</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/perfume-set.webp" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">DJOKR Perfume Gift Set for Men Pack of 4x20 ML | Eau De Parfum |</p>
+                    <p class="product-discount"> 15% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/tshirt.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Urbano Fashion Men's Printed Full Sleeve Slim Fit Cotton T-Shirt</p>
+                    <p class="product-discount"> 70% off</p>
+                    <p class="offer-price">₹399</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <a href="./pages/electronics.html">
+            <i class="fa-solid fa-arrow-right right-arrow"></i>
+            </a>
+        </div>
+
+        <p class="section-heading"> Clothing deals </p>
+        <div class="products-sec">
+            <div class="product-cards">
+                <img src="./img/home-page/hair-serum.jpg" class="card-sell-img">
+                <div class="card-desc">
+                    <p class="product-title">Minimalist Hair Growth Serum With Redensyl, Anagain, Procapil, Capixyl &
+                        Baicapil</p>
+                    <p class="product-discount"> 30% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/trolley-bag.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Safari Pentagon 55 Cms Small Cabin Polypropylene Hard Sided Trolley Bag,
+                        Cyan Blue</p>
+                    <p class="product-discount"> 27% off</p>
+                    <p class="offer-price">₹2,299</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/mixer.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Philips HL7756/00 Mixer Grinder 750 Watt, 3 Speed Control and Pulse
+                        function</p>
+                    <p class="product-discount"> 43% off</p>
+                    <p class="offer-price">₹2,9999</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/perfume-set.webp" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">DJOKR Perfume Gift Set for Men Pack of 4x20 ML | Eau De Parfum |</p>
+                    <p class="product-discount"> 15% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/tshirt.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Urbano Fashion Men's Printed Full Sleeve Slim Fit Cotton T-Shirt</p>
+                    <p class="product-discount"> 70% off</p>
+                    <p class="offer-price">₹399</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <a href="./pages/clothings.html">
+            <i class="fa-solid fa-arrow-right right-arrow"></i>
+            </a>
+        </div>
+
+        <p class="section-heading"> popular brands </p>
+        <div class="popular-brands">
+
+        </div>
+
+        <p class="section-heading"> footwear deals </p>
+        <div class="products-sec">
+            <div class="product-cards">
+                <img src="./img/home-page/hair-serum.jpg" class="card-sell-img">
+                <div class="card-desc">
+                    <p class="product-title">Minimalist Hair Growth Serum With Redensyl, Anagain, Procapil, Capixyl &
+                        Baicapil</p>
+                    <p class="product-discount"> 30% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/trolley-bag.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Safari Pentagon 55 Cms Small Cabin Polypropylene Hard Sided Trolley Bag,
+                        Cyan Blue</p>
+                    <p class="product-discount"> 27% off</p>
+                    <p class="offer-price">₹2,299</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/mixer.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Philips HL7756/00 Mixer Grinder 750 Watt, 3 Speed Control and Pulse
+                        function</p>
+                    <p class="product-discount"> 43% off</p>
+                    <p class="offer-price">₹2,9999</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/perfume-set.webp" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">DJOKR Perfume Gift Set for Men Pack of 4x20 ML | Eau De Parfum |</p>
+                    <p class="product-discount"> 15% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/tshirt.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Urbano Fashion Men's Printed Full Sleeve Slim Fit Cotton T-Shirt</p>
+                    <p class="product-discount"> 70% off</p>
+                    <p class="offer-price">₹399</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <a href="./pages/footwears.html">
+                <i class="fa-solid fa-arrow-right right-arrow"></i>
+            </a>
+        </div>
+
+        <p class="section-heading"> beauty & personal care dels </p>
+        <div class="products-sec">
+            <div class="product-cards">
+                <img src="./img/home-page/hair-serum.jpg" class="card-sell-img">
+                <div class="card-desc">
+                    <p class="product-title">Minimalist Hair Growth Serum With Redensyl, Anagain, Procapil, Capixyl &
+                        Baicapil</p>
+                    <p class="product-discount"> 30% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/trolley-bag.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Safari Pentagon 55 Cms Small Cabin Polypropylene Hard Sided Trolley Bag,
+                        Cyan Blue</p>
+                    <p class="product-discount"> 27% off</p>
+                    <p class="offer-price">₹2,299</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/mixer.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Philips HL7756/00 Mixer Grinder 750 Watt, 3 Speed Control and Pulse
+                        function</p>
+                    <p class="product-discount"> 43% off</p>
+                    <p class="offer-price">₹2,9999</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/perfume-set.webp" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">DJOKR Perfume Gift Set for Men Pack of 4x20 ML | Eau De Parfum |</p>
+                    <p class="product-discount"> 15% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/tshirt.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Urbano Fashion Men's Printed Full Sleeve Slim Fit Cotton T-Shirt</p>
+                    <p class="product-discount"> 70% off</p>
+                    <p class="offer-price">₹399</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <a href="./pages/beauty-personal-care.html">
+                <i class="fa-solid fa-arrow-right right-arrow"></i>
+            </a>
+        </div>
+
+        <p class="section-heading"> popular-brands </p>
+        <div class="popular-brands">
+
+        </div>
+
+        <p class="section-heading"> groceries deals </p>
+        <div class="products-sec">
+            <div class="product-cards">
+                <img src="./img/home-page/hair-serum.jpg" class="card-sell-img">
+                <div class="card-desc">
+                    <p class="product-title">Minimalist Hair Growth Serum With Redensyl, Anagain, Procapil, Capixyl &
+                        Baicapil</p>
+                    <p class="product-discount"> 30% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/trolley-bag.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Safari Pentagon 55 Cms Small Cabin Polypropylene Hard Sided Trolley Bag,
+                        Cyan Blue</p>
+                    <p class="product-discount"> 27% off</p>
+                    <p class="offer-price">₹2,299</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/mixer.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Philips HL7756/00 Mixer Grinder 750 Watt, 3 Speed Control and Pulse
+                        function</p>
+                    <p class="product-discount"> 43% off</p>
+                    <p class="offer-price">₹2,9999</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/perfume-set.webp" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">DJOKR Perfume Gift Set for Men Pack of 4x20 ML | Eau De Parfum |</p>
+                    <p class="product-discount"> 15% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/tshirt.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Urbano Fashion Men's Printed Full Sleeve Slim Fit Cotton T-Shirt</p>
+                    <p class="product-discount"> 70% off</p>
+                    <p class="offer-price">₹399</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <a href="./pages/groceries.html">
+                <i class="fa-solid fa-arrow-right right-arrow"></i>
+            </a>
+        </div>
+
+        <p class="section-heading"> Packaged food deals </p>
+        <div class="products-sec">
+            <div class="product-cards">
+                <img src="./img/home-page/hair-serum.jpg" class="card-sell-img">
+                <div class="card-desc">
+                    <p class="product-title">Minimalist Hair Growth Serum With Redensyl, Anagain, Procapil, Capixyl &
+                        Baicapil</p>
+                    <p class="product-discount"> 30% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/trolley-bag.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Safari Pentagon 55 Cms Small Cabin Polypropylene Hard Sided Trolley Bag,
+                        Cyan Blue</p>
+                    <p class="product-discount"> 27% off</p>
+                    <p class="offer-price">₹2,299</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/mixer.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Philips HL7756/00 Mixer Grinder 750 Watt, 3 Speed Control and Pulse
+                        function</p>
+                    <p class="product-discount"> 43% off</p>
+                    <p class="offer-price">₹2,9999</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/perfume-set.webp" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">DJOKR Perfume Gift Set for Men Pack of 4x20 ML | Eau De Parfum |</p>
+                    <p class="product-discount"> 15% off</p>
+                    <p class="offer-price">₹799</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <div class="product-cards">
+                <img src="./img/home-page/tshirt.jpg" class="card-sell-img">
+
+                <div class="card-desc">
+                    <p class="product-title">Urbano Fashion Men's Printed Full Sleeve Slim Fit Cotton T-Shirt</p>
+                    <p class="product-discount"> 70% off</p>
+                    <p class="offer-price">₹399</p>
+                    <button class="product-btn"> BUY </button>
+                </div>
+            </div>
+            <a href="./pages/food.html">
+                <i class="fa-solid fa-arrow-right right-arrow"></i>
+            </a>
         </div>
     </div>
-    <hr/>
 
+    <p class="section-heading"> What do our Customers have to say about us... </p>
+    <div class="review-section">
+        <div class="review-section-card">
+            <div class="reviewer-detail">
+                <img src="./img/home-page/suraj-sir.png" class="customer-img" />
+                <h3 class="customer-name"> Suraj Sir</h3>
+            </div>
+            <p class="customer-review"> Had a great experience with them 😊 </p>
+        </div>
+        <div class="review-section-card">
+            <div class="reviewer-detail">
+                <img src="./img/home-page/vaibhavi-mam.png" class="customer-img" />
+                <h3 class="customer-name"> Vaibhavi mam</h3>
+            </div>
+            <p class="customer-review"> 👍 </p>
+        </div>
+        <div class="review-section-card">
+            <div class="reviewer-detail">
+                <img src="./img/home-page/anand-sir.png" class="customer-img" />
+                <h3 class="customer-name"> Anand sir</h3>
+            </div>
+            <p class="customer-review"> ✌️ </p>
+        </div>
+        <div class="review-section-card">
+            <div class="reviewer-detail">
+                <img src="./img/home-page/vaishnavi-mam.png" class="customer-img" />
+                <h3 class="customer-name"> Vaishanavi mam</h3>
+            </div>
+            <p class="customer-review">🥳 </p>
+        </div>
+        <span class="return-top-btn">
+            <a href="#home-top" style="color: white;">   Return to top
+            <i class="fa-solid fa-arrow-up " style="color: #fff;"></i> </a>
+        </span>
+    </div>
+    
 
-
+    
 
     <!-- Footer Section -->
-
-    <div style="background-color: #000; padding-top: 10px;">
-    <div class="shop-footer">
+    <div style="background-color: #000; padding-top: 10px; margin-top: 10px;">
+        <div class="shop-footer">
+          
             <div class="footer-sec">
                 <div class="footer-about-logo">
                     <img class="footer-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
@@ -615,61 +1534,79 @@
                     <p>A online shopping experience that you will not experience anywhere else.</p>
                     <p>Experience the difference with us as your shopping partners.</p>
                     <p>A group of individuals who wish to enrich your shopping experience.</p>
-                    <span><a class="footer-anchor" href="./pages/about.html"> More about us <i class="fa-solid fa-arrow-right header-btn-arrow"></i> </a></span>
+                    <span><a class="footer-anchor" href="./pages/about.html"> More about us <i
+                                class="fa-solid fa-arrow-right header-btn-arrow"></i> </a></span>
                 </div>
             </div>
-           
+            <hr />
             <div class="footer-sec">
                 <p> Quick Links </p>
                 <div class="footer-data">
                     <p class="footer-item-list"><a href="index.html" class="footer-anchor">Home </a></p>
-                    <p class="footer-item-list"><a href="./pages/electronics.html" class="footer-anchor">Electronics </a></p>
+                    <p class="footer-item-list"><a href="./pages/electronics.html" class="footer-anchor">Electronics
+                        </a></p>
                     <p class="footer-item-list"><a href="./pages/clothings.html" class="footer-anchor">Fashion </a></p>
-                    <p class="footer-item-list"><a href="./pages/footwears.html" class="footer-anchor">Footwears </a></p>
-                    <p class="footer-item-list"><a href="./pages/beauty-personal-care.html" class="footer-anchor"> Beauty & personal care </a></p>
-                    <p class="footer-item-list"><a href="./pages/groceries.html" class="footer-anchor"> Groceries </a></p>
-                    <p class="footer-item-list"><a href="./pages/home-kitchen.html" class="footer-anchor"> Home & Kitchen </a></p>
+                    <p class="footer-item-list"><a href="./pages/footwears.html" class="footer-anchor">Footwears </a>
+                    </p>
+                    <p class="footer-item-list"><a href="./pages/beauty-personal-care.html" class="footer-anchor">
+                            Beauty & personal care </a></p>
+                    <p class="footer-item-list"><a href="./pages/groceries.html" class="footer-anchor"> Groceries </a>
+                    </p>
+                    <p class="footer-item-list"><a href="./pages/food.html" class="footer-anchor"> Food </a>
+                    </p>
+                    <p class="footer-item-list"><a href="./pages/home-kitchen.html" class="footer-anchor"> Home &
+                            Kitchen </a></p>
                 </div>
             </div>
-            <div class="footer-sec"> 
+            <div class="footer-sec">
                 <p> Social :</p>
                 <div class="footer-data">
                     <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp;  <a href="mailto:suraj@roadtocode.org" class="footer-anchor">suraj@roadtocode.org</a>
-                     </p>
+                        &nbsp; &nbsp; <a href="mailto:ashishgore382@gmail.com"
+                            class="footer-anchor">ashishgore382@gmail.com</a>
+                    </p>
 
                     <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
                         &nbsp; &nbsp; <a href="tel:+918805803087" class="footer-anchor"> +91-8805803087</a>
                     </p>
 
-                    <p class="footer-item-list"> <i class="fa-brands fa-facebook" style="color: #ffffff;"></i> &nbsp; &nbsp; Facebook </p>
-                    
-                    <p class="footer-item-list"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i> &nbsp; &nbsp; Twitter</p>
-                    
-                    <p class="footer-item-list"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> &nbsp; &nbsp;  Instagram</p>
-                    
-                    <p class="footer-item-list"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> &nbsp; &nbsp; LinkedIn</p>
+                    <p class="footer-item-list"> <i class="fa-brands fa-facebook" style="color: #ffffff;"></i> &nbsp;
+                        &nbsp; Facebook </p>
+
+                    <p class="footer-item-list"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i> &nbsp;
+                        &nbsp; Twitter</p>
+
+                    <p class="footer-item-list"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> &nbsp;
+                        &nbsp; Instagram</p>
+
+                    <p class="footer-item-list"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> &nbsp;
+                        &nbsp; LinkedIn</p>
                 </div>
             </div>
-            <div class="footer-sec"> 
+            <div class="footer-sec">
                 <p> Contact us :</p>
                 <div class="footer-data">
+                    
                     <p class="footer-item-list"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp; &nbsp; <a href="https://goo.gl/maps/2v5cX44ZgVjsnx5Y9" target="blank" class="footer-anchor">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Manjari BK, pune - 412307</a>
+                        &nbsp; &nbsp; <a href="https://maps.app.goo.gl/N3ngnED1vBDYVvj19" target="blank"
+                            class="footer-anchor"> B. D. College of Engineering, Wardha</a>
                     </p>
                     <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp;  <a href="mailto:ashishgore393@gmail.com" class="footer-anchor">ashishgore393@gmail.com</a>
-                     </p>
+                        &nbsp; &nbsp; <a href="mailto:ashishgore393@gmail.com"
+                            class="footer-anchor">ashishgore393@gmail.com</a>
+                    </p>
 
                     <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
                         &nbsp; &nbsp; <a href="tel:+918975004427" class="footer-anchor"> +91-8975004427</a>
                     </p>
                 </div>
             </div>
-    </div>
-    <hr/>
-    <p style="text-align: center; font-size: 20px; color: white; background-color: #000; margin: 0; padding:0;"> Made by ICP 6 Group 6 (2023) </p>
+        </div>
+        
+        <p style="text-align: center; font-size: 20px; color: white; background-color: #000; margin: 0; padding:0; border-top: 1px solid white;">
+            Made by ICP 6 Group 6 (2023) </p>
     </div>
     <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
