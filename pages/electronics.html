@@ -83,8 +83,6 @@
             list-style: none;
         }
 
-<<<<<<< HEAD
-=======
         ul li {
             display: block;
         }
@@ -117,48 +115,49 @@
         li:hover li a:hover {
             background: #ccc;
         }
-
         .supersale-container{
             display: flex;
-            align-items: left;
-            background-color: #eee;
             flex-wrap: wrap;
-
+            align-items: center;
+        }
+        .supersale-img{
+            width: 250px;
+            height: 300px;
         }
         .desc{
-            padding:15px;
-            font-size: 25px;
-            align-items: center;
+            font-size: large;
             text-align: center;
-        }
-        .feature-container{
-            display: flex;
-            font-size: 20px;
-        }       
-        .feature-img{
-            height: 60px;
-            width: 60px;
+            
         }
         .left{
-            margin-top: 30px;
-            margin-right: 40px;
-            margin-left: 40px;
-            flex-basis: 50%;
-            animation: animate 3s linear infinite;
-            filter: drop-shadow(0px 0px 10px rgb(151, 186, 214) );
+    	margin-top: 30px;
+        margin-left: 100px;
+        margin-right: 0px;
+    	flex-basis: 50%;
+    	animation: animate 3s linear infinite;
         }
-        @keyframes animate{
-            0%{
-                transform: scale(1.1);
-            }
-            50%{
-                transform: scale(1);
-            }
-            100%{
-                transform: scale(1.1);
-            }
+@keyframes animate{
+	0%{
+		transform: scale(1.1);
+	}
+	50%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.1);
+	}
+}
+        .feature-container{
+            display: flex;
+            
         }
->>>>>>> 6b5c33b8cc9db12a223f2c95621e5e5a2a01801b
+        .feature-img{
+            width: 40px;
+            height: 40px;
+        }
+        .feature-para{
+            font-size: small;
+        }
         .heading-for-item{
             text-align: center;
         }
@@ -203,7 +202,8 @@
             display: block;
             justify-content: center;
             padding: 10px;
-            margin: 10px;   
+            margin: 10px;
+            margin-left: 0px;   
         }
         .img-in-card{
             width: 150px;
@@ -383,11 +383,13 @@
         }
         .desc{
             font-size: large;
+            margin-left: auto;
+            margin-right: auto;
         }
         .left{
             margin-top: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     @media only screen and (max-width:1000px) and (min-width:701px){
@@ -525,11 +527,11 @@
             <p>Collect your offer now</p>
             <div class="feature-container">
                 <img src="./../img/electronics/free-delivery.png" alt="free delivery" class="feature-img">
-                <p class=".feature-para">Free <br>Delivery</p>
+                <p class="feature-para">Free <br>Delivery</p>
                 <img src="./../img/electronics/cod.png" alt="cash on delivery" class="feature-img">
-                <p class=".feature-para">Cash on<br>Delivery</p>
+                <p class="feature-para">Cash on<br>Delivery</p>
                 <img src="./../img/electronics/easy-return.png" alt="easy return" class="feature-img">
-                <p class=".feature-para">Easy<br>Returns</p>
+                <p class="feature-para">Easy<br>Returns</p>
             </div>
             <a href="./../index.html">
                 <button type="button" class="card-btn">  
