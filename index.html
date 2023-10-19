@@ -141,9 +141,23 @@
         }
 
         .header-img {
-            margin: 5px 30px;
+            margin: 5px 40px;
             height: 200px;
-            border-radius: 50%;
+            border-radius: 15px;
+            flex-basis: 25%;
+            animation: animate 3s linear infinite;
+
+        }
+        @keyframes animate{
+            0%{
+                transform: scale(1.1);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.1);
+            }
         }
 
         .header-desc {
@@ -487,7 +501,6 @@
             .header-img {
                 margin: 25px 10px;
                 height: 125px;
-                border-radius: 50%;
             }
             .header-desc {
                 width: 350px;
@@ -656,7 +669,7 @@
             .header-img {
                 margin: 20px;
                 height: 160px;
-                border-radius: 50%;
+
             }
 
             .header-desc {
@@ -772,7 +785,6 @@
             .header-img {
                 margin: 20px;
                 height: 180px;
-                border-radius: 50%;
             }
 
             .header-desc {
@@ -949,7 +961,7 @@
         </ul>
     </div>
     <div class="page-header">
-        <img class="header-img" src="./img/home-page/header-img.jpg" alt="">
+        <img class="header-img" src="./img/home-page/header-img1.jpg" >
 
         <div class="header-desc">
             <p>Welcome to Your Favourite Shopping Destination </p>
