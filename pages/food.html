@@ -3,10 +3,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Packaged-food </title>
+    <title>Food</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .a{ text-decoration:none;
+        }
+        .tagline{
+            background-color: #eeeeee;
+            color:#000000;
+            margin:0;
+            text-align: center;
+            font-size:25px;
+        }
+        .navbar{
+            margin-top:0;
+            font-size:40px;
+            background-color: #000;
+            color:#bcc8cf;
+            display:flex;
+            align-items: center;
+        }
+        .nav-shop-logo{
+            height:70px;
+            border:1px solid black;
+            border-radius: 50%;
+        } 
+        .navbar-menu-contianer{
+            margin-left:auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar-menu{
+            background-color: #d1d1d1;
+            color:black;
+            font-size: 15px;
+            padding:5px 15px;
+            border:1px solid white;
+            margin:15px;
+            border-radius: 5px;
+        }
+        .section-heading{
+            margin:10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .special-offers{
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        .special-offers-card{
+            width:200px;
+            border:1px solid #eee;
+            text-align: center;
+            padding:25px 20px;
+            margin:10px 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .card-img{
+            width: 120px;
+            height: 120px;
+        }
+        .card-title{
+            font-size: 15px;
+        }
+        .discount-desc{
+            font-size:medium;
+        
+        }
+        .category-name{
+            font-size: 15px;
+            color:grey;
+
+        }
+        .offer{
+            color: green;
+        }
+        .card-btn{
+            padding:5px 15px;
+            background-color:#8daec4 ;
+            color:white;
+            border-radius: 5px;
+            border:none;
+            box-shadow: 0px 0px 5px  2px lightblue;
+        }
+          .shop-footer{
+            height:200px;
+            background-color: #000000;
+            text-align: center;
+            color:white;
+        }
+
+        .shopping-categories{
+            height:100px;
+            background-color: #565656;
+            color:#eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 10px;
+            padding:10px;
+        }
+        .categories-img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .popular-brands{
+            height:100px;
+            background-color: #565656;
+            color:#eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 10px;
+            padding:10px;
+        }
+        .popular-products{
+            height:250px;
+            background-color: #eee;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 10px;
+            padding:10px;
+        }
+        
+        </style>
 </head>
 <body>
-     <h1> Group 6 Packaged Food Page</h1>  
-     <h2> Vikrant </h2> 
+    <div class="navbar">
+        <img class="nav-shop-logo" src="./../img/shop-logo.png" alt="shop-logo">
+    <span> Dream's Land</span>
+
+    <div class="navbar-menu-contianer">
+        <span class="navbar-menu">
+            Electronics
+        </span>
+        <span class="navbar-menu">
+            Clothings
+        </span>
+        <span class="navbar-menu">
+            Footwear
+        </span>
+        <span class="navbar-menu">
+            Beauty & care
+        </span>
+        <span class="navbar-menu">
+            Groceries
+        </span>
+        <span class="navbar-menu">
+            Food
+        </span>
+        <span class="navbar-menu">
+            Home & Kitchen
+        </span> 
+        <list class="navbar-menu">
+            <i class="fa-solid fa-bars "></i>
+        </list>
+    </div>
+</div> 
+<div class="deals-section">
+    <p class="section-heading"> Special Offers </p>
+
+<div class="special-offers">
+   <div class="special-offers-card">
+       <img src="./../img/food/pista.webp" class="card-img">
+       <p class="card-title">Rostaa</p>
+       <p class="discount-desc">Roastes & salted Pistachios</p>
+       <p class="category-name">rs 239.00 <br> <strike>379rs</strike> &nbsp;36% off</p>
+       <button class="card-btn"> BUY </button>
+   </div>
+   <div class="special-offers-card">
+       <img src="./../img/food/almonds.jpg" class="card-img">
+       <p class="card-title">Rostaa </p>
+       <p class="discount-desc"> Rosted & salted value pack</p>
+       <p class="category-name">rs 369.00 <br> <strike>500rs</strike>&nbsp; 26% off</p>
+       <button class="card-btn"> BUY </button>
+   </div>
+   <div class="special-offers-card">
+       <img src="./../img/food/ginger.webp" class="card-img">
+       <p class="card-title">Prov Tm</p>
+       <p class="discount-desc"> Figs Anjeer</p>
+       <p class="category-name">789.00<br> <strike>1,025.00rs</strike>&nbsp; 21% off</p>
+       <button class="card-btn"> BUY </button>
+   </div>
+   <div class="special-offers-card">
+       <img src="./../img/food/walnut.webp" class="card-img">
+       <p class="card-title">Californian </p>
+       <p class="discount-desc"> Inshell Walnut</p>
+       <p class="category-name">269.00<br> <strike>499.00rs</strike>&nbsp; 46% off</p>
+       <button class="card-btn"> BUY </button>
+   </div>
+   <div class="special-offers-card">
+       <img src="./../img/food/kishmish123.jpg" class="card-img">
+       <p class="card-title">	20-20 Dry Fruits</p>
+       <p class="discount-desc">  Black Kishmish With Seed</p>
+       <p class="category-name">₹249.00<br> <strike>₹295.00</strike>
+        15% Off</p>
+       <button class="card-btn"> BUY </button>
+   </div>
+</div>
+
+<hr/>
+
+
+    
+</list>
+</div>
+</div> 
+<div class="deals-section">
+<p class="section-heading"> Cookies For You🍪 </p>
+
+<div class="special-offers">
+<div class="special-offers-card">
+<img src="./../img/food/choco more.jpg" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">Julie’s Chco More Sandwich Biscuits 160G</p>
+<p class="category-name">195.00</p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/Julies-Cheese.png" class="card-img">
+<p class="card-title">Julie’s Le-Mond Puff Sandwich 170G</p>
+<p class="discount-desc"></p>
+<p class="category-name">175.00</p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/Julies-Le-Mond-Puff.jpg" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">Julie’s Le-Mond Puff Sandwich 170G</p>
+<p class="category-name">₹100.00</p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/Cadbury-Chocobakes.jpg" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">  Cadbury Chocobakes Cookies 25G</p>
+<p class="category-name">₹100.00</p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/vgbswbsParle-Milano.jpg" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">Parle Milano C Chip Cookies 75gm</p>
+<p class="category-name">₹100.00</p>
+<button class="card-btn"> BUY </button>
+</div>
+</div>
+
+
+
+
+
+    
+</list>
+</div>
+</div> 
+<div class="deals-section">
+<p class="section-heading">Baked just right!</p>
+
+<div class="special-offers">
+<div class="special-offers-card">
+<img src="./../img/food/American-Pancake-Chocoltae-Cake.jpg" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">American Pancake Chocoltae Cake Mix 500G
+</p>
+<p class="category-name">330.00</p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/American-Pancake-Red-Velvet-Cake-Mix-Icing.jpg" class="card-img">
+<p class="card-title">American Pancake Red Velvet Cake Mix Icing Sugar 5</p>
+<p class="discount-desc"></p>
+<p class="category-name">175.00</p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/American-Pancake-Unbleached-Bread.jpg" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">American Pancake Unbleached Bread Flour</p>
+<p class="category-name">₹100.00</p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/American-Pancake-Vanilla-Cake.jpg" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">American Pancake Vanilla Cake Mix 285G</p>
+<p class="category-name">₹195.00</p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/American-Pancake-Waffle.jpg" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">American Pancake Waffle Mix 400G</p>
+<p class="category-name">₹195.00</p>
+<button class="card-btn"> BUY </button>
+</div>
+</div>
+<hr/>
+
+</list>
+</div>
+</div> 
+<div class="deals-section">
+<p class="section-heading">Helps You Stay Sober!</p>
+
+<div class="special-offers">
+<div class="special-offers-card">
+<img src="./../img/food/40174619_4-budweiser-00-non-alcoholic-beer.webp" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">Budweiser 0.0 Non-Alcoholic Beer, 330 ml Can</p>
+</p>
+<p class="category-name">Price: ₹90 (₹0.27 / ml)
+    </p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/baveria.jpeg" class="card-img">
+<p class="card-title">Bavaria Non Alcoholic Malt Drink Can 330 ML</p>
+<p class="discount-desc"></p>
+<p class="category-name">Price: ₹299 (₹100 / ml)</p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/partake.jpeg" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">Partake IPA Non Alcoholic Cans</p>
+<p class="category-name">Price: ₹150 (₹0.27 / ml)</p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/tuboro1.jpeg" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">
+    Tuborg. Non Alcoholic Beer. Tin</p>
+<p class="category-name">Price: ₹199 (₹0.27/ ml)</p>
+<button class="card-btn"> BUY </button>
+</div>
+<div class="special-offers-card">
+<img src="./../img/food/kingfisher.jpeg" class="card-img">
+<p class="card-title"></p>
+<p class="discount-desc">Kingfisher Ultra Non Alcoholic Beer</p>
+<p class="category-name">Price: ₹1400 (₹0.27 / ml)</p>
+<button class="card-btn"> BUY </button>
+</div>
+</div>
+<hr/>
+
+<p class="section-heading"> Shop By Category </p>
+<div class="shopping-categories">
+   <img src="./../img/home-page/nestle.jpg" class="categories-img">
+   <img src="./../img/home-page/Knorr-logo-tumb.jpg" class="categories-img">
+   <img src="./../img/home-page/amul-dairy-logo.png" class="categories-img">
+   <img src="./../img/home-page/mondelez.png" class="categories-img">
+   <img src="./../img/home-page/hersheys.png" class="categories-img">
+   <img src="./../img/home-page/general mills.png" class="categories-img">
+   <img src="./../img/home-page/kraft.jpeg" class="categories-img">
+</div>
+
+<hr/>
+<div class="shop-footer">
+    <h3> FOOTER </h3>
+</div>
+
+<script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
 </body>
 </html>
