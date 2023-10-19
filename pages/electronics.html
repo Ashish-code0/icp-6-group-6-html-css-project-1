@@ -48,7 +48,7 @@
             display:flex;
             justify-content: space-around;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
         }
         .menu{
             background-color: #fff;
@@ -119,10 +119,12 @@
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            background-color: #eee;
         }
         .supersale-img{
             width: 250px;
             height: 300px;
+            filter: drop-shadow(0 0 10px rgb(138, 138, 157));
         }
         .desc{
             font-size: large;
@@ -203,7 +205,8 @@
             justify-content: center;
             padding: 10px;
             margin: 10px;
-            margin-left: 0px;   
+            margin-left: 0px;
+            box-shadow: 5px 10px 5px rgb(38, 38, 40);   
         }
         .img-in-card{
             width: 150px;
