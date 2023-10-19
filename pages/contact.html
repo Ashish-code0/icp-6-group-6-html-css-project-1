@@ -3,9 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home </title>
+    <title> Contact </title>
+
+    <style>
+        a{
+            text-decoration: none;
+            color: #262626;
+        }
+        body{
+            margin:0;
+            padding:0;
+        }
+        .navbar{
+            margin-top:0;
+            font-size:40px;
+            background-color: #000;
+            color:#bcc8cf;
+            display:flex;
+            align-items: center;
+        }
+        .navbar-menu-contianer{
+            margin-left:auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar-menu{
+            background-color: white;
+            color:black;
+            font-size: 15px;
+            font-weight: bold;
+            padding:5px 25px;
+            border:1px solid white;
+            margin:15px;
+            border-radius: 10px;
+        }
+        .nav-shop-logo{
+            height:70px;
+            border:1px solid black;
+            border-radius: 50%;
+        } 
+        .section-heading{
+            margin:10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .contact-us{
+            width: 700px;
+            height: 150px;
+            margin-top: 20px;
+            padding-top: 30px;
+            padding-left: 40px;
+            background-color: #eee;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            border: 2px solid rgba(0, 0, 0, 0.66);
+            border-radius: 10px;
+            display: block;
+            
+
+        }
+        .contact-us-container{
+          width: auto;
+          height: 400px;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: #eeeeee80;
+          padding: 10px;
+          
+
+        }
+        .contact-info{
+            color: rgba(0, 0, 0, 0.612);
+            font-weight: bold;
+        }
+        
+        
+
+         /* Footer Section */
+         .shop-footer{
+            background-color: #000000;
+            color:#bcc8cf;
+            padding:15px;
+            text-align: center;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .footer-sec{
+            width:1000px;
+            background-color:#0f0f0f;
+            font-size: 28px;
+            border-radius: 10px;
+            padding:15px;
+            display: flex;
+            flex-direction: column; ;
+        }
+        .footer-item-list{
+            margin:5px;
+            font-size: 18px;
+            padding:5px;
+            text-align: right;
+            
+        }
+        .footer-data{
+            display: flex;
+            padding: 10px;
+            justify-content:space-evenly;
+            
+        }
+        .footer-anchor{
+            color:#bcc8cf;
+        }
+        .footer-item-list:hover{
+            font-size: 20px;
+            padding: 8px;
+            transition: 0.3s;
+            
+        }
+    </style>
 </head>
 <body>
-     <h1> Group 6 Home Page</h1>   
+    <div class="navbar">
+        <img class="nav-shop-logo" src="../img/shop-logo.png" alt="shop-logo">
+     <span> Dream's Land</span>
+
+     <div class="navbar-menu-contianer">
+        
+        <span class="navbar-menu">
+            <a href="./pages/electronics.html">Electronics</a>
+        </span>
+        <span class="navbar-menu">
+            <a href="./pages/clothings.html">Clothings</a>
+        </span>
+        <span class="navbar-menu">
+            <a href="./pages/footwears.html">Footwear</a>
+        </span>
+        <span class="navbar-menu">
+            <a href="./pages/beauty-personal-care.html">Beauty & care</a>
+        </span>
+        <span class="navbar-menu">
+            <a href="./pages/groceries.html">Groceries</a>
+        </span>
+        <span class="navbar-menu">
+            <a href="./pages/food.html">Food</a>
+        </span>
+        <span class="navbar-menu">
+            <a href="./pages/home-kitchen.html">Home & Kitchen</a>
+        </span> 
+        <list class="navbar-menu">
+            <i class="fa-solid fa-bars "></i>
+        </list>
+     </div>
+    </div>  
+
+    <hr/><hr/>
+      <div class="contact-us-container">
+       <p class="section-heading"> Contact Us  </p>
+       <div class="contact-us">
+         <p class="contact-us-list"><i class="fa-solid fa-location-dot" style="color: black;"></i>
+            &nbsp; &nbsp; &nbsp; <a href="https://goo.gl/maps/2v5cX44ZgVjsnx5Y9" target="blank" class="contact-info">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Manjari BK, pune - 412307</a>
+         </p>
+         <p class="contact-us-list"> <i class="fa-solid fa-envelope" style="color: black;"></i>
+            &nbsp; &nbsp;  <a href="mailto:ashishgore393@gmail.com" class="contact-info">ashishgore393@gmail.com</a>
+         </p>
+
+         <p class="contact-us-list"> <i class="fa-solid fa-phone" style="color: black;"></i>
+            &nbsp; &nbsp; <a href="tel:+918975004427" class="contact-info"> +91-8975004427</a>
+         </p>
+       </div>
+    </div>
+
+      <!-- Footer Section -->
+
+    <div style="background-color: #000; padding-top: 10px;">
+        <div class="shop-footer">
+            <div class="footer-sec">
+                <p> Quick Links </p>
+                <div class="footer-data">
+                    <p class="footer-item-list"><a href="../index.html" class="footer-anchor">Home </a></p>
+                    <p class="footer-item-list"><a href="../pages/electronics.html" class="footer-anchor">Electronics </a></p>
+                    <p class="footer-item-list"><a href="../pages/clothings.html" class="footer-anchor">Fashion </a></p>
+                    <p class="footer-item-list"><a href="../pages/footwears.html" class="footer-anchor">Footwears </a></p>
+                    <p class="footer-item-list"><a href="../pages/beauty-personal-care.html" class="footer-anchor"> Beauty & personal care </a></p>
+                    <p class="footer-item-list"><a href="../pages/groceries.html" class="footer-anchor"> Groceries </a></p>
+                    <p class="footer-item-list"><a href="../pages/home-kitchen.html" class="footer-anchor"> Home & Kitchen </a></p>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <p style="text-align: center; font-size: 20px; color: white; background-color: #000; margin: 0; padding:5px;"> Made by ICP 6 Group 6 (2023) </p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
+  
 </body>
 </html>
