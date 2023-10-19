@@ -9,6 +9,10 @@
 
 
     <style>
+        a {
+            text-decoration: none;
+            color: #262626;
+        }
         body{
             margin:0;
             padding:0;
@@ -20,6 +24,46 @@
             color:#bcc8cf;
             display:flex;
             align-items: center;
+        }
+        .nav-shop-logo{
+            height:70px;
+            border:1px solid black;
+            border-radius: 50%;
+
+        }
+        .navbar-menu-contianer{
+            margin-left:auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar-menu{
+            background-color: white;
+            color:black;
+            font-size: 15px;
+            font-weight: bold;
+            padding:5px 25px;
+            border:1px solid white;
+            margin:15px;
+            border-radius: 10px;
+        }
+        .desc{
+            margin-left:auto;
+            margin-right:auto;
+            padding:15px;
+            font-size: 25px;
+            align-items: left;
+        }
+        .header-btn{
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #e67300;
+            color:#fff;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
         }
         .electronic-logo{
             height: 30px;
@@ -178,6 +222,16 @@
             text-align: center;
             font-size:35px;
         }
+        .container1{
+    display: flex;
+    align-items: left;
+  }
+  .off-deal{
+    font-size: 50px;
+    color: #000000;
+
+  }
+  
     
 
         .left{
@@ -185,11 +239,6 @@
 	flex-basis: 50%;
 	animation: animate 3s linear infinite;
 
-}
-.Right{
-	        flex-basis: 50%;
-            max-width: 400px;
-             margin-right: 100px;
 }
 @keyframes animate{
 	0%{
@@ -202,6 +251,11 @@
 		transform: scale(1.1);
 	}
 }
+.container1{
+    display: flex;
+    align-items: left;
+  }
+
 
     
     
@@ -209,43 +263,55 @@
 </head>
 <body>
     <div class="navbar">
-        <span style=" padding:5px 25px; font-size: 40px;"> Dream's Land</span>
+        <img class="nav-shop-logo" src="./../img/shop-logo.png" alt="shop-logo">
+        <span> Dream's Land</span>
 
-        <div class="menu-contianer">
-            <span class="menu">
-                Home
+        <div class="navbar-menu-contianer">
+            
+            <span class="navbar-menu">
+                <a href="./pages/electronics.html">Electronics</a>
             </span>
-            <span class="menu">
-                Clothings
+            <span class="navbar-menu">
+                <a href="./pages/clothings.html">Clothings</a>
             </span>
-            <span class="menu">
-                Footwear
+            <span class="navbar-menu">
+                <a href="./pages/footwears.html">Footwear</a>
             </span>
-            <span class="menu">
-                Beauty & care
+            <span class="navbar-menu">
+                <a href="./pages/beauty-personal-care.html">Beauty & care</a>
             </span>
-            <span class="menu">
-                Groceries
+            <span class="navbar-menu">
+                <a href="./pages/groceries.html">Groceries</a>
             </span>
-            <span class="menu">
-                Food
+            <span class="navbar-menu">
+                <a href="./pages/food.html">Food</a>
             </span>
-            <span class="menu">
-                Home & Kitchen
+            <span class="navbar-menu">
+                <a href="./pages/home-kitchen.html">Home & Kitchen</a>
             </span> 
-            <list class="menu">
+            <list class="navbar-menu">
                 <i class="fa-solid fa-bars "></i>
             </list>
         </div>
-    </div>
-    <div class="container">
+    </div> 
+    <div class="container1">
         <div class="left">
     <img src="./../img/footwears/img1.jpg">
         </div>
+        <div class="desc">
+            <p>Welcome to Your Favourite Footwear Shop </p>
+            <p class ="off-deal"> 50% Off</p>
+            <p> For 10 days Only</p>
+            <p> Hurry up.....</p>
+            <button type="button" class="header-btn">  
+                Shopping Now 
+            </button>
 
+        
+        </div>
+
+            </div>
     
-
-    </div>
       <div class="deals-section">
         
         <p><h1 class="name-brand"> Latest-offers on Footwear </h1></p>
@@ -283,6 +349,16 @@
     </div>
         
    </div>
+<<<<<<< HEAD
+   <p> popular brands </p>
+   <div class="popular-brands">
+        <img src="./../img/footwears/batalogo.jpg" class="img-logo">
+        <img src="./../img/footwears/venuslogo.jpg" class="img-logo">
+        <img src="./../img/footwears/pasion.jpg" class="img-logo">
+        <img src="./../img/footwears/libertylogo.jpg" class="img-logo">
+        <img src="./../img/footwears/mungro.jpg" class="img-logo">
+   </div>
+=======
    
          <p class="section-heading"> Category </p>
             <div class="shopping-categories">
@@ -292,6 +368,7 @@
                 <img src="./../img/footwears/bride1.jpg" class="categories-img">
                 <img src="./../img/footwears/groom category.jpg" class="categories-img">
             </div>
+>>>>>>> af289f0dcec5384d8dc9c22a997f8420a6ab4d61
 
    <p class="name-brand"> Girls Footwear</p>
    <div class="latest-offers">
