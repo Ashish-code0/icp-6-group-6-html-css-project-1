@@ -356,32 +356,38 @@
             text-align: center;
             background-color: #8daec4;
             padding: 15px;
+            margin-bottom: 40px;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
         .review-section-card {
+            height:180px;
+            width:280px;
             border: 1px solid #eee;
             text-align: center;
-            padding: 10px 40px;
-            margin: 10px 20px;
+            padding: 10px 30px;
+            margin: 10px auto;
             background-color: white;
             border-radius: 10px;
             box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.5);
             display: flex;
             flex-wrap: wrap;
+            align-items: center;
         }
-
+        .reviewer-detail{
+            width:100px;
+        }
         .customer-img {
             width: 80px;
             height: 80px;
         }
-
         .customer-name {
             color: #262626;
             font-size: 18px;
         }
-
         .customer-review {
             width: 140px;
             color: #565656;
@@ -391,7 +397,18 @@
             display: flex;
             align-items: center;
         }
-
+        .return-top-btn{
+            position: absolute;
+            font-size: 13px;
+            font-weight: bolder;
+            bottom:-33px;
+            right:10px;
+            background-color: #0099ff;
+            border: 2px solid #565656;
+            color:white;
+            padding:5px;
+            border-radius: 20px;
+        }
         /* Footer Section */
         .shop-footer {
             background-color: #000000;
@@ -402,7 +419,6 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
-
         .footer-sec {
             width: 300px;
             background-color: #0f0f0f;
@@ -412,28 +428,23 @@
             display: flex;
             flex-direction: column;
         }
-
         .footer-about-logo {
             height: 80px;
             display: flex;
             align-items: center;
         }
-
         .footer-shop-logo {
             height: 80px;
             border-radius: 50%;
         }
-
         .footer-shop-name {
             padding: 10px;
         }
-
         .footer-about-desc {
             text-align: justify;
             font-size: 18px;
             padding: 15px;
         }
-
         .footer-data {
             margin-left: 20px;
             margin-top: 20px;
@@ -442,7 +453,10 @@
             flex-direction: column;
             align-items: flex-start;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1ad9f57b7e1624e5565801f18840568ef5d5f72
         .footer-item-list {
             margin: 5px;
             font-size:18px;
@@ -585,13 +599,18 @@
                 text-align: center;
             }
             .review-section-card {
+                height:150px;
+                width:200px;
                 padding: 10px 15px;
                 margin: 10px 15px;
             }
+             .reviewer-detail{
+               width:70px;
+            }
 
             .customer-img {
-                width: 70px;
-                height: 70px;
+                width: 60px;
+                height: 60px;
             }
 
             .customer-name {
@@ -600,8 +619,8 @@
             }
 
             .customer-review {
-                width: 120px;
-                font-size: 17px;
+                width: 90px;
+                font-size: 15px;
                 text-align: center;
             }
 
@@ -656,6 +675,11 @@
                 display: flex;
                 align-items: center;
             }
+            .navbar-menu {
+                font-size: 15px;          
+                padding: 5px 15px;
+                margin: 10px; 
+            }
             .page-header {
                 height: auto;
                 margin: 10px 0;
@@ -707,14 +731,14 @@
                 border-bottom:2px solid #ffa41c;
             }
             .product-cards {
-
                 margin: 10px auto;
             }
                    
             .right-arrow {
                 position: absolute;
-                top: 10px;
-                right: 10px;
+                top: 15px;
+                right: 15px;
+                font-size: 20px;
                 padding: 4px;
                 
             }
@@ -780,7 +804,9 @@
                 display: flex;
                 align-items: center;
             }
-            
+            hr{
+                display:none;
+            }
             .header-img {
                 margin: 20px;
                 height: 180px;
@@ -827,10 +853,10 @@
                    
             .right-arrow {
                 position: absolute;
-                top: 10px;
+                top: 50%;
                 right: 10px;
                 padding: 4px;
-                
+                font-size: 30px;
             }
             .shopping-categories {
                 height: auto;
@@ -887,10 +913,14 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <div class="tagline">
+=======
+    <div class="tagline" >
+>>>>>>> b1ad9f57b7e1624e5565801f18840568ef5d5f72
         A place where your dreams come true.
     </div>
-    <div class="navbar">
+    <div class="navbar" id="home-top">
         <div class="navbar-name-logo">
             <img class="nav-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
             <span> Dream's Land</span>
@@ -1027,7 +1057,7 @@
 
         <p class="section-heading"> Shop By Category </p>
         <div class="shopping-categories">
-            <a href="#discount-offers"><img src="img/home-page/discount.png" class="categories-img"></a>
+            <a href="#discount-offers"><img src="img/home-page/discount.jpg" class="categories-img"></a>
             <a href="./pages/electronics.html"><img src="img/home-page/iphone.webp" class="categories-img"></a>
             <a href="./pages/electronics.html"><img src="img/home-page/laptop-catgory.webp" class="categories-img"></a>
             <a href="./pages/clothings.html"><img src="img/home-page/fashion-category.jpg" class="categories-img"></a>
@@ -1463,41 +1493,54 @@
     <p class="section-heading"> What do our Customers have to say about us... </p>
     <div class="review-section">
         <div class="review-section-card">
-            <div>
+            <div class="reviewer-detail">
                 <img src="./img/home-page/suraj-sir.png" class="customer-img" />
                 <h3 class="customer-name"> Suraj Sir</h3>
             </div>
             <p class="customer-review"> Had a great experience with them 😊 </p>
         </div>
         <div class="review-section-card">
-            <div>
+            <div class="reviewer-detail">
                 <img src="./img/home-page/vaibhavi-mam.png" class="customer-img" />
                 <h3 class="customer-name"> Vaibhavi mam</h3>
             </div>
             <p class="customer-review"> 👍 </p>
         </div>
         <div class="review-section-card">
-            <div>
+            <div class="reviewer-detail">
                 <img src="./img/home-page/anand-sir.png" class="customer-img" />
                 <h3 class="customer-name"> Anand sir</h3>
             </div>
             <p class="customer-review"> ✌️ </p>
         </div>
         <div class="review-section-card">
-            <div>
+            <div class="reviewer-detail">
                 <img src="./img/home-page/vaishnavi-mam.png" class="customer-img" />
                 <h3 class="customer-name"> Vaishanavi mam</h3>
             </div>
             <p class="customer-review">🥳 </p>
         </div>
+        <span class="return-top-btn">
+            <a href="#home-top" style="color: white;">   Return to top
+            <i class="fa-solid fa-arrow-up " style="color: #fff;"></i> </a>
+        </span>
     </div>
+<<<<<<< HEAD
     </div>
 
+=======
+    
+>>>>>>> b1ad9f57b7e1624e5565801f18840568ef5d5f72
 
+    
 
     <!-- Footer Section -->
     <div style="background-color: #000; padding-top: 10px; margin-top: 10px;">
         <div class="shop-footer">
+<<<<<<< HEAD
+=======
+          
+>>>>>>> b1ad9f57b7e1624e5565801f18840568ef5d5f72
             <div class="footer-sec">
                 <div class="footer-about-logo">
                     <img class="footer-shop-logo" src="./img/shop-logo.png" alt="shop-logo">
@@ -1535,8 +1578,8 @@
                 <p> Social :</p>
                 <div class="footer-data">
                     <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp; <a href="mailto:suraj@roadtocode.org"
-                            class="footer-anchor">suraj@roadtocode.org</a>
+                        &nbsp; &nbsp; <a href="mailto:ashishgore382@gmail.com"
+                            class="footer-anchor">ashishgore382@gmail.com</a>
                     </p>
 
                     <p class="footer-item-list"> <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
@@ -1559,10 +1602,10 @@
             <div class="footer-sec">
                 <p> Contact us :</p>
                 <div class="footer-data">
+                    
                     <p class="footer-item-list"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                        &nbsp; &nbsp; &nbsp; <a href="https://goo.gl/maps/2v5cX44ZgVjsnx5Y9" target="blank"
-                            class="footer-anchor">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Manjari BK,
-                            pune - 412307</a>
+                        &nbsp; &nbsp; <a href="https://maps.app.goo.gl/N3ngnED1vBDYVvj19" target="blank"
+                            class="footer-anchor"> B. D. College of Engineering, Wardha</a>
                     </p>
                     <p class="footer-item-list"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
                         &nbsp; &nbsp; <a href="mailto:ashishgore393@gmail.com"
