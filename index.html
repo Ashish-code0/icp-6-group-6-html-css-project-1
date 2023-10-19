@@ -6,16 +6,11 @@
     <style>
         .color-scheme {
             color: #000000;
-            color: #565656;
-            /* nav */
-            color: #ffffff;
-            /*background*/
-            color: #eeeeee;
-            /*card-div-background*/
-            color: #8daec4;
-            /*button*/
-            color: #bcc8cf;
-            /* text on black div*/
+            color: #565656;/* nav */
+            color: #ffffff;/*background*/
+            color: #eeeeee;/*card-div-background*/
+            color: #8daec4;/*button*/
+            color: #bcc8cf;/* text on black div*/
             color: #d1d1d1;
             color: #262626;
         }
@@ -69,7 +64,12 @@
             border-radius: 10px;
             cursor: pointer;
         }
-
+        .navbar-menu:hover{
+            background-color: #565656;
+            color: #fff;
+            border-radius: 15px;
+            border: none;
+        }
         .navbar-sub-menu {
             background-color: white;
             color: black;
@@ -141,9 +141,22 @@
         }
 
         .header-img {
-            margin: 5px 30px;
+            margin: 5px 40px;
             height: 200px;
-            border-radius: 50%;
+            flex-basis: 30%;
+            animation: animate 3s linear infinite;
+
+        }
+        @keyframes animate{
+            0%{
+                transform: scale(1.1);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.1);
+            }
         }
 
         .header-desc {
@@ -156,7 +169,7 @@
         }
 
         .header-btn {
-            background-color: #0099ff;
+            background-color: #e67300;
             color: white;
             font-size: 16px;
             font-weight: bold;
@@ -487,7 +500,6 @@
             .header-img {
                 margin: 25px 10px;
                 height: 125px;
-                border-radius: 50%;
             }
             .header-desc {
                 width: 350px;
@@ -656,7 +668,7 @@
             .header-img {
                 margin: 20px;
                 height: 160px;
-                border-radius: 50%;
+
             }
 
             .header-desc {
@@ -772,7 +784,6 @@
             .header-img {
                 margin: 20px;
                 height: 180px;
-                border-radius: 50%;
             }
 
             .header-desc {
@@ -949,7 +960,7 @@
         </ul>
     </div>
     <div class="page-header">
-        <img class="header-img" src="./img/home-page/header-img.jpg" alt="">
+        <img class="header-img" src="./img/home-page/header-img1.jpg" >
 
         <div class="header-desc">
             <p>Welcome to Your Favourite Shopping Destination </p>
@@ -1513,6 +1524,8 @@
                     <p class="footer-item-list"><a href="./pages/beauty-personal-care.html" class="footer-anchor">
                             Beauty & personal care </a></p>
                     <p class="footer-item-list"><a href="./pages/groceries.html" class="footer-anchor"> Groceries </a>
+                    </p>
+                    <p class="footer-item-list"><a href="./pages/food.html" class="footer-anchor"> Food </a>
                     </p>
                     <p class="footer-item-list"><a href="./pages/home-kitchen.html" class="footer-anchor"> Home &
                             Kitchen </a></p>
