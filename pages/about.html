@@ -9,39 +9,114 @@
             text-decoration: none;
             color: #262626;
         }
-        body{
-            margin:0;
-            padding:0;
-        }
-        .navbar{
-            margin-top:0;
-            font-size:40px;
+        .navbar {
+            margin-top: 0;
+            font-size: 40px;
             background-color: #000;
-            color:#bcc8cf;
-            display:flex;
+            color: #bcc8cf;
+            display: flex;
             align-items: center;
         }
-        .navbar-menu-contianer{
-            margin-left:auto;
-            display:flex;
+
+        .navbar-name-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-shop-logo {
+            height: 70px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
+        .navbar-menu-contianer {
+            margin-left: 0px;
+            display: flex;
+            margin-right: 90px;
             justify-content: space-around;
             align-items: center;
+
+            
         }
-        .navbar-menu{
+
+        .navbar-menu {
             background-color: white;
-            color:black;
+            color: black;
             font-size: 15px;
             font-weight: bold;
-            padding:5px 25px;
-            border:1px solid white;
-            margin:15px;
+            padding: 5px 20px;
+            border: 1px solid white;
+            margin: 5px;
             border-radius: 10px;
+            cursor: pointer;
+            margin-left: 90px;
         }
-        .nav-shop-logo{
-            height:70px;
-            border:1px solid black;
-            border-radius: 50%;
-        } 
+        .navbar-menu:hover{
+            background-color: #565656;
+            color: #fff;
+            border-radius: 15px;
+            border: none;
+        }
+        .navbar-sub-menu {
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px 25px;
+            border: 1px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        ul {
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            display: block;
+            
+        }
+
+        li ul {
+            display: none;
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 5px 15px 5px 15px;
+            white-space: nowrap;
+        }
+
+        li:hover ul {
+            display: block;
+            position: absolute;
+        }
+
+        li:hover li {
+            float: none;
+            font-size: 15px;
+        }
+
+        li:hover a {
+            background: white
+        }
+
+        li:hover li a:hover {
+            background: #ccc;
+        }
+        
+
+        .tagline {
+            background-color: #fff;
+            color: #000;
+            margin-bottom: 5px;
+            text-align: center;
+            font-size: 15px;
+        }
         .about-img{
             width:100%;
             height: 250px;
@@ -58,7 +133,7 @@
         .heading-name{
             font-family: "Open Sans",Helvetica,Arial,sans-serif;
             font-size: 35px;
-            color: #eb9b08;
+            color: #eaaa2f;
             
         }
         .heading{
@@ -67,14 +142,16 @@
         .description-container{
             background-color: #eee;
             margin: 10px;
-            padding: 5px 10px 10px 10px;
+            padding: 1px 10px 10px 1px;
+
             
         }
+        
         .description{
-            margin-left: 100px;
-            font-size: 18px;
-            text-align: center;
-            font-style:oblique;
+            margin-left: 50px;
+            font-size: 17px;
+            text-align: left;
+            font-style:normal;
 
         }
         
@@ -176,76 +253,167 @@
             
         }
 
+        @media only screen and (max-width:700px) {
+            hr{
+                display:none;
+            }
+            .navbar {
+                font-size: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar-menu {
+                background-color: white;
+                color: black;
+                font-size: 15px;
+                font-weight: bold;
+                padding: 5px 15px;
+                border: 1px solid white;
+                margin: 10px;
+                border-radius: 10px;
+            }
 
-        @media only screen and (max-width:700px){
-            .navbar-menu-contianer{
-            margin-left: auto;
-            margin-right: auto;
-           }
-         .navbar-menu{
-            display: flex;
-            margin: 10px;
-            width: 50px;
-            text-align: center;
-            justify-content: start;
-          }
-          .navbar{
-            flex-direction: column;
+            .navbar-sub-menu {
+                background-color: white;
+                color: black;
+                font-size: 10px;
+                font-weight: bold;
+                padding: 5px 10px;
+                border: 1px solid white;
+                border-radius: 10px;
+            }    
+            .page-header {
+                height: auto;
+                margin: 10px 0;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .description{
+            margin-right: 20px;
+            padding-right: 90px;
+            font-size: 11px;
+            height: 240px;
+            width: 220px;
             
-          }
+           }
+           
+           .heading{
+            font-size: 20px;
+            margin-right: 30px;
 
-          .image-container{
+            
+           }
+            @media only screen and (min-width:701px) and (max-width:1000px) {
+            .navbar {
+                font-size: 25px;
+                display: flex;
+                align-items: center;
+            }
+            
 
-          }
-          .about-img{
-            width:100%;
-            height: 150px;
-        }
-        }
-       
+
+            @media only screen and (min-width:1001px) and (max-width:1300px) {
+            .navbar {
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+            }
+            .navbar-sub-menu {
+                background-color: white;
+                color: black;
+                font-size: 10px;
+                font-weight: bold;
+                padding: 5px 10px;
+                border: 1px solid white;
+                border-radius: 10px;
+            }   
+            
+            .header-img {
+                margin: 20px;
+                height: 180px;
+            }
+        
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <img class="nav-shop-logo" src="../img/shop-logo.png" alt="shop-logo">
-     <span> Dream's Land</span>
-
-     <div class="navbar-menu-contianer">
-        
-        <span class="navbar-menu">
-            <a href="./pages/electronics.html">Electronics</a>
-        </span>
-        <span class="navbar-menu">
-            <a href="./pages/clothings.html">Clothings</a>
-        </span>
-        <span class="navbar-menu">
-            <a href="./pages/footwears.html">Footwear</a>
-        </span>
-        <span class="navbar-menu">
-            <a href="./pages/beauty-personal-care.html">Beauty & care</a>
-        </span>
-        <span class="navbar-menu">
-            <a href="./pages/groceries.html">Groceries</a>
-        </span>
-        <span class="navbar-menu">
-            <a href="./pages/food.html">Food</a>
-        </span>
-        <span class="navbar-menu">
-            <a href="./pages/home-kitchen.html">Home & Kitchen</a>
-        </span> 
-        <list class="navbar-menu">
-            <i class="fa-solid fa-bars "></i>
-        </list>
-     </div>
-    </div>  
-
-    <div class="image-container">
-        <img src="../img/About/shopping-cart.jpg" class="about-img">
-        
-        <div class="About-heading">
-           <p class="heading-name"><b>About Dream's Land</b> </p>
+    <body>
+        <div class="tagline">
+            A place where your dreams come true.
         </div>
-    </div>
+        <div class="navbar">
+            <div class="navbar-name-logo">
+                <img class="nav-shop-logo" src="./../img/shop-logo.png" alt="shop-logo">
+                <span> Dream's Land</span>
+            </div>
+            <ul class="navbar-menu-contianer">
+    
+                <li class="navbar-menu" style="padding:0 25px;">
+                    <a href="./../pages/electronics.html">Electronics</a>
+                </li>
+                <li class="navbar-menu"> Fashion
+                    <ul>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/clothings.html">Clothings</a>
+                        </li>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/footwears.html">Footwear</a>
+                        </li>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/beauty-personal-care.html">Beauty & care</a>
+                        </li>
+    
+                    </ul>
+                </li>
+                <li class="navbar-menu"> Home and groceries
+                    <ul>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/food.html">Food</a>
+                        </li>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/home-kitchen.html">Home & Kitchen</a>
+                        </li>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/groceries.html">Groceries</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="navbar-menu">
+                    <i class="fa-solid fa-bars "></i>
+                    <ul>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/clothings.html">Clothings</a>
+                        </li>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/footwears.html">Footwear</a>
+                        </li>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/beauty-personal-care.html">Beauty & care</a>
+                        </li>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/food.html">Food</a>
+                        </li>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/home-kitchen.html">Home & Kitchen</a>
+                        </li>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/groceries.html">Groceries</a>
+                        </li>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/about.html"> About</a>
+                        </li>
+                        <li class="navbar-sub-menu">
+                            <a href="./pages/contact.html"> Contact</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    
 
     <div class="description-container">
         <h1 class="heading">Who we are</h1>
@@ -257,6 +425,13 @@
 
     <hr/><hr/>
 
+    <div class="image-container">
+        <img src="../img/About/shopping-cart.jpg" class="about-img">
+        
+        <div class="About-heading">
+           <p class="heading-name"><b>About Dream's Land</b> </p>
+        </div>
+    </div>
    
         <p class="container-heading"> Meet the Team </p>
 
