@@ -34,6 +34,7 @@
             background-color: #000;
             color:#bcc8cf;
             display:flex;
+            flex-wrap: wrap;
             align-items: center;
         }
 
@@ -46,7 +47,8 @@
 
         .menu-contianer
         {
-            margin-left:auto;
+            margin-left:200px;
+            
             display:flex;
             justify-content: space-around;
             align-items: center;
@@ -674,8 +676,8 @@
             .menu-container
             {
                 height:40px;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
             }
     }
    
@@ -683,9 +685,10 @@
 </head>
 <body>
     <div class="navbar">
+        <div style="display: flex; align-items: center; ">
             <img class="nav-shop-logo" src="./../img/groceries/shop-logo.png" alt="shop-logo">
-        <span> Dream's Land</span>
-
+            <span> Dream's Land</span>
+        </div>
         <div class="menu-container">
             
         <a href="./../index.html" class="menu">
