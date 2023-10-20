@@ -83,8 +83,6 @@
             list-style: none;
         }
 
-<<<<<<< HEAD
-=======
         ul li {
             display: block;
         }
@@ -122,7 +120,7 @@
             display: flex;
             align-items: left;
             background-color: #eee;
-
+            flex-wrap: wrap;
         }
         .desc{
             padding:15px;
@@ -133,7 +131,7 @@
         .feature-container{
             display: flex;
             font-size: 20px;
-        }
+        }       
         .feature-img{
             height: 60px;
             width: 60px;
@@ -157,7 +155,6 @@
                 transform: scale(1.1);
             }
         }
->>>>>>> 6b5c33b8cc9db12a223f2c95621e5e5a2a01801b
         .heading-for-item{
             text-align: center;
         }
@@ -376,6 +373,18 @@
             width: 95px;
             height: 125px;
         }
+        .supersale-img{
+            width: 200px;
+            height: 250px;
+        }
+        .desc{
+            font-size: large;
+        }
+        .left{
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
     @media only screen and (max-width:1000px) and (min-width:701px){
         .menu-container{
@@ -388,7 +397,22 @@
             margin: 10px;
             width: 70px;
             text-align: center;
-
+        }
+        .supersale-container{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .supersale-img{
+            width: 200px;
+            height: 300px;
+        }
+        .desc{
+            font-size: large;
+        }
+        .left{
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
     @media only screen and (max-width:1200px) and (min-width:1001px){
@@ -401,6 +425,18 @@
             margin: 10px;
             width: 90px;
             text-align: center;
+        }
+        .supersale-img{
+            width: 200px;
+            height: 250px;
+        }
+        .desc{
+            font-size: large;
+        }
+        .left{
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
     </style>
@@ -477,7 +513,7 @@
     <hr>
     <div class="supersale-container" id="grad">
         <div class="left">
-    <img src="./../img/electronics/supersale-removebg.png">
+    <img src="./../img/electronics/supersale-removebg.png" class="supersale-img">
         </div>
         <div class="desc">
             <h3>Best deals of the year live now</h3>
@@ -496,6 +532,7 @@
                 Shop Now 🏃‍♂️➡️
             </button>
             </a>
+        </div>
         </div>
             </div>
             <hr>
