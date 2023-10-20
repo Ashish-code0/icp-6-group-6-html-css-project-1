@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> About </title>
     <style>
-         a{
+        a {
             text-decoration: none;
             color: #262626;
         }
+
         .navbar {
             margin-top: 0;
             font-size: 40px;
@@ -17,22 +19,26 @@
             display: flex;
             align-items: center;
         }
+
         .navbar-name-logo {
             display: flex;
             align-items: center;
         }
+
         .nav-shop-logo {
             height: 70px;
             border: 1px solid black;
             border-radius: 50%;
         }
+
         .navbar-menu-contianer {
             margin-left: auto;
             display: flex;
             margin-right: 90px;
             justify-content: space-around;
-            align-items: center;  
+            align-items: center;
         }
+
         .navbar-menu {
             background-color: white;
             color: black;
@@ -45,12 +51,14 @@
             cursor: pointer;
             margin-left: 90px;
         }
-        .navbar-menu:hover{
+
+        .navbar-menu:hover {
             background-color: #565656;
             color: #fff;
             border-radius: 15px;
             border: none;
         }
+
         .navbar-sub-menu {
             background-color: white;
             color: black;
@@ -61,38 +69,47 @@
             border-radius: 10px;
             cursor: pointer;
         }
+
         ul {
             font-size: 15px;
             margin: 0;
             padding: 0;
             list-style: none;
         }
+
         ul li {
             display: block;
         }
+
         li ul {
             display: none;
         }
+
         ul li a {
             display: block;
             text-decoration: none;
             padding: 5px 15px 5px 15px;
             white-space: nowrap;
         }
+
         li:hover ul {
             display: block;
             position: absolute;
         }
+
         li:hover li {
             float: none;
             font-size: 15px;
         }
+
         li:hover a {
             background: white
         }
+
         li:hover li a:hover {
             background: #ccc;
         }
+
         .tagline {
             background-color: #fff;
             color: #000;
@@ -100,161 +117,185 @@
             text-align: center;
             font-size: 15px;
         }
-        .about-img{
-            width:100%;
+
+        .about-img {
+            width: 100%;
             height: 250px;
         }
-        .image-container{
+
+        .image-container {
             position: relative;
         }
-        .about-heading{
+
+        .about-heading {
             position: absolute;
-            top: 20%; 
+            top: 20%;
             left: 42%;
-           
+
         }
-        .heading-name{
-            font-family: "Open Sans",Helvetica,Arial,sans-serif;
+
+        .heading-name {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-size: 35px;
             color: #eaaa2f;
-            
+
         }
-        .heading{
+
+        .heading {
             text-align: center;
         }
-        .description-container{
+
+        .description-container {
             background-color: #eee;
             margin: 10px;
             padding: 1px 10px 10px 1px;
 
-            
+
         }
-        
-        .description{
+
+        .description {
             margin-left: 50px;
             font-size: 17px;
             text-align: left;
-            font-style:normal;
+            font-style: normal;
 
         }
-        
+
         .card-img{
-           width: 140px;
-           margin-top: 20px;
-           margin-left: auto;
-           margin-right: auto;
-           padding: 20px;
-            display: block;
-            justify-content: center;
-            border-radius: 50%;
-            
-        } 
-        .card-img-1{
-            width:150px;
-            height: 130px;
-           margin-top: 20px;
-           margin-left: auto;
-           margin-right: auto;
-           padding: 20px;
+            width: 150px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
             display: block;
             justify-content: center;
             border-radius: 50%;
         }
-        
-        .container-heading{
-            margin:10px 0;
+        .card-img:hover{
+            height:170px;
+            width:170px;
+
+        }
+
+        .card-img-1 {
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            display: block;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        .card-img-1:hover{
+            height: 170px;
+            width: 170px;
+            
+        }
+        .container-heading {
+            margin: 10px 0;
             text-align: center;
             font-size: 30px;
             font-weight: bolder;
         }
-        .card-container{
+
+        .card-container {
             background-color: #eee;
-            display:flex;
+            display: flex;
             flex-wrap: wrap;
-            justify-content:space-evenly;
+            justify-content: space-evenly;
             margin: 20px 0;
-            padding:10px;
-            
-        } 
-        .team-member-card{
-            width:250px;
-            border:1px solid #eee;
+            padding: 10px;
+
+        }
+
+        .team-member-card {
+            width: 250px;
+            border: 1px solid #eee;
             text-align: center;
-            padding:25px 20px;
-            margin:10px 20px;
+            padding: 25px 20px;
+            margin: 10px 20px;
             background-color: white;
             border-radius: 10px;
             position: relative;
             box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.5);
         }
-        .card-title{
+
+        .card-title {
             font-size: 15px;
             font-weight: bold;
             margin-bottom: 10px;
         }
-       
-        .team-member-card:hover{
-            width:260px;
-            border:2px solid #eee;
+
+        .team-member-card:hover {
+            border: 2px solid #eee;
             cursor: pointer;
             text-align: center;
-            padding:28px 22px;
-            margin:10px 20px;
+            margin: 10px 20px;
             transition: 0.3s;
         }
 
         /* Footer Section */
-        .shop-footer{
+        .shop-footer {
             background-color: #000000;
-            color:#bcc8cf;
-            padding:15px;
+            color: #bcc8cf;
+            padding: 15px;
             text-align: center;
-            display:flex;
+            display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
-        .footer-sec{
-            width:1000px;
-            background-color:#0f0f0f;
+
+        .footer-sec {
+            width: 1000px;
+            background-color: #0f0f0f;
             font-size: 28px;
             border-radius: 10px;
-            padding:15px;
+            padding: 15px;
             display: flex;
-            flex-direction: column; ;
+            flex-direction: column;
+            ;
         }
-        .footer-item-list{
-            margin:5px;
+
+        .footer-item-list {
+            margin: 5px;
             font-size: 18px;
-            padding:5px;
+            padding: 5px;
             text-align: right;
-            
+
         }
-        .footer-data{
+
+        .footer-data {
             display: flex;
             padding: 10px;
-            justify-content:space-evenly;
-            
+            justify-content: space-evenly;
+
         }
-        .footer-anchor{
-            color:#bcc8cf;
+
+        .footer-anchor {
+            color: #bcc8cf;
         }
-        .footer-item-list:hover{
+
+        .footer-item-list:hover {
             font-size: 20px;
             padding: 8px;
             transition: 0.3s;
-            
+
         }
 
         @media only screen and (max-width:700px) {
-            hr{
-                display:none;
+            hr {
+                display: none;
             }
+
             .navbar {
                 font-size: 25px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
+
             .navbar-menu {
                 background-color: white;
                 color: black;
@@ -274,7 +315,8 @@
                 padding: 5px 10px;
                 border: 1px solid white;
                 border-radius: 10px;
-            }    
+            }
+
             .page-header {
                 height: auto;
                 margin: 10px 0;
@@ -283,38 +325,38 @@
                 flex-direction: row;
                 flex-wrap: wrap;
             }
-            .description{
-            margin-right: 20px;
-            padding-right: 90px;
-            font-size: 11px;
-            height: 240px;
-            width: 220px;
-            
-           }
-           
-           .heading{
-            font-size: 20px;
-            margin-right: 30px;
-            
-           }
-         }
-            @media only screen and (min-width:701px) and (max-width:1000px) {
+
+            .description {
+                margin-right: 20px;
+                padding-right: 90px;
+                font-size: 11px;
+                height: 240px;
+                width: 220px;
+
+            }
+
+            .heading {
+                font-size: 20px;
+                margin-right: 30px;
+
+            }
+        }
+
+        @media only screen and (min-width:701px) and (max-width:1000px) {
             .navbar {
                 font-size: 25px;
                 display: flex;
                 align-items: center;
             }
-          }
+        }
 
-            
-
-
-            @media only screen and (min-width:1001px) and (max-width:1300px) {
+        @media only screen and (min-width:1001px) and (max-width:1300px) {
             .navbar {
                 font-size: 30px;
                 display: flex;
                 align-items: center;
             }
+
             .navbar-sub-menu {
                 background-color: white;
                 color: black;
@@ -323,16 +365,18 @@
                 padding: 5px 10px;
                 border: 1px solid white;
                 border-radius: 10px;
-            }   
-            
+            }
+
             .header-img {
                 margin: 20px;
                 height: 180px;
             }
-          }
+        }
     </style>
 </head>
+
 <body>
+
     <body>
         <div class="tagline">
             A place where your dreams come true.
@@ -360,7 +404,7 @@
                         <li class="navbar-sub-menu">
                             <a href="../pages/beauty-personal-care.html">Beauty & care</a>
                         </li>
-    
+
                     </ul>
                 </li>
                 <li class="navbar-menu"> Home and groceries
@@ -376,7 +420,7 @@
                         </li>
                     </ul>
                 </li>
-    
+
                 <li class="navbar-menu">
                     <i class="fa-solid fa-bars "></i>
                     <ul>
@@ -398,145 +442,163 @@
                         <li class="navbar-sub-menu">
                             <a href="../pages/groceries.html">Groceries</a>
                         </li>
-                       
+
                         <li class="navbar-sub-menu">
                             <a href="../pages/contact.html"> Contact</a>
                         </li>
-                        
+
                     </ul>
                 </li>
             </ul>
         </div>
 
-    
 
-    <div class="description-container">
-        <h1 class="heading">Who we are</h1>
 
-         <div class="description">
-          <p>Dream's Land is your gateway to a world of convenience and endless possibilities in the realm of online shopping. Our digital emporium brings you a diverse selection of products, spanning from cutting-edge electronics that keep you connected and entertained, to stylish footwear that elevates your fashion game. In the pursuit of holistic well-being, we offer a range of beauty products to pamper yourself, and a wide array of grocery items to fill your pantry with essentials. At Dream's Land, we are committed to providing a seamless and delightful shopping experience, where you can explore, choose, and order your desired items with ease. We invite you to embark on a journey through our virtual aisles and discover the perfect blend of quality, affordability, and convenience. Your dream shopping experience awaits you at Dream's Land.</p>
-       </div>
-    </div>
+        <div class="description-container">
+            <h1 class="heading">Who we are</h1>
 
-    <hr/><hr/>
-
-    <div class="image-container">
-        <img src="../img/About/shopping-cart.jpg" class="about-img">
-        
-        <div class="about-heading">
-           <p class="heading-name"><b>About Dream's Land</b> </p>
+            <div class="description">
+                <p>Dream's Land is your gateway to a world of convenience and endless possibilities in the realm of
+                    online shopping. Our digital emporium brings you a diverse selection of products, spanning from
+                    cutting-edge electronics that keep you connected and entertained, to stylish footwear that elevates
+                    your fashion game. In the pursuit of holistic well-being, we offer a range of beauty products to
+                    pamper yourself, and a wide array of grocery items to fill your pantry with essentials. At Dream's
+                    Land, we are committed to providing a seamless and delightful shopping experience, where you can
+                    explore, choose, and order your desired items with ease. We invite you to embark on a journey
+                    through our virtual aisles and discover the perfect blend of quality, affordability, and
+                    convenience. Your dream shopping experience awaits you at Dream's Land.</p>
+            </div>
         </div>
-    </div>
-   
+
+        <hr />
+        <hr />
+
+        <div class="image-container">
+            <img src="../img/About/shopping-cart.jpg" class="about-img">
+
+            <div class="about-heading">
+                <p class="heading-name"><b>About Dream's Land</b> </p>
+            </div>
+        </div>
+
         <p class="container-heading"> Meet the Team </p>
 
-    <div class="card-container">
-            
-           <div class="team-member-card">
+        <div class="card-container">
+
+            <div class="team-member-card">
                 <img src="../img/about/ashish.jpeg" class="card-img-1">
-                
+
                 <p class="card-title">Name : Ashish Gore</p>
                 <p>ICP-6.0 (Team Lead)</p>
                 <p>Created the Homepage.</p>
-            
-            </div>
-       
 
-       
+            </div>
+
+
+
             <div class="team-member-card">
                 <img src="../img/about/rohini.jpeg" class="card-img-1">
                 <p class="card-title">Name : Rohini Kandekar</p>
                 <p>ICP-6.0 (Team Lead)</p>
                 <p>Created the Home and Kitchen Section.</p>
             </div>
-        
 
-        
+
+
             <div class="team-member-card">
                 <img src="../img/about/download.png" class="card-img">
                 <p class="card-title">Name : Vikrant Patil</p>
                 <p>ICP-6.0</p>
                 <p>Created the About Section and Contact Section .</p>
             </div>
-        
 
-      
+
+
             <div class="team-member-card">
                 <img src="../img/about/leena.jpeg" class="card-img">
                 <p class="card-title">Name : Leena Yenkar</p>
                 <p>ICP-6.0</p>
                 <p>Created the Food Section.</p>
             </div>
-        
 
-        
+
+
             <div class="team-member-card">
                 <img src="../img/about/divya.jpeg" class="card-img-1">
                 <p class="card-title">Name : Divya Kasule</p>
                 <p>ICP-6.0</p>
                 <p>Created the Footwears section.</p>
             </div>
-        
 
-        
+
+
             <div class="team-member-card">
                 <img src="../img/about/akshada.jpeg" class="card-img-1">
                 <p class="card-title">Name : Akshada Anawade</p>
                 <p>ICP-6.0</p>
                 <p>Created the Clothing Section.</p>
             </div>
-       
 
-        
+
+
             <div class="team-member-card">
                 <img src="../img/about/sharyu.jpeg" class="card-img-1">
                 <p class="card-title">Name : Sharyu Tilekar</p>
                 <p>ICP-6.0</p>
                 <p>Created the Groceries Section.</p>
             </div>
-       
 
-        
+
+
             <div class="team-member-card">
                 <img src="../img/about/sunny.jpeg" class="card-img">
                 <p class="card-title">Name : Ratandeep Bulbake</p>
                 <p>ICP-6.0</p>
                 <p>Created the Electronics Section.</p>
             </div>
-       
 
-       
+
+
             <div class="team-member-card">
                 <img src="../img/about/anjali.jpeg" class="card-img">
                 <p class="card-title">Name : Anjali Pise</p>
                 <p>ICP-6.0</p>
                 <p>Created the beauty and personal care Section.</p>
             </div>
-    </div>
-   
+        </div>
 
-    <!-- Footer Section -->
 
-    <div style="background-color: #000; padding-top: 10px;">
-        <div class="shop-footer">
-            <div class="footer-sec">
-                <p> Quick Links </p>
-                <div class="footer-data">
-                    <p class="footer-item-list"><a href="../index.html" class="footer-anchor">Home </a></p>
-                    <p class="footer-item-list"><a href="../pages/electronics.html" class="footer-anchor">Electronics </a></p>
-                    <p class="footer-item-list"><a href="../pages/clothings.html" class="footer-anchor">Fashion </a></p>
-                    <p class="footer-item-list"><a href="../pages/footwears.html" class="footer-anchor">Footwears </a></p>
-                    <p class="footer-item-list"><a href="../pages/beauty-personal-care.html" class="footer-anchor"> Beauty & personal care </a></p>
-                    <p class="footer-item-list"><a href="../pages/groceries.html" class="footer-anchor"> Groceries </a></p>
-                    <p class="footer-item-list"><a href="../pages/home-kitchen.html" class="footer-anchor"> Home & Kitchen </a></p>
+        <!-- Footer Section -->
+
+        <div style="background-color: #000; padding-top: 10px;">
+            <div class="shop-footer">
+                <div class="footer-sec">
+                    <p> Quick Links </p>
+                    <div class="footer-data">
+                        <p class="footer-item-list"><a href="../index.html" class="footer-anchor">Home </a></p>
+                        <p class="footer-item-list"><a href="../pages/electronics.html"
+                                class="footer-anchor">Electronics </a></p>
+                        <p class="footer-item-list"><a href="../pages/clothings.html" class="footer-anchor">Fashion </a>
+                        </p>
+                        <p class="footer-item-list"><a href="../pages/footwears.html" class="footer-anchor">Footwears
+                            </a></p>
+                        <p class="footer-item-list"><a href="../pages/beauty-personal-care.html" class="footer-anchor">
+                                Beauty & personal care </a></p>
+                        <p class="footer-item-list"><a href="../pages/groceries.html" class="footer-anchor"> Groceries
+                            </a></p>
+                        <p class="footer-item-list"><a href="../pages/home-kitchen.html" class="footer-anchor"> Home &
+                                Kitchen </a></p>
+                    </div>
                 </div>
             </div>
+            <hr />
+            <p
+                style="text-align: center; font-size: 20px; color: white; background-color: #000; margin: 0; padding:5px;">
+                Made by ICP 6 Group 6 (2023) </p>
         </div>
-        <hr/>
-        <p style="text-align: center; font-size: 20px; color: white; background-color: #000; margin: 0; padding:5px;"> Made by ICP 6 Group 6 (2023) </p>
-    </div>
- 
 
-    <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
-</body>
+
+        <script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
+    </body>
+
 </html>

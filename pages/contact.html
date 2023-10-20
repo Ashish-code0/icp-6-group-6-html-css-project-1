@@ -64,12 +64,10 @@
             border-radius: 10px;
             display: block;
             box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.5);
-            
-
         }
         .contact-us-container{
           width: auto;
-          height: 400px;
+          height: 480px;
           margin-left: auto;
           margin-right: auto;
           background-color: #eeeeee80;
@@ -88,7 +86,7 @@
          .shop-footer{
             background-color: #000000;
             color:#bcc8cf;
-            padding:15px;
+            padding:10px;
             text-align: center;
             display:flex;
             flex-wrap: wrap;
@@ -99,13 +97,13 @@
             background-color:#0f0f0f;
             font-size: 28px;
             border-radius: 10px;
-            padding:15px;
+            padding:10px;
             display: flex;
             flex-direction: column; ;
         }
         .footer-item-list{
             margin:5px;
-            font-size: 18px;
+            font-size: 15px;
             padding:5px;
             text-align: right;
             
@@ -114,7 +112,6 @@
             display: flex;
             padding: 10px;
             justify-content:space-evenly;
-            
         }
         .footer-anchor{
             color:#bcc8cf;
@@ -123,12 +120,14 @@
             font-size: 20px;
             padding: 8px;
             transition: 0.3s;
-            
         }
 
         @media only screen and (max-width:700px){
             .navbar-menu-contianer{
-            margin-left: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                 margin-left: auto;
             margin-right: auto;
            }
          .navbar-menu{
@@ -143,20 +142,18 @@
             
           }
           .contact-us{
-            width: 600px;
+            width: 400px;
             height: 150px;
             margin-top: 20px;
             padding-top: 30px;
             padding-left: 40px;
-            
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 20px;
-            
-            
-
           }
-
+          .contact-us-container{
+          height: 300px;
+          }
         }
     </style>
 </head>
@@ -198,9 +195,10 @@
       <div class="contact-us-container">
        <p class="section-heading"> Contact Us  </p>
        <div class="contact-us">
-         <p class="contact-us-list"><i class="fa-solid fa-location-dot" style="color: black;"></i>
-            &nbsp; &nbsp; &nbsp; <a href="https://goo.gl/maps/2v5cX44ZgVjsnx5Y9" target="blank" class="contact-info">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Manjari BK, pune - 412307</a>
-         </p>
+        <p class="contact-us-list"><i class="fa-solid fa-location-dot" style="color: black;"></i>
+            &nbsp; &nbsp; <a href="https://maps.app.goo.gl/N3ngnED1vBDYVvj19" target="blank"
+                class="contact-info"> B. D. College of Engineering, Wardha</a>
+        </p>
          <p class="contact-us-list"> <i class="fa-solid fa-envelope" style="color: black;"></i>
             &nbsp; &nbsp;  <a href="mailto:ashishgore393@gmail.com" class="contact-info">ashishgore393@gmail.com</a>
          </p>
@@ -214,7 +212,7 @@
       <!-- Footer Section -->
 
     <div style="background-color: #000; padding-top: 10px;">
-        <div class="shop-footer">
+        <div class="shop-footer" style="margin-top: auto;">
             <div class="footer-sec">
                 <p> Quick Links </p>
                 <div class="footer-data">
