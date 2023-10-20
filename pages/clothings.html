@@ -10,11 +10,25 @@
             text-decoration: none;
             color: #262626;
         }
-
         .sale {
-            margin-top: 1%;
-            margin-bottom: 1%;
-            margin-right: 3%;
+            display: block;
+            margin:20px auto;
+            width:90vw;
+            height: 30vh;
+            flex-basis: 30%;
+            animation: animate 3s linear infinite;
+        }
+        @keyframes animate
+        {
+            0%{
+                transform: scale(1.1);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.1);
+            }
         }
 
         body {
@@ -274,8 +288,10 @@
 
 <body>
     <div class="navbar">
-        <img class="nav-shop-logo" src="../img/clothings/shop-logo.png" alt="shop-logo">
-        <span style=" padding:5px 25px; font-size: 40px;"> Dream's Land</span>
+        <div style="display: flex; align-items: center; " class="navbar-name-logo">
+            <img href="./../index.html" class="nav-shop-logo" src="./../img/shop-logo.png" alt="shop-logo">
+            <span href="./../index.html"> Dream's Land</span>
+        </div>
 
 
         <div class="menu-contianer">
@@ -306,7 +322,7 @@
         </div>
     </div>
 
-    <img src="../img/clothings/sale4-img.jpg" width="100%" class="sale">
+    <img src="../img/clothings/sale4-img.jpg"  class="sale">
     <div class="deals-section">
 
         <h2 class="items-heading"> Latest-offers on clothings </h2>
