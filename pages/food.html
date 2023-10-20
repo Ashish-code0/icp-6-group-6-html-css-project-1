@@ -61,32 +61,36 @@
             font-size: 30px;
             font-weight: bolder;
         }
-
-        .special-offers{
+        .special-offers {
             background-color: #eee;
-            display:flex;
+            display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 20px 10px;
-            padding:10px;
+            margin: 10px 0;
+            padding: 10px;
+            position: relative;
+            border-bottom:2px solid #ffa41c; 
         }
+
         .special-offers-card{
-            width:200px;
-            border:1px solid #eee;
+            width: 200px;
+            border: 1px solid #eee;
             text-align: center;
-            padding:25px 20px;
-            margin:10px 20px;
+            padding: 20px 20px;
+            margin: 10px 20px;
             background-color: white;
             border-radius: 10px;
+            box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+        }
+        .special-offers-card:hover{
+            background-color: #f8f8f8;
+            box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.8);
         }
         .card-img{
             width: 120px;
             height: 120px;
         }
-        .card-img:hover{
-            width: 155px;
-            height: 125px;
-        }
+       
         .card-title{
             font-size: 15px;
         }
@@ -102,15 +106,23 @@
         .offer{
             color: green;
         }
-        .card-btn{
-            padding:5px 15px;
-            background-color:#0099ff ;
-            color:white;
+        .card-btn {
+            padding: 5px 15px;
+            background-color: #0099ff;
+            font-weight: bold;
+            text-align: center;
+            color: white;
             border-radius: 5px;
-            border:none;
-            box-shadow: 0px 0px 5px  2px lightblue;
+            border: none;
+            cursor: pointer;
         }
-        
+        .card-btn:hover {
+            background-color: #000;
+            color: white;
+            padding: 7px 20px;
+            border-left: 3px solid #ffa41c;
+            border-bottom: 3px solid #ffa41c;
+        }       
         .shopping-categories{
             height:100px;
             background-color: #565656;
@@ -420,12 +432,7 @@
        <button class="card-btn"> BUY </button>
    </div>
 </div>
-
-
-<hr>
-
-
-    
+</div>
 </list>
 </div>
 </div> 
@@ -469,14 +476,11 @@
 <button class="card-btn"> BUY </button>
 </div>
 </div>
-<hr>
-    
 </list>
 </div>
 </div> 
 <div class="deals-section">
 <p class="section-heading">Baked just right!</p>
-
 <div class="special-offers">
 <div class="special-offers-card">
 <img src="./../img/food/American-Pancake-Chocoltae-Cake.jpg" class="card-img">
@@ -556,104 +560,93 @@
 <button class="card-btn"> BUY </button>
 </div>
 </div>
-<hr/>
-<img src="./../img/food/Banner-4.jpg" height="1000px" >
-<hr>
-</list>
-</div>
-</div> 
-<div class="deals-section">
-<p class="section-heading"></p>
 
-<div class="special-offers">
-<div class="special-offers-card">
-<img src="./../img/food/chili powder.jpeg" class="card-img">
-<p class="card-title"></p>
-<p class="discount-desc"> Natural Red Chilli Powder Laal Mirch Masala 500gm</p>
-<p class="category-name">-20% ₹234 (₹234 / count)
-    M.R.P.: ₹260</p>
-<button class="card-btn"> BUY </button>
-</div>
-<div class="special-offers-card">
-<img src="./../img/food/haldi1.jpg" class="card-img">
-<p class="card-title"></p>
-<p class="discount-desc"> Natural Turmeric Powder Haldi Powder 100gm</p>
-<p class="category-name">-20% ₹86 (₹28.67 / count)
-    M.R.P.: ₹108</p>
-<button class="card-btn"> BUY </button>
-</div>
-<div class="special-offers-card">
-<img src="./../img/food/jeera.jpeg" class="card-img">
-<p class="card-title"></p>
-<p class="discount-desc"> Natural Whole Jeera 360g, Whole Cumin Seeds</p>
-<p class="category-name"> -20% ₹234 (₹234 / count)
-    M.R.P.: ₹260</p>
-<button class="card-btn"> BUY </button>
-</div>
-<div class="special-offers-card">
-<img src="./../img/food/coriander.jpeg" class="card-img">
-<p class="card-title"></p>
-<p class="discount-desc">  Dnv Coriander Powder, 100 g Pouch</p>
-<p class="category-name">-20% ₹200 (₹200 / count)
-    M.R.P.: ₹160
-    </p>
-<button class="card-btn"> BUY </button>
-</div>
-<div class="special-offers-card">
-<img src="./../img/food/garam masala.jpeg" class="card-img">
-<p class="card-title"></p>
-<p class="discount-desc"> DNv Garam Masala Powder 360gm</p>
-<p class="category-name">-20% ₹234 (₹234 / count)
-    M.R.P.: ₹260</p>
-<button class="card-btn"> BUY </button>
-</div>
 
 </div>
+
+<img src="./../img/food/Namkeen_mobile.jpg" width="1520px">
+
+
+
     <p class="section-heading"></p>
 
 <div class="special-offers">
    <div class="special-offers-card">
-       <img src="./../img/food/jumbone.jpg" class="card-img">
-       <p class="card-title">Pedigree Jumbone Mini Adult Dog Treat, Chicken & Lamb</p>
+       <img src="./../img/food/aloo bhujia.jpeg" class="card-img">
+       <p class="card-title">Haldiram's Aloo Bhujia,</p>
        <p class="discount-desc"></p>
-       <p class="category-name">M.R.P ₹3,000
-        Price: ₹2,123 (₹21.23 /100 g)</p>
+       <p class="category-name">₹200</p>
        <button class="card-btn"> BUY </button>
    </div>
    <div class="special-offers-card">
-       <img src="./../img/food/pedigree 1.jpg" class="card-img">
-       <p class="card-title">Pedigree Pro Puppy, Large Breed (3-18 Months)</p>
+       <img src="./../img/food/aloo mixture.jpeg" class="card-img">
+       <p class="card-title"> 
+        Haldiram's Aloo Mixture, 150 g</p>
        <p class="discount-desc"> </p>
-       <p class="category-name">M.R.P ₹2,123
-        Price: ₹1,900 (₹21.23 /100 g)</p>
+       <p class="category-name">₹200</p>
        <button class="card-btn"> BUY </button>
    </div>
    <div class="special-offers-card">
-       <img src="./../img/food/puppy.jpg" class="card-img">
-       <p class="card-title">Maxi Puppy <br>
-        Dry Dog Food</p>
+       <img src="./../img/food/bhujia sev.jpeg" class="card-img">
+       <p class="card-title">
+        Bhujia Sev
+    </p>
        <p class="discount-desc"> </p>
-       <p class="category-name">M.R.P ₹2,999
-        Price: ₹2,000 (₹21.23 /100 g)</p>
+       <p class="category-name">₹250 </p>
        <button class="card-btn"> BUY </button>
    </div>
    <div class="special-offers-card">
-       <img src="./../img/food/pedigree 2.jpg" class="card-img">
-       <p class="card-title">Pedigree Adult Dry Dog Food, Chicken & Vegetables</p>
+       <img src="./../img/food/kachori.jpeg" class="card-img">
+       <p class="card-title">Dry Kachori, 200gm</p>
        <p class="discount-desc"> </p>
-       <p class="category-name">M.R.P ₹2,390
-        Price: ₹2,123 (₹21.23 /100 g)</p>
+       <p class="category-name">₹250</p>
        <button class="card-btn"> BUY </button>
    </div>
    <div class="special-offers-card">
-       <img src="./../img/food/chopped-pedigree.jpeg" class="card-img">
-       <p class="card-title">Pedigree Chopped Wet Dog Food - 22oz</p>
+       <img src="./../img/food/minisamosa.jpeg" class="card-img">
+       <p class="card-title">Mini Samosa, 200g</p>
        <p class="discount-desc"> </p>
-       <p class="category-name">M.R.P ₹2,390
-        Price: ₹2,123 (₹21.23 /100 g)</p>
+       <p class="category-name"> ₹150</p>
        <button class="card-btn"> BUY </button>
    </div>
 </div>
+
+<div class="special-offers">
+    <div class="special-offers-card">
+        <img src="./../img/food/kajukatli.jpeg" class="card-img">
+        <p class="card-title">Kajukatli</p>
+        <p class="discount-desc"></p>
+        <p class="category-name">₹500</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="special-offers-card">
+        <img src="./../img/food/dhoda.jpeg" class="card-img">
+        <p class="card-title"> Dhoda Burfi 250gm</p>
+        <p class="discount-desc"> </p>
+        <p class="category-name">₹350</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="special-offers-card">
+        <img src="./../img/food/soncake.jpeg" class="card-img">
+        <p class="card-title">Soncake 100gm</p>
+        <p class="discount-desc"> </p>
+        <p class="category-name">₹400</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="special-offers-card">
+        <img src="./../img/food/mithai.jpeg" class="card-img">
+        <p class="card-title">Mix Mithaii</p>
+        <p class="discount-desc"> </p>
+        <p class="category-name">₹450</p>
+        <button class="card-btn"> BUY </button>
+    </div>
+    <div class="special-offers-card">
+        <img src="./../img/food/barfi.jpeg" class="card-img">
+        <p class="card-title">Choclate Barfi</p>
+        <p class="discount-desc"> </p>
+        <p class="category-name">₹250</p>
+        <button class="card-btn"> BUY </button>
+    </div>
 </div>
 <p class="section-heading"> Shop By Category </p>
 <div class="shopping-categories">
@@ -665,7 +658,7 @@
    <img src="./../img/food/general mills.png" class="categories-img">
    <img src="./../img/food/kraft.jpeg" class="categories-img">
 </div>
-<hr>
+
 <div class="return">
     <a href="#" class="top">Return To Top</a>
 </div>
@@ -684,7 +677,6 @@
                             class="fa-solid fa-arrow-right header-btn-arrow"></i> </a></span>
             </div>
         </div>
-        <hr>
         <div class="footer-sec">
             <p> Quick Links </p>
             <div class="footer-data">
